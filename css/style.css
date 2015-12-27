@@ -1,0 +1,963 @@
+/* @override http://0.0.0.0:4000/css/style.css */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+}
+
+h1 {
+	font: 900 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #3694b2;
+}
+h2 {
+	font:900  30px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	left: 1px;
+}
+h3 {
+	font: 500 24px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+h4 {
+	font: 500 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+p {
+	font: 200 18px/1.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+ul {
+	font: 200 18px/1.9em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+a {
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+a:hover {
+	color: #b23636;
+}
+.button {
+	display: inline-block;
+	position: relative;
+	/*height: 48px;*/
+	width: ;
+	margin:0;
+	padding: 12px 36px;
+	border: 2px solid #fff;
+	border-radius: 3px;	
+	font: 400 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	color: #fff;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;	
+}
+.button:hover {
+	color: #fff;
+}
+
+.button.dark {
+	/*background: #13d1c1;*/
+	border: 2px solid #13d1c1;
+	color: #13d1c1;
+}
+.button.dark:hover {
+	background: #13d1c1;
+	color: #fff;
+}
+
+
+	
+
+
+/* @group HEADER */
+body > header {
+	position: absolute;
+	z-index: 1000000000;
+	width: 100%;
+	height: 72px;
+	padding: 12px;
+	text-align: center;
+}
+body > header > div {
+	position: relative;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+body > header > div > a {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+body > header > div > .menu-button {
+	display: none;
+	width: 48px;
+	height: 48px;
+	padding: 0 0 0 12px;
+	border-left: 1px solid #ccc;
+	font: 900 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #ccc;
+	/*background: #f16;*/
+}
+body > header > div > .menu-button:hover {
+	color: #b23636;
+	cursor: pointer;
+}
+body > header > div > nav {
+	text-align: right;
+	padding: 12px 0;
+}
+body > header > div > nav > p  {
+	display: none;
+}
+body > header > div > nav > a {
+	position: relative;
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-decoration: none;
+	color: #666;
+	margin: 0 0 0 12px;
+}
+body > header > div > nav > a:hover {
+	color: #000;
+}
+/* @end */
+
+
+
+
+/* @group BANNER */
+.banner {
+	position: relative;
+	height: 100%;
+	min-height: 320px;
+	background: #13d1c1;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top right;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+}
+.banner:before {
+	display: none;
+	content: '\00a0';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(circle, rgba(0, 0, 0, .5) 0%, rgba(0,0,0,.75) 100%);	
+}
+.banner:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+/* @group HGROUP */
+.banner > hgroup {
+	position: relative;
+	z-index: 1000;
+	display: inline-block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 -.25em;
+	vertical-align: middle;
+	text-align: center;
+	white-space: normal;
+}
+.banner > hgroup > h1 {
+	font: 100 36/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 4px;
+	/*text-shadow: 0 1px 6px rgba(0,0,0,.5);*/
+	text-transform: uppercase;
+	color: #fff;
+}
+.banner > hgroup > h1 > span {
+	margin: 0 0 -.25em 0;
+	padding: 0;
+	display: block;
+	font: 500 90px/96px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.banner > hgroup > img {
+	width: 60%;
+}
+.banner > hgroup > .button {
+	margin: 48px 0 0 0;
+}
+/* @end */
+
+
+
+/* @end */
+
+/* @group KNOWLEDGE */
+.knowledge {
+	
+}
+.knowledge > div {
+	float: left;
+	width: 16.666666%;
+	text-align: center;
+}
+.knowledge > div > img {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+}
+.knowledge > div > h5 {
+	font: 500 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+/* @end */
+
+/* @group CONTENT */
+.content {
+	position: relative;
+	height: 100%;
+	/*overflow: scroll;*/
+}
+
+
+
+
+
+
+/* @group Article */
+article {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 60px 0px 60px 0;
+}
+
+
+article > hgroup {
+	margin: 72px 0 48px 0;
+	text-align: center;
+}
+article > h1 {
+	margin: 36px 0;
+}
+article > h2 {
+	margin: 36px 0;
+}
+article > p+h3  {
+	margin: 72px 0 0 0;
+}
+
+
+article > blockquote > p {
+	margin: 72px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color: #b23636;
+}
+article > blockquote > p:before,
+article > blockquote > p:after {
+	content: '"';
+}
+
+article p {
+	margin: 36px 0;
+	font-size: 20px;
+	overflow: hidden;
+}
+article > h3+p {
+	margin: 0 0 36px 0;
+}
+article > p:first-of-type:first-letter { 
+	float: left; 
+	color: #b23636; 
+	font-size: 120px; 
+	line-height: 96px; 
+	vertical-align: top;
+	padding-top: 12px; 
+	padding-right: 24px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+article > hr {
+	height: 48px;
+	border: none;
+	border-top: 1px dotted #ccc;
+}
+
+
+article > ul {
+	padding: 0 0 0 24px;
+}
+article > ul > li{
+	margin: 36px 0;
+	/*padding: 50px;*/
+	font-size: 20px;
+}
+/* @end */
+
+
+
+
+
+/* @group SECTION */
+.content > div > section {
+	max-width: 1080px;
+	margin: 0 auto;	
+	padding: 48px 0;
+}
+.content > div > section:after {
+	content: '\00a0';
+	display: block;
+	clear: both;
+	height: 0;
+}
+.content > div > section > section {
+	float: left;
+	width: 50%;
+	min-width: 320px;
+}
+.content > div > section > section + section {
+	padding-left: 24px;
+}
+.content > div > section > section > img {
+	max-width: 100%;
+}
+
+.content > div > section ul {
+	padding: 0 0 0 24px;
+}
+.content > div > section ul > li {
+	margin: 0 0 12px 0;
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+
+.content > div > section > p {
+	margin: 0 0 24px;
+}
+
+.content > div > section > p:first-of-type:first-letter { 
+	float: left; 
+	color: #b23636; 
+	font-size: 75px; 
+	line-height: 60px; 
+	vertical-align: bottom;
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px; 
+	font-family: Georgia; 
+}
+
+/* @end */
+
+/* @end */
+
+
+
+
+
+
+/* @group Features */
+.features {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+}
+.features > div {
+	float: left;
+	width: 33.333333%;
+	padding: 5%;
+}
+.features > div > img {
+	width: 100%;
+}
+.features > div > hgroup {
+	text-align: center;
+}
+.features > div > hgroup > h2 {
+	font: 700 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.features > div > hgroup > p {
+	
+}
+/* @end */
+
+
+
+
+
+
+/* @group Main Gallery */
+.main-gallery {
+	height: 100%;
+}
+
+.main-gallery .gallery-cell {
+	width: 33.333%;
+	height: 100%;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+}
+.main-gallery .gallery-cell.first-cell {
+	width: 100%;
+}
+.main-gallery .gallery-cell:before {
+	content: '\00a0';
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	/*background: #f16;*/
+	vertical-align: middle;
+}
+.main-gallery .gallery-cell > hgroup {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 960px;
+}
+.main-gallery .gallery-cell > hgroup > h1 {
+	color: #fff;
+	margin: 0 0 24px 0;
+	text-shadow: none;
+}
+/* position dots in gallery */
+.main-gallery .flickity-page-dots {
+  bottom: 24px;
+}
+/* white circles */
+.main-gallery .flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+/* fill-in selected dot */
+.main-gallery .flickity-page-dots .dot.is-selected {
+  background: white;
+}
+/* @end */
+
+
+
+
+
+
+/* @group Product Options */
+.product-options {
+	max-width: 960px;
+	margin: 0 auto 96px auto;
+	text-align: center;
+}
+.product-options > section {
+	/*background: #f16;*/
+}
+.product-options > section > hgroup {
+	overflow: hidden;
+	text-align: left;
+}
+.product-options > section > hgroup > h2 {
+	
+}
+.product-options > section > hgroup > img {
+	float: left;
+	width: 150px;
+}
+.product-options > section > hgroup > p {
+	
+}
+.product-options > section > form {
+	text-align: left;
+}
+
+
+.product-options > section > form > label {
+	position: relative;
+	display: inline-block;
+	width: 18%;
+	min-width: 100px;
+	margin: 0 12px 18px 0;
+	padding: 12px;
+	border: 2px solid #444;
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: top;
+	cursor: pointer;
+}
+.product-options > section > form > label:hover {
+	border-color: #13d1c1;
+	box-shadow: 0 0 0 1px #13d1c1 inset;
+}
+
+.product-options > section > form > label.selected {
+	border: 2px solid #13d1c1;
+	box-shadow: 0px -48px 0px -12px #13d1c1 inset;
+}
+.product-options > section > form > label.selected > h3 {
+	color: #13d1c1;
+}
+.product-options > section > form > label.selected > p {
+	color: #13d1c1;
+}
+.product-options > section > form > label > h3 {
+	font: 900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+}
+.product-options > section > form > label > p {
+	margin: 0 0 18px 0;
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+.product-options > section > form > label > input {
+	
+}
+
+
+
+
+.product-options > section.photos > form > label {
+	position: relative;
+	padding: 0;
+	/*border: none;*/
+	/*overflow: hidden;*/
+	border-radius: 4px;
+}
+.product-options > section.photos > form > label.selected {
+	border: 2px solid #13d1c1;
+}
+.product-options > section.photos > form > label.selected:after{
+	content: '\00a0';
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 42px;
+	background: #13d1c1;
+}
+.product-options > section.photos > form > label > a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 9px;
+	/*background: #444;*/
+	color: #fff;
+	text-shadow: 0 1px 5px rgba(0,0,0,1);
+	border-radius: 0 0 0 3px;
+}
+.product-options > section.photos > form > label > a:hover {
+	background: #13d1c1;
+}
+.product-options > section.photos > form > label > img {
+	width: 100%;
+	/*margin: 0 0 24px 0;*/
+}
+.product-options > section.photos > form > label > input {
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	bottom: 12px;
+}
+
+/* @end */
+
+
+
+
+
+
+/* @group ALTERNATING */
+.alternating {
+	padding: 0;
+}
+.alternating > div {
+	position: relative;
+	margin: 96px 0;
+	padding: 96px 0;
+}
+.alternating > div+div {
+	margin-top: 240px;
+}
+
+
+/* Image */
+.alternating > div > img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 100%;
+	margin: 0 0 0 48px;
+}
+
+
+/* H Group */
+.alternating > div > hgroup {
+	padding: 0 50% 0 0;
+}
+.alternating > div > hgroup > h2 {
+	margin: 0 0 48px;
+	font: 200 52px/1.0865em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.alternating > div > hgroup > p {
+	font: 400 18px/1.45em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 0 0 36px 0;
+	/*float: left;*/
+	/*width: 60%;*/
+	clear: left;
+}
+.alternating > div > hgroup > a {
+	margin: 12px 0;
+}
+
+
+.alternating > div:nth-of-type(odd) > hgroup {
+	padding: 0 0 0 50%;
+}
+.alternating > div:nth-of-type(odd) > img  {
+	left: auto;
+	right: 50%;
+	margin: 0 48px 0 0;
+}
+.alternating > div:nth-of-type(odd) > h2 {
+	float: right;
+}
+.alternating > div:nth-of-type(odd) > p {
+	float: right;
+	clear: right;
+}
+
+/* @end */
+
+
+
+
+
+
+/* @group Overlay */
+.overlay {
+	position: fixed;
+	z-index: 100000000000;
+	width: 100%;
+	height: 100%;
+	left: 300%;
+	top: 0;
+	padding: 48px;
+	background: rgba(0,0,0,.75);
+	text-align: center;
+	white-space: nowrap;
+}
+.overlay.visible {
+	left: 0;
+}
+.overlay > .close-overlay {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	border: 2px solid #fff;
+	border-radius: 24px;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+	font: 400 24px/42px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	cursor: pointer;
+}
+.overlay > .close-overlay:hover {
+	background: #fff;
+	color: #000;
+}
+.overlay > .close-overlay:active {
+	background: #000;
+	color: #fff;
+}
+.overlay > .video-wrapper {
+	display: inline-block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+.overlay:after {
+	content: '\00a0';
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	/*background: red;*/
+	vertical-align: middle;
+}
+.overlay > .video-wrapper > iframe {
+	/*top: 0;
+	left: 0;
+	width: 100%;*/
+}
+/* @end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @group FOOTER */
+footer {
+	/*position: absolute;*/
+	width: 100%;
+	bottom: 0px;
+	left: 0;
+	padding: 24px;
+	background: #f2f2f2;
+	text-align: center;
+	overflow: hidden;
+}
+footer > div {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+footer > div > a {
+	display: block;
+	max-width: 320px;
+	margin: 0 auto;
+}
+footer > div > a > img {
+	width: 100%;
+	max-width: 200px;
+	margin: 24px 0 0 0;
+}
+footer > div > section {
+	display: inline-block;
+	margin: 0 -.25em 0 0;
+	padding: 36px 0;
+	width: 33.33%;
+	font: 200 14px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #999;
+	vertical-align: top;
+	text-align: center;
+}
+footer > div > p {
+	font: inherit;
+	color: inherit;
+	font:200 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: #999;
+}
+/* @end */
+
+
+
+
+
+
+
+
+@media all and (max-width: 1080px) {
+	.content > div > section {
+		padding: 24px;
+	}
+	
+	
+	
+	/* Alternating */
+	.alternating {
+		padding: 24px;
+	}
+	.alternating > div {
+		padding: 24px 0;
+	}
+	.alternating > div > hgroup {
+		text-align: center;
+	}
+	
+	
+	
+	.banner {
+		padding: 48px;
+	}
+}
+
+
+
+
+
+
+@media all and (max-width: 840px) {
+	
+	
+}
+	
+	
+	
+	
+	
+	
+@media all and (max-width: 720px) {
+	.banner {
+		height: 50%;
+		padding: 12px;
+		background-attachment: scroll;
+		text-align: center;
+	}
+	.banner > hgroup {
+		width: auto;
+	}
+	.banner > hgroup > img {
+		
+	}
+	
+	
+	/* Features */
+	.features {
+		width: 100%;
+		max-width: 960px;
+	}
+	.features > div {
+		float: none;
+		width: 100%;
+	}
+	
+	/* Alternating */
+	.alternating {
+		
+	}
+	.alternating > div {
+		text-align: center;
+		padding: 24px;
+	}
+	.alternating > div+div {
+		margin-top: 1px;
+	}
+	.alternating > div:first-of-type {
+		margin-top: 0;
+	}
+	.content .alternating > div > hgroup {
+		padding: 24px 0;
+	}
+	.alternating > div > hgroup > h2 {
+		margin: 0 0 12px 0;
+	}
+	.alternating > div > hgroup > p {
+		margin: 0;
+	}
+	.alternating > div:first-of-type {
+		/*padding-bottom: 24px;*/
+	}
+	.alternating > div > img {
+		position: relative;
+		left: auto;
+		right: auto!important;
+		margin: 0 auto!important;
+		
+		height: auto;
+		width: 50%;
+	}
+	.alternating > div > hgroup > h2 {
+			font-size: 36px;
+	}
+	.alternating > div > hgroup > p {
+		
+	}
+	
+	
+	.knowledge > div > h5 {
+		font: 500 14px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+	
+	
+	
+	footer > div {
+		
+	}
+	
+	footer > div > section {	
+		display: block;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	
+	}
+	.content > div > section > section {
+		width: 100%;
+	}
+	.content > div > section > section+section {
+		margin: 48px 0 0 0;
+		/*padding: 0;*/
+	}
+
+
+}
+
+
+
+
+@media all and (max-width: 540px) {
+	.knowledge > div {
+		width: 33%;
+		margin: 24px 0;
+	}
+}
+
+
+
+
+
