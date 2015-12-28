@@ -7,22 +7,26 @@ FabricOptions:
 - Image_Path: /images/galleries/boundless/fabric/boundless-dress-fabric-1.jpg
   Name: Fabric 1
   Description: Blah blah blah
-BustSize:
-- Size: XXS
-  Inches: 30"-31"
-BustSize:
-- Size: XS
-  Inches: 32"-33"
+Gallery:
+- Image Path:
 ---
 <div class="main-gallery gallery js-flickity">
-	<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
+	{% for item in page.Gallery %}
+		<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
+			<hgroup>
+				<h1 class="product-title">Boundless Dress</h1>
+				<a href="#product-options" class="button">Customize It</a>
+			</hgroup>
+		</div>
+	{% endfor %}
+	<!--<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
 		<hgroup>
 			<h1 class="product-title">Boundless Dress</h1>
 			<a href="#product-options" class="button">Customize It</a>
 		</hgroup>
 	</div>
 	<div class="gallery-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-2.jpg');"></div>
-	<div class="gallery-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-3.jpg');"></div>
+	<div class="gallery-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-3.jpg');"></div>-->
 </div>
 
 <div class="product-options" id="product-options">
@@ -49,6 +53,11 @@ BustSize:
 	{% include size/waist.html %}
 	{% include size/hips.html %}
 	
+	{% include options/skirt.html %}
+	{% include options/sleeves.html %}
+	{% include options/waist.html %}
+	{% include options/pockets.html %}
+	
 </div>
 
 <section class="results">
@@ -62,17 +71,18 @@ BustSize:
 	<div>
 		<ul>
 			<h4>Measurements</h4>
-			<li id="bust-results">Bust: <span></span></li>
-			<li id="under-bust-results">Under Bust: <span></span></li>
-			<li id="waist-results">Waist: <span></span></li>
-			<li id="hips-results">Hips: <span></span></li>
+			<li id="bust-measurement">Bust: <span></span></li>
+			<li id="under-bust-measurement">Under Bust: <span></span></li>
+			<li id="waist-measurement">Waist: <span></span></li>
+			<li id="hip-measurement">Hips: <span></span></li>
 		</ul>
 		<ul>
 			<h4>Options</h4>
-			<li id="fabric-choice">Fabric: <span></span></li>
-			<li id="fabric-choice-url">URL: <span></span></li>
-			<li></li>
-			<li></li>
+			<!--<li id="fabric-choice">Fabric: <span></span></li>-->
+			<li id="skirt-choice">Skirt: <span></span></li>
+			<li id="sleeve-choice">Sleeves: <span></span></li>
+			<li id="waist-choice">Waist: <span></span></li>
+			<li id="pocket-choice">Pockets: <span></span></li>
 		</ul>
 	</div>
 	<footer>
@@ -104,6 +114,27 @@ BustSize:
 		    data-item-custom5-name="Hip Size"
 		    data-item-custom5-value=""
 		    data-item-custom5-required="True"
+		    
+		    
+		    
+		    
+		    
+		    
+		    data-item-custom6-name="Skirt"
+		    data-item-custom6-value=""
+		    data-item-custom6-required="True"
+		    
+		    data-item-custom7-name="Sleeves"
+		    data-item-custom7-value=""
+		    data-item-custom7-required="True"
+		    
+		    data-item-custom8-name="Waist"
+		    data-item-custom8-value=""
+		    data-item-custom8-required="True"
+		    
+		    data-item-custom9-name="Pockets"
+		    data-item-custom9-value=""
+		    data-item-custom9-required="True"
 		>Add To Cart</a>
 	</footer>
 </section>
@@ -124,7 +155,7 @@ BustSize:
 		var fabricChoiceURL = $('#fabric-options > label.selected > a').attr('href');
 		
 		$('#fabric-choice > span').html(fabricChoice);
-		$('#fabric-choice-url > span').html(fabricChoiceURL);
+//		$('#fabric-choice-url > span').html(fabricChoiceURL);
 		$('.results').css('background-image', 'url(' + fabricChoiceURL + ')');
 		
 		$('.snipcart-add-item').data('item-custom1-value',fabricChoice);
@@ -143,7 +174,7 @@ BustSize:
 		
 		var bustSize = $('#bust input[name=bust]:checked').val();
 		
-		$('#bust-results > span').html(bustSize);
+		$('#bust-measurement > span').html(bustSize);
 		$('.snipcart-add-item').data('item-custom2-value',bustSize);
 	});
 	
@@ -154,7 +185,7 @@ BustSize:
 		
 		var underBustSize = $('#under-bust input[name=under-bust]:checked').val();
 		
-		$('#under-bust-results > span').html(underBustSize);
+		$('#under-bust-measurement > span').html(underBustSize);
 		$('.snipcart-add-item').data('item-custom3-value',underBustSize);
 	});
 	
@@ -165,7 +196,7 @@ BustSize:
 		
 		var waistSize = $('#waist input[name=waist]:checked').val();
 		
-		$('#waist-results > span').html(waistSize);
+		$('#waist-measurement > span').html(waistSize);
 		$('.snipcart-add-item').data('item-custom4-value',waistSize);
 	});
 	
@@ -176,8 +207,60 @@ BustSize:
 		
 		var hipSize = $('#hips input[name=hips]:checked').val();
 		
-		$('#hips-results > span').html(hipSize);
+		$('#hip-measurement > span').html(hipSize);
 		$('.snipcart-add-item').data('item-custom5-value',hipSize);
+	});
+	
+	
+	
+	
+	
+	////////////////
+	//  Options  //
+	//////////////
+	
+	// Skirt
+	$( "#skirt > label" ).click(function() {	
+		$('#skirt > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var skirtChoice = $('#skirt input[name=skirt]:checked').val();
+		
+		$('#skirt-choice > span').html(skirtChoice);
+		$('.snipcart-add-item').data('item-custom6-value',skirtChoice);
+	});
+	
+	// Sleeves
+	$( "#sleeves > label" ).click(function() {	
+		$('#sleeves > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var sleeveChoice = $('#sleeves input[name=sleeves]:checked').val();
+		
+		$('#sleeve-choice > span').html(sleeveChoice);
+		$('.snipcart-add-item').data('item-custom7-value',sleeveChoice);
+	});
+	
+	// Waist
+	$( "#waist-type > label" ).click(function() {	
+		$('#waist-type > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var waistChoice = $('#waist-type input[name=waist-type]:checked').val();
+		
+		$('#waist-choice > span').html(waistChoice);
+		$('.snipcart-add-item').data('item-custom8-value',waistChoice);
+	});
+	
+	// Pockets
+	$( "#pockets > label" ).click(function() {	
+		$('#pockets > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var pocketChoice = $('#pockets input[name=pockets]:checked').val();
+		
+		$('#pocket-choice > span').html(pocketChoice);
+		$('.snipcart-add-item').data('item-custom9-value',pocketChoice);
 	});
 	
 	

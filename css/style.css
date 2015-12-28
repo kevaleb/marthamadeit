@@ -562,12 +562,12 @@ article > ul > li{
 	color: #444;
 	letter-spacing: 1px;
 }
-.product-options > section > form > label > p:after {
+/*.product-options > section > form > label > p:after {
 	content: 'Inches';
 	display: block;
 	text-align: center;
 	font: 200 10px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
+}*/
 .product-options > section > form > label > input {
 	
 }
@@ -639,11 +639,6 @@ article > ul > li{
 }
 
 
-
-.results > div {
-	overflow: hidden;
-	background: rgba(0,0,0,.5);
-}
 .results > header {
 	padding: 24px;
 	overflow: hidden;
@@ -686,7 +681,10 @@ article > ul > li{
 }
 
 
-
+.results > div {
+	overflow: hidden;
+	background: rgba(0,0,0,.5);
+}
 .results > div > ul {
 	float: left;
 	width: 50%;
@@ -697,19 +695,20 @@ article > ul > li{
 }
 .results > div > ul > h4 {
 	color: #fff;
+	font: 900 18/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .results > div > ul > li {
 	margin: 12px 0 0 0;
 	padding: 0;
 	/*border: 1px solid #ccc;*/
 	border-radius: 24px;
-	font: 600 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 600 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 1px;
 	color: #fff;
 }
 .results > div > ul > li > span {
 	/*display: block;*/
-	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: 200;
 	
 }
 /*.results > div > ul > li > span:after {
