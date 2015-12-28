@@ -8,15 +8,19 @@ FabricOptions:
   Name: Fabric 1
   Description: Blah blah blah
 Gallery:
-- Image Path:
+- Image_Path: /images/galleries/boundless/boundless-dress-1.jpg
+- Image_Path: /images/galleries/boundless/boundless-dress-2.jpg
+- Image_Path: /images/galleries/boundless/boundless-dress-3.jpg
 ---
 <div class="main-gallery gallery js-flickity">
 	{% for item in page.Gallery %}
-		<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
+		<div class="gallery-cell first-cell" style="background-image: url('{{  item.Image_Path  }}');">
+			{% if forloop.first %}
 			<hgroup>
-				<h1 class="product-title">Boundless Dress</h1>
-				<a href="#product-options" class="button">Customize It</a>
+				<h1 class="product-title" class="editable">{{  page.title  }}</h1>
+				<a href="#product-options" class="button editable">Customize It</a>
 			</hgroup>
+			{% endif %}
 		</div>
 	{% endfor %}
 	<!--<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
