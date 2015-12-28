@@ -3,11 +3,16 @@ layout: default
 title: Boundless Dress
 description:
 permalink: /dress/boundless/
-pageclass: product
-fabricoptions:
+FabricOptions:
 - Image_Path: /images/galleries/boundless/fabric/boundless-dress-fabric-1.jpg
-  name: Fabric 1
-  description: Blah blah blah
+  Name: Fabric 1
+  Description: Blah blah blah
+BustSize:
+- Size: XXS
+  Inches: 30"-31"
+BustSize:
+- Size: XS
+  Inches: 32"-33"
 ---
 <div class="main-gallery gallery js-flickity">
 	<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
@@ -27,133 +32,111 @@ fabricoptions:
 			<p>Blah blah blah blah blah blah blah blah blah.</p>
 		</hgroup>
 		<form method="" action="" id="fabric-options">
-			{% for item in page.fabricoptions %}
+			{% for item in page.FabricOptions %}
 			<label>
-				<a href="{{ item.Image_Path }}" class="strip" data-strip-group="fabric" data-strip-caption="{{ item.description }}">
+				<a href="{{ item.Image_Path }}" class="strip" data-strip-group="fabric" data-strip-caption="{{ item.Description }}">
 					<i class="fa fa-search-plus fa-lg"></i>
 				</a>
-				<img src="{{ item.Image_Path }}" alt="{{ item.name }}" />
-				<input type="radio" name="fabric-option" value="{{ item.name }}" />
+				<img src="{{ item.Image_Path }}" alt="{{ item.Name }}" />
+				<input type="radio" name="fabric-option" value="{{ item.Name }}" />
 			</label>
 			{% endfor %}
-			
-			<!--<label>
-				<a href="/images/galleries/boundless/fabric/boundless-dress-fabric-1.jpg" class="strip" data-strip-group="fabric"><i class="fa fa-search-plus fa-lg"></i></a>
-				<img src="/images/galleries/boundless/fabric/boundless-dress-fabric-1.jpg" alt="" />
-				<input type="radio" name="fabric-option" value="Option 1" />
-			</label>
-			<label class="">
-				<a href="/images/galleries/boundless/fabric/boundless-dress-fabric-2.jpg" class="strip" data-strip-group="fabric"><i class="fa fa-search-plus fa-lg"></i></a>
-				<img src="/images/galleries/boundless/fabric/boundless-dress-fabric-2.jpg" alt="" />
-				<input type="radio" name="fabric-option" value="Option 2" />
-			</label>-->
 		</form>
 	</section>
 	
-	<section>
-		<hgroup>
-			<img src="/images/icons/fashion/fit.png" alt="" />
-			<h2>Bust</h2>
-			<p>Blah blah blah blah blah blah blah blah blah.</p>
-		</hgroup>
-		<form name="bust" id="bust">
-			<label>
-				<h3>XXS</h3>
-				<p>30"-31"</p>
-				<input type="radio" name="bust" value="XXS" />
-			</label>
-			<label>
-				<h3>XS</h3>
-				<p>32"-33"</p>
-				<input type="radio" name="bust" value="XS" />
-			</label>
-			<label>
-				<h3>S</h3>
-				<p>34"-35"</p>
-				<input type="radio" name="bust" value="S" />
-			</label>
-			<label>
-				<h3>M</h3>
-				<p>36"-37"</p>
-				<input type="radio" name="bust" value="M" />
-			</label>
-			<label>
-				<h3>L</h3>
-				<p>38"-40"</p>
-				<input type="radio" name="bust" value="L" />
-			</label>
-			<label> 
-				<h3>XL</h3>
-				<p>41"-42"</p>
-				<input type="radio" name="bust" value="XL" />
-			</label>
-			<label>
-				<h3>XXL</h3>
-				<p>43"-45"</p>
-				<input type="radio" name="bust" value="XXL" />
-			</label>
-			<label>
-				<h3>Plus 1X</h3>
-				<p>46"-48"</p>
-				<input type="radio" name="bust" value="Plus 1X" />
-			</label>
-			<label>
-				<h3>Plus 2X</h3>
-				<p>49"-51"</p>
-				<input type="radio" name="bust" value="Plus 2X" />
-			</label>
-			<label>
-				<h3>Plus 3X</h3>
-				<p>52"-54"</p>
-				<input type="radio" name="bust" value="Plus 3X" />
-			</label>
-		</form>
-	</section>
+	{% include size/bust.html %}
+	{% include size/under-bust.html %}
+	{% include size/waist.html %}
+	{% include size/hips.html %}
 	
-	
-	
-	<section class="results">
-		<h4 id="fabric-choice">Fabric: <span></span></h4>
-		<h4 id="bust-results">Bust: <span></span></h4>
-	</section>
-	
-	<a href="#" class="snipcart-add-item button dark"
-	    data-item-id="1"
-	    data-item-name="Boundless Dress"
-	    data-item-price="69.00"
-	    data-item-weight="1"
-	    data-item-url="marthamadeit.com/dress/boundless/"
-	    data-item-description="A dress without bounds"
-	    
-	    data-item-custom1-name="Fabric"
-	    data-item-custom1-value=""
-	    data-item-custom1-required="True"
-	    
-	    data-item-custom2-name="Bust Size"
-	    data-item-custom2-value=""
-	>Add To Cart</a>
 </div>
-	
+
+<section class="results">
+	<header>
+		<div class="image"></div>
+		<hgroup>
+			<h2>{{ page.title }}</h2>
+			<h3 id="price" class="price">69</h3>
+		</hgroup>
+	</header>
+	<div>
+		<ul>
+			<h4>Measurements</h4>
+			<li id="bust-results">Bust: <span></span></li>
+			<li id="under-bust-results">Under Bust: <span></span></li>
+			<li id="waist-results">Waist: <span></span></li>
+			<li id="hips-results">Hips: <span></span></li>
+		</ul>
+		<ul>
+			<h4>Options</h4>
+			<li id="fabric-choice">Fabric: <span></span></li>
+			<li id="fabric-choice-url">URL: <span></span></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<footer>
+		<!--<a href="#">Satisfaction Policy</a>-->
+		<a href="#" class="snipcart-add-item button dark"
+		    data-item-id="1"
+		    data-item-name="Boundless Dress"
+		    data-item-price="69.00"
+		    data-item-weight="1"
+		    data-item-url="marthamadeit.com/dress/boundless/"
+		    data-item-description="A dress without bounds"
+		    
+		    data-item-custom1-name="Fabric"
+		    data-item-custom1-value=""
+		    data-item-custom1-required="True"
+		    
+		    data-item-custom2-name="Bust Size"
+		    data-item-custom2-value=""
+		    data-item-custom2-required="True"
+		    
+		    data-item-custom3-name="Under Bust Size"
+		    data-item-custom3-value=""
+		    data-item-custom3-required="True"
+		    
+		    data-item-custom4-name="Waist Size"
+		    data-item-custom4-value=""
+		    data-item-custom4-required="True"
+		    
+		    data-item-custom5-name="Hip Size"
+		    data-item-custom5-value=""
+		    data-item-custom5-required="True"
+		>Add To Cart</a>
+	</footer>
+</section>
 
 <script type="text/javascript">
 	
 	
 	
 	
-	// Fabric Choice
+	//////////////////////
+	//  Fabric Choice  //
+	////////////////////
 	$( "#fabric-options > label" ).click(function() {	
 		$('#fabric-options > label.selected').removeClass('selected');
 		$(this).addClass('selected');
 		
 		var fabricChoice = $('#fabric-options input[name=fabric-option]:checked').val();
+		var fabricChoiceURL = $('#fabric-options > label.selected > a').attr('href');
 		
 		$('#fabric-choice > span').html(fabricChoice);
+		$('#fabric-choice-url > span').html(fabricChoiceURL);
+		$('.results').css('background-image', 'url(' + fabricChoiceURL + ')');
 		
 		$('.snipcart-add-item').data('item-custom1-value',fabricChoice);
 	});
 	
 	
-	// Bust Size
+	
+	//////////////
+	//  Sizes  //
+	////////////
+	
+	// Bust
 	$( "#bust > label" ).click(function() {	
 		$('#bust > label.selected').removeClass('selected');
 		$(this).addClass('selected');
@@ -163,6 +146,41 @@ fabricoptions:
 		$('#bust-results > span').html(bustSize);
 		$('.snipcart-add-item').data('item-custom2-value',bustSize);
 	});
+	
+	// Under Bust
+	$( "#under-bust > label" ).click(function() {	
+		$('#under-bust > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var underBustSize = $('#under-bust input[name=under-bust]:checked').val();
+		
+		$('#under-bust-results > span').html(underBustSize);
+		$('.snipcart-add-item').data('item-custom3-value',underBustSize);
+	});
+	
+	// Waist
+	$( "#waist > label" ).click(function() {	
+		$('#waist > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var waistSize = $('#waist input[name=waist]:checked').val();
+		
+		$('#waist-results > span').html(waistSize);
+		$('.snipcart-add-item').data('item-custom4-value',waistSize);
+	});
+	
+	// Hips
+	$( "#hips > label" ).click(function() {	
+		$('#hips > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var hipSize = $('#hips input[name=hips]:checked').val();
+		
+		$('#hips-results > span').html(hipSize);
+		$('.snipcart-add-item').data('item-custom5-value',hipSize);
+	});
+	
+	
 	
 	
 	$('.main-gallery').flickity({

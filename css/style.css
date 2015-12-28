@@ -338,10 +338,6 @@ article > ul > li{
 .content > div > section > section > img {
 	max-width: 100%;
 }
-
-.content > div > section ul {
-	padding: 0 0 0 24px;
-}
 .content > div > section ul > li {
 	margin: 0 0 12px 0;
 	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -404,35 +400,7 @@ article > ul > li{
 
 
 
-/* @group Products */
-.products {
-	min-height: 100%;
-}
-.products > div {
-	height: 100%;
-	background: #f16;
-	text-decoration: none;
-	text-align: center;
-	background-position: center;
-	background-attachment: fixed;
-}
-.products > div::after {
-	content: '\00a0';
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
-}
-.products > div > hgroup {
-	width: 100%;
-	max-width: 960px;
-	display: inline-block;
-	text-align: left;
-	
-}
-.products > div > hgroup > h2 {
-	color: #fff;
-}
-/* @end */
+
 
 
 
@@ -491,6 +459,38 @@ article > ul > li{
 }
 /* @end */
 
+
+
+
+/* @group Products */
+.products {
+	min-height: 100%;
+}
+.products > div {
+	height: 100%;
+	background: #f16;
+	text-decoration: none;
+	text-align: center;
+	background-position: center;
+	background-attachment: fixed;
+}
+.products > div::after {
+	content: '\00a0';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.products > div > hgroup {
+	width: 100%;
+	max-width: 960px;
+	display: inline-block;
+	text-align: left;
+	
+}
+.products > div > hgroup > h2 {
+	color: #fff;
+}
+/* @end */
 
 
 
@@ -558,8 +558,15 @@ article > ul > li{
 }
 .product-options > section > form > label > p {
 	margin: 0 0 18px 0;
-	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #666;
+	font: 500 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #444;
+	letter-spacing: 1px;
+}
+.product-options > section > form > label > p:after {
+	content: 'Inches';
+	display: block;
+	text-align: center;
+	font: 200 10px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .product-options > section > form > label > input {
 	
@@ -573,6 +580,7 @@ article > ul > li{
 	padding: 0;
 	/*border: none;*/
 	/*overflow: hidden;*/
+	border-color: #fff;
 	border-radius: 4px;
 }
 .product-options > section.photos > form > label.selected {
@@ -613,6 +621,115 @@ article > ul > li{
 }
 
 /* @end */
+
+
+
+
+
+
+
+
+/* @group Results */
+.results {
+	position: relative;
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto 96px auto;
+	box-shadow: 500px 0px 500px -150px rgba(0,0,0,.5) inset;
+}
+
+
+
+.results > div {
+	overflow: hidden;
+	background: rgba(0,0,0,.5);
+}
+.results > header {
+	padding: 24px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center top;
+	color: #fff;
+	text-align: left;
+	/*box-shadow: 500px 0px 150px -150px rgba(0,0,0,.5) inset;*/
+}
+.results > header > .image {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	margin: 0 24px 0 0;
+	background: #fff;
+	vertical-align: middle;
+	
+	border-radius: 250px;
+	
+}
+.results > header > hgroup {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.results > header > hgroup > h2 {
+	color: inherit;
+	font: 900 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+.results > header > hgroup > h3 {
+	color: inherit;
+	font: 100 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+.results > header > hgroup > h3:before {
+	content: '$';
+}
+
+
+
+.results > div > ul {
+	float: left;
+	width: 50%;
+	text-align: left;
+	list-style: none;
+	margin: 0;
+	padding: 24px;
+}
+.results > div > ul > h4 {
+	color: #fff;
+}
+.results > div > ul > li {
+	margin: 12px 0 0 0;
+	padding: 0;
+	/*border: 1px solid #ccc;*/
+	border-radius: 24px;
+	font: 600 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+	color: #fff;
+}
+.results > div > ul > li > span {
+	/*display: block;*/
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	
+}
+/*.results > div > ul > li > span:after {
+	content: '"';
+}*/
+
+
+.results > footer {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	padding: 12px 0;
+	text-align: right;
+}
+.results > footer > a {
+}
+.results > footer > a.button {
+}
+/* @end */
+
 
 
 
@@ -795,8 +912,8 @@ article > ul > li{
 
 
 
-/* @group FOOTER */
-footer {
+/* @group .main-footer */
+.main-footer {
 	/*position: absolute;*/
 	width: 100%;
 	bottom: 0px;
@@ -806,21 +923,21 @@ footer {
 	text-align: center;
 	overflow: hidden;
 }
-footer > div {
+.main-footer > div {
 	max-width: 1080px;
 	margin: 0 auto;
 }
-footer > div > a {
+.main-footer > div > a {
 	display: block;
 	max-width: 320px;
 	margin: 0 auto;
 }
-footer > div > a > img {
+.main-footer > div > a > img {
 	width: 100%;
 	max-width: 200px;
 	margin: 24px 0 0 0;
 }
-footer > div > section {
+.main-footer > div > section {
 	display: inline-block;
 	margin: 0 -.25em 0 0;
 	padding: 36px 0;
@@ -830,7 +947,7 @@ footer > div > section {
 	vertical-align: top;
 	text-align: center;
 }
-footer > div > p {
+.main-footer > div > p {
 	font: inherit;
 	color: inherit;
 	font:200 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -960,11 +1077,11 @@ footer > div > p {
 	
 	
 	
-	footer > div {
+	.main-footer > div {
 		
 	}
 	
-	footer > div > section {	
+	.main-footer > div > section {	
 		display: block;
 		width: 100%;
 		margin: 0;
