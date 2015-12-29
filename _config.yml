@@ -2,9 +2,3 @@ name: Winery Guild
 permalink: pretty
 markdown: redcarpet
 excerpt_separator: <!--more-->
-
-
-collections:
-  - dresses
-  - skirts
-  - tops
