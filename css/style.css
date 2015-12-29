@@ -503,10 +503,17 @@ article > ul > li{
 	text-align: center;
 }
 .product-options > section {
+	overflow: hidden;
 	/*background: #f16;*/
 }
+.product-options > section > img {
+	float: left;
+	width: 25%;
+}
 .product-options > section > hgroup {
+	max-width: 480px;
 	overflow: hidden;
+	margin: 0 0 12px 0;
 	text-align: left;
 }
 .product-options > section > hgroup > h2 {
@@ -515,6 +522,7 @@ article > ul > li{
 .product-options > section > hgroup > img {
 	float: left;
 	width: 150px;
+	margin: 0 24px 0 0;
 }
 .product-options > section > hgroup > p {
 	
@@ -523,7 +531,9 @@ article > ul > li{
 	text-align: left;
 }
 
-
+.product-options > section > form > img {
+	width: 250px;
+}
 .product-options > section > form > label {
 	position: relative;
 	display: inline-block;
@@ -568,6 +578,9 @@ article > ul > li{
 	text-align: center;
 	font: 200 10px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }*/
+.product-options > section > form > label > img {
+	width: 100%;
+}
 .product-options > section > form > label > input {
 	
 }
@@ -618,6 +631,16 @@ article > ul > li{
 	z-index: 100;
 	left: 50%;
 	bottom: 12px;
+}
+
+
+
+
+.product-options > section > form.natural > label.empire {
+	display: none;
+}
+.product-options > section > form.empire > label.natural {
+	display: none!important;
 }
 
 /* @end */

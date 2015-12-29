@@ -23,14 +23,6 @@ Gallery:
 			{% endif %}
 		</div>
 	{% endfor %}
-	<!--<div class="gallery-cell first-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-1.jpg');">
-		<hgroup>
-			<h1 class="product-title">Boundless Dress</h1>
-			<a href="#product-options" class="button">Customize It</a>
-		</hgroup>
-	</div>
-	<div class="gallery-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-2.jpg');"></div>
-	<div class="gallery-cell" style="background-image: url('/images/galleries/boundless/boundless-dress-3.jpg');"></div>-->
 </div>
 
 <div class="product-options" id="product-options">
@@ -57,9 +49,9 @@ Gallery:
 	{% include size/waist.html %}
 	{% include size/hips.html %}
 	
-	{% include options/skirt.html %}
 	{% include options/sleeves.html %}
 	{% include options/waist.html %}
+	{% include options/skirt.html %}
 	{% include options/pockets.html %}
 	
 </div>
@@ -83,9 +75,9 @@ Gallery:
 		<ul>
 			<h4>Options</h4>
 			<!--<li id="fabric-choice">Fabric: <span></span></li>-->
-			<li id="skirt-choice">Skirt: <span></span></li>
 			<li id="sleeve-choice">Sleeves: <span></span></li>
 			<li id="waist-choice">Waist: <span></span></li>
+			<li id="skirt-choice">Skirt: <span></span></li>
 			<li id="pocket-choice">Pockets: <span></span></li>
 		</ul>
 	</div>
@@ -223,6 +215,26 @@ Gallery:
 	//  Options  //
 	//////////////
 	
+	// Waist
+	$( "#waist-type > label" ).click(function() {	
+		$('#waist-type > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var waistChoice = $('#waist-type input[name=waist-type]:checked').val();
+		
+		$('#waist-choice > span').html(waistChoice);
+		$('.snipcart-add-item').data('item-custom8-value',waistChoice);
+	});
+	
+	$( "#waist-type > label.natural" ).click(function() {	
+		$('#skirt.empire').addClass('natural');
+		$('#skirt.empire').removeClass('empire');
+	});
+	$( "#waist-type > label.empire" ).click(function() {	
+		$('#skirt.natural').addClass('empire');
+		$('#skirt.natural').removeClass('natural');
+	});
+	
 	// Skirt
 	$( "#skirt > label" ).click(function() {	
 		$('#skirt > label.selected').removeClass('selected');
@@ -245,16 +257,6 @@ Gallery:
 		$('.snipcart-add-item').data('item-custom7-value',sleeveChoice);
 	});
 	
-	// Waist
-	$( "#waist-type > label" ).click(function() {	
-		$('#waist-type > label.selected').removeClass('selected');
-		$(this).addClass('selected');
-		
-		var waistChoice = $('#waist-type input[name=waist-type]:checked').val();
-		
-		$('#waist-choice > span').html(waistChoice);
-		$('.snipcart-add-item').data('item-custom8-value',waistChoice);
-	});
 	
 	// Pockets
 	$( "#pockets > label" ).click(function() {	
