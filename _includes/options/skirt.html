@@ -1,0 +1,23 @@
+<section>
+	<hgroup>
+		<h2>Skirt</h2>
+		<p>Blah blah blah blah blah blah blah blah blah.</p>
+	</hgroup>
+	<form name="skirt" id="skirt" class="natural">
+		{% for item in site.data.options.skirt %}
+		<label class="{{  item.Style  }}">
+			<p>{{ item.Option }}</p>
+			<img src="{{ item.Image_Path_1 }}" alt="{{ item.Option }}" />
+			<!--<img src="{{ item.Image_Path_2 }}" alt="{{ item.Option }}" />-->
+			<input type="radio" name="skirt" value="{{ item.Option }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+<section>
+	<hgroup>
+		<h2>Pockets</h2>
+		<p>Blah blah blah blah blah blah blah blah blah.</p>
+	</hgroup>
+	<form name="pockets" id="pockets">
+		{% for item in site.data.options.pockets %}
+		<label>
+			<p>{{ item.Option }}</p>
+			<img src="{{ item.Image_Path }}" alt="{{ item.Option }}" />
+			<input type="radio" name="pockets" value="{{ item.Option }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>

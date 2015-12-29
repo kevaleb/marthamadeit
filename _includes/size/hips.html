@@ -1,0 +1,16 @@
+<section>
+	<hgroup>
+		<img src="/images/icons/sizes/hips.png" alt="" />
+		<h2>Hips</h2>
+		<p>Blah blah blah blah blah blah blah blah blah.</p>
+	</hgroup>
+	<form name="hips" id="hips">
+		{% for item in site.data.sizes.hips %}
+		<label>
+			<!--<h3>{{ item.Size }}</h3>-->
+			<p>{{ item.Measurement }}</p>
+			<input type="radio" name="hips" value="{{ item.Measurement }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>
