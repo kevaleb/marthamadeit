@@ -413,21 +413,31 @@ article > ul > li{
 }
 
 .main-gallery .gallery-cell {
-	width: 33.333%;
+	width: 100%;
 	height: 100%;
 	text-align: center;
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background: #13d1c1;
+	/*background: #000;*/
+	white-space: nowrap;
 }
 .main-gallery .gallery-cell.first-cell {
-	width: 100%;
+	/*width: 100%;*/
 }
 .main-gallery .gallery-cell:before {
 	content: '\00a0';
 	display: inline-block;
 	width: 0px;
 	height: 100%;
+	margin: 0 -.25em 0 0;
 	/*background: #f16;*/
+	vertical-align: middle;
+}
+.main-gallery .gallery-cell > img {
+	max-height: 100%;
+	max-width: 100%;
 	vertical-align: middle;
 }
 .main-gallery .gallery-cell > hgroup {
@@ -659,6 +669,7 @@ article > ul > li{
 	max-width: 720px;
 	margin: 0 auto 96px auto;
 	box-shadow: 500px 0px 500px -150px rgba(0,0,0,.5) inset;
+	background-size: cover;
 }
 
 
