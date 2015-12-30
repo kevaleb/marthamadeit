@@ -1,23 +1,52 @@
 ---
 layout: default
 title: Boundless Dress
-description:
+description: ''
 permalink: /dress/boundless/
 FabricOptions:
-- Image_Path: /images/galleries/boundless/fabric/boundless-dress-fabric-1.jpg
-  Name: Fabric 1
-  Description: Blah blah blah
+  - Image_Path: /images/galleries/boundless/fabric/062.jpg
+    Name: Bright Aztec Skirt with Solid Black Top.
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/063.jpg
+    Name: Hot Pink Aztec Print with Solid Black Print
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/064.jpg
+    Name: Black Polka Dot on Maroon Red with Solid Black Top
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/067.jpg
+    Name: Rainbow Chevron Print with solid Black Top
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/065.jpg
+    Name: Pink and Blue Small Floral on Black with Solid Black Top
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/066.jpg
+    Name: Navy and Red Plaid
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/068.jpg
+    Name: Black and Cream Polka Dot Chevron Print
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/069.jpg
+    Name: Black and Cream Polka Dot Chevron Print Skirt with Solid Black Top
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/070.jpg
+    Name: Navy and Cream Chevron Print Skirt with Solid Cream Top
+    Description: ''
+  - Image_Path: /images/galleries/boundless/fabric/boundless-dress-fabric-3.jpg
+    Name: Black and White Stripe with Solid Yellow Skirt
+    Description: ''
 Gallery:
-- Image_Path: /images/galleries/boundless/boundless-dress-1.jpg
-- Image_Path: /images/galleries/boundless/boundless-dress-2.jpg
-- Image_Path: /images/galleries/boundless/boundless-dress-3.jpg
+  - Image_Path: /dresses/img_0060.jpg
+  - Image_Path: /images/galleries/boundless/boundless-dress-3.jpg
+  - Image_Path: /images/galleries/boundless/boundless-dress-2.jpg
+  - Image_Path: ''
+  - Image_Path: ''
 ---
 <div class="main-gallery gallery js-flickity">
 	{% for item in page.Gallery %}
 		<div class="gallery-cell first-cell" style="background-image: url('{{  item.Image_Path  }}');">
 			{% if forloop.first %}
 			<hgroup>
-				<h1 class="product-title" class="editable">{{  page.title  }}</h1>
+				<h1 class="product-title">{{  page.title  }}</h1>
 				<a href="#product-options" class="button editable">Customize It</a>
 			</hgroup>
 			{% endif %}
@@ -83,55 +112,7 @@ Gallery:
 	</div>
 	<footer>
 		<!--<a href="#">Satisfaction Policy</a>-->
-		<a href="#" class="snipcart-add-item button dark"
-		    data-item-id="1"
-		    data-item-name="Boundless Dress"
-		    data-item-price="69.00"
-		    data-item-weight="1"
-		    data-item-url="marthamadeit.com/dress/boundless/"
-		    data-item-description="A dress without bounds"
-		    
-		    data-item-custom1-name="Fabric"
-		    data-item-custom1-value=""
-		    data-item-custom1-required="True"
-		    
-		    data-item-custom2-name="Bust Size"
-		    data-item-custom2-value=""
-		    data-item-custom2-required="True"
-		    
-		    data-item-custom3-name="Under Bust Size"
-		    data-item-custom3-value=""
-		    data-item-custom3-required="True"
-		    
-		    data-item-custom4-name="Waist Size"
-		    data-item-custom4-value=""
-		    data-item-custom4-required="True"
-		    
-		    data-item-custom5-name="Hip Size"
-		    data-item-custom5-value=""
-		    data-item-custom5-required="True"
-		    
-		    
-		    
-		    
-		    
-		    
-		    data-item-custom6-name="Skirt"
-		    data-item-custom6-value=""
-		    data-item-custom6-required="True"
-		    
-		    data-item-custom7-name="Sleeves"
-		    data-item-custom7-value=""
-		    data-item-custom7-required="True"
-		    
-		    data-item-custom8-name="Waist"
-		    data-item-custom8-value=""
-		    data-item-custom8-required="True"
-		    
-		    data-item-custom9-name="Pockets"
-		    data-item-custom9-value=""
-		    data-item-custom9-required="True"
-		>Add To Cart</a>
+		<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="Boundless Dress" data-item-price="69.00" data-item-weight="1" data-item-url="marthamadeit.com/dress/boundless/" data-item-description="A dress without bounds" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Bust Size" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Under Bust Size" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Skirt" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Sleeves" data-item-custom7-value="" data-item-custom7-required="True" data-item-custom8-name="Waist" data-item-custom8-value="" data-item-custom8-required="True" data-item-custom9-name="Pockets" data-item-custom9-value="" data-item-custom9-required="True">Add To Cart</a>
 	</footer>
 </section>
 
