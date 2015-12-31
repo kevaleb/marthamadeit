@@ -812,7 +812,7 @@ article > ul > li{
 	font-weight: 200;
 	
 }
-.results > a.button {
+.results > .button {
 	position: absolute;
 	bottom: -72px;
 	right: -3px;
@@ -1192,10 +1192,66 @@ article > ul > li{
 
 
 @media all and (max-width: 540px) {
-	.knowledge > div {
-		width: 33%;
-		margin: 24px 0;
-	}
+.product-options > section.padding {
+	padding: 24px;
+}
+.product-options > section > img {
+	float: none;
+	width: 100%;
+	max-width: 150px;
+	margin: 48px 0 0 0;
+}
+.product-options > section > hgroup {
+	text-align: center;
+}
+.product-options > section > form > label {
+	float: left;
+	width: 24%;
+	margin: 0 1% 1% 0;
+}
+.product-options > section > div {
+	text-align: center;
+}
+.product-options > section > div > input {
+	text-align: center;
+}
+.product-options > section > form > label+label {
+	
+}
+.product-options > section > form > label > p {
+	font: 400 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+
+.results {
+	border: none;
+}
+.results > section {
+	display: block;
+	width: 100%;
+}
+
+.results > section.fabricses {
+	width: 100%;
+	margin: 0 auto;
+}
+.results > section.fabricses > .diagram {
+	max-width: 200px;
+}
+.results > section hgroup {
+	text-align: center;
+}
+.results > section ul {
+	float: none;
+}
+.results > .button {
+	position: relative;
+	float: none;
+	/*display: block;*/
+	margin: 0 auto;
+	/*background: #f16;*/
+}
 }
 
 
