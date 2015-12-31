@@ -81,41 +81,45 @@ Gallery:
 	{% include size/under-bust.html %}
 	{% include size/waist.html %}
 	{% include size/hips.html %}
+	{% include size/height.html %}
 	
 	
 	
 </div>
 
-<section class="results">
-	<header>
-		<div class="image"></div>
+<div class="results">
+	<section class="fabricses">
+		<div class="diagram">
+			<img src="/images/galleries/boundless/options/pockets-2.png" alt="pokets" id="pocket-diagram"/>
+			<img src="/images/galleries/boundless/options/skirt-maxi-empire-2.png" alt="skirt" id="skirt-diagram"/>
+			<img src="/images/galleries/boundless/options/torso-2.png" alt="torso" id="torso-diagram"/>
+			<img src="/images/galleries/boundless/options/sleeves-sleeveless-2.png" alt="sleeves" id="sleeve-diagram"/>
+		</div>
+	</section>
+	<section>
 		<hgroup>
 			<h2>{{ page.title }}</h2>
 			<h3 id="price" class="price">69</h3>
 		</hgroup>
-	</header>
-	<div>
 		<ul>
 			<h4>Measurements</h4>
 			<li id="bust-measurement">Bust: <span></span></li>
 			<li id="under-bust-measurement">Under Bust: <span></span></li>
 			<li id="waist-measurement">Waist: <span></span></li>
 			<li id="hip-measurement">Hips: <span></span></li>
+			<li id="height-measurement">Height: <span></span></li>
 		</ul>
 		<ul>
 			<h4>Options</h4>
-			<!--<li id="fabric-choice">Fabric: <span></span></li>-->
-			<li id="sleeve-choice">Sleeves: <span></span></li>
+			<li id="fabric-choice">Fabric: <span></span></li>
 			<li id="waist-choice">Waist: <span></span></li>
 			<li id="skirt-choice">Skirt: <span></span></li>
+			<li id="sleeve-choice">Sleeves: <span></span></li>
 			<li id="pocket-choice">Pockets: <span></span></li>
 		</ul>
-	</div>
-	<footer>
-		<!--<a href="#">Satisfaction Policy</a>-->
-		<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="Boundless Dress" data-item-price="69.00" data-item-weight="1" data-item-url="marthamadeit.com/dress/boundless/" data-item-description="A dress without bounds" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Bust Size" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Under Bust Size" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Skirt" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Sleeves" data-item-custom7-value="" data-item-custom7-required="True" data-item-custom8-name="Waist" data-item-custom8-value="" data-item-custom8-required="True" data-item-custom9-name="Pockets" data-item-custom9-value="" data-item-custom9-required="True">Add To Cart</a>
-	</footer>
-</section>
+	</section>
+	<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="Boundless Dress" data-item-price="69.00" data-item-weight="1" data-item-url="marthamadeit.com/dress/boundless/" data-item-description="A dress without bounds" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Bust Size" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Under Bust Size" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Skirt" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Sleeves" data-item-custom7-value="" data-item-custom7-required="True" data-item-custom8-name="Waist" data-item-custom8-value="" data-item-custom8-required="True" data-item-custom9-name="Pockets" data-item-custom9-value="" data-item-custom9-required="True"data-item-custom10-name="Height" data-item-custom10-value="" data-item-custom10-required="True">Add To Cart</a>
+</div>
 
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -135,7 +139,7 @@ Gallery:
 		
 		$('#fabric-choice > span').html(fabricChoice);
 //		$('#fabric-choice-url > span').html(fabricChoiceURL);
-		$('.results').css('background-image', 'url(' + fabricChoiceURL + ')');
+		$('.fabricses').css('background-image', 'url(' + fabricChoiceURL + ')');
 		
 		$('.snipcart-add-item').data('item-custom1-value',fabricChoice);
 	});
@@ -188,6 +192,15 @@ Gallery:
 		
 		$('#hip-measurement > span').html(hipSize);
 		$('.snipcart-add-item').data('item-custom5-value',hipSize);
+	});
+	
+	
+	// Height
+	$( "input#height").change(function() {
+	  var height = $('input#height').val();
+	  
+	  $('#height-measurement > span').html(height);
+	  $('.snipcart-add-item').data('item-custom10-value',height);
 	});
 	
 	

@@ -315,8 +315,8 @@ article > ul > li{
 
 
 
-/* @group SECTION */
-.content > div > section {
+/*/* @group SECTION *!/
+.content > section {
 	max-width: 1080px;
 	margin: 0 auto;	
 	padding: 48px 0;
@@ -360,7 +360,7 @@ article > ul > li{
 	font-family: Georgia; 
 }
 
-/* @end */
+/* @end *!/*/
 
 /* @end */
 
@@ -380,9 +380,11 @@ article > ul > li{
 	float: left;
 	width: 33.333333%;
 	padding: 5%;
+	text-align: center;
 }
 .features > div > img {
 	width: 100%;
+	max-width: 150px;
 }
 .features > div > hgroup {
 	text-align: center;
@@ -474,31 +476,52 @@ article > ul > li{
 
 /* @group Products */
 .products {
-	min-height: 100%;
-}
-.products > div {
-	height: 100%;
-	background: #f16;
-	text-decoration: none;
 	text-align: center;
+}
+.products > a {
+	display: inline-block;
+	margin: 0 0 48px 0 ;
+	border: 3px solid #fff;
+	text-decoration: none;
+	vertical-align: top;
+	text-align: center;
+}
+.products > a+a {
+	margin-left:48px ;
+}
+.products > a > .image {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border: 3px solid #fff;
+	border-radius: 200px;
+	background-size: cover;
 	background-position: center;
-	background-attachment: fixed;
 }
-.products > div::after {
-	content: '\00a0';
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
+.products > a > h2 {
+	font: 200 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-.products > div > hgroup {
-	width: 100%;
-	max-width: 960px;
-	display: inline-block;
-	text-align: left;
-	
+.products > a:hover {
+	/*background: #13d1c1;*/
 }
-.products > div > hgroup > h2 {
-	color: #fff;
+.products > a:hover > .image {
+	border-color: #13d1c1;
+}
+.products > a:hover > h2 {
+	color: #13d1c1;
+}
+.products > a.coming-soon {
+	position: relative;
+	top: 2px;
+	width: 200px;
+	height: 200px;
+	background: none;
+	border: 3px dashed #ccc;
+	border-radius: 200px;
+	font: 400 18px/200px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #ccc;
+	vertical-align: top;
+	text-align: center;
 }
 /* @end */
 
@@ -513,12 +536,18 @@ article > ul > li{
 	text-align: center;
 }
 .product-options > section {
+	position: relative;
+	padding: 48px 0;
 	overflow: hidden;
-	/*background: #f16;*/
+}
+.product-options > section.padding {
+	padding-left: 150px;
 }
 .product-options > section > img {
 	float: left;
 	width: 25%;
+	max-width: 150px;
+	margin: 0 0 0 -150px;
 }
 .product-options > section > hgroup {
 	max-width: 480px;
@@ -537,6 +566,22 @@ article > ul > li{
 .product-options > section > hgroup > p {
 	
 }
+
+
+.product-options > section > div {
+	text-align: left;
+}
+.product-options > section input[type=text] {
+	max-width: 96px;
+	padding: 0 12px;
+	border: 2px solid #444;
+	border-radius: 3px;
+	font: 18px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+
+
 .product-options > section > form {
 	text-align: left;
 }
@@ -594,6 +639,7 @@ article > ul > li{
 .product-options > section > form > label > input {
 	
 }
+
 
 
 
@@ -666,100 +712,110 @@ article > ul > li{
 .results {
 	position: relative;
 	width: 100%;
-	max-width: 720px;
-	margin: 0 auto 96px auto;
-	box-shadow: 500px 0px 500px -150px rgba(0,0,0,.5) inset;
-	background-size: cover;
+	max-width: 960px;
+	margin: 0 auto 240px auto;
+	/*padding: 48px 0 96px 0px;*/
+	border: 3px solid #444;
+	text-align: center;
+	white-space: nowrap;
 }
-
-
-.results > header {
+.results > section {
+	display: inline-block;	
+	width: 70%;
 	padding: 24px;
-	overflow: hidden;
+	vertical-align: middle;
+}
+.results > section.fabricses {
+	width: 30%;
+	margin: 0 -.25e	m 0 0;
+	border: none;
 	background-size: cover;
-	background-position: center top;
-	color: #fff;
+	background-position: top right;
+}
+
+.results .diagram {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+.results .diagram > img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.results .diagram > img#pocket-diagram {
+	z-index: 400;
+}
+.results .diagram > img#skirt-diagram {
+	z-index: 300;
+}
+.results .diagram > img#torso-diagram {
+	position: relative;
+	z-index: 200;
+}
+.results .diagram > img#sleeve-diagram {
+	z-index: 100;	
+}
+
+
+.results hgroup {
+	position: relative;
+	z-index: 1000;
+	display: block;
 	text-align: left;
-	/*box-shadow: 500px 0px 150px -150px rgba(0,0,0,.5) inset;*/
-}
-.results > header > .image {
-	display: inline-block;
-	width: 150px;
-	height: 150px;
-	margin: 0 24px 0 0;
-	background: #fff;
 	vertical-align: middle;
-	
-	border-radius: 250px;
-	
+	color: #444;
 }
-.results > header > hgroup {
-	display: inline-block;
-	text-align: left;
-	vertical-align: middle;
-}
-.results > header > hgroup > h2 {
+.results hgroup > h2 {
 	color: inherit;
 	font: 900 36px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 2px;
-	text-shadow: 0 1px 5px rgba(0,0,0,.5);
+	/*text-shadow: 0 1px 5px rgba(0,0,0,.5);*/
 }
-.results > header > hgroup > h3 {
+.results hgroup > h3 {
 	color: inherit;
 	font: 100 36px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 2px;
-	text-shadow: 0 1px 5px rgba(0,0,0,.5);
+	/*text-shadow: 0 1px 5px rgba(0,0,0,.5);*/
 }
-.results > header > hgroup > h3:before {
+.results hgroup > h3:before {
 	content: '$';
 }
 
-
-.results > div {
-	overflow: hidden;
-	background: rgba(0,0,0,.5);
-}
-.results > div > ul {
+.results > section ul {
 	float: left;
 	width: 50%;
 	text-align: left;
 	list-style: none;
 	margin: 0;
-	padding: 24px;
+	padding: 24px 0;
 }
-.results > div > ul > h4 {
-	color: #fff;
+.results > section ul > h4 {
+	display: none;
+	color: #444;
 	font: 900 18/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-bottom: 1px dotted #ccc;
 }
-.results > div > ul > li {
+.results > section ul > li {
 	margin: 12px 0 0 0;
 	padding: 0;
 	/*border: 1px solid #ccc;*/
 	border-radius: 24px;
 	font: 600 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #444;
+	white-space: normal;
 }
-.results > div > ul > li > span {
+.results > section ul > li > span {
 	/*display: block;*/
 	font-weight: 200;
 	
 }
-/*.results > div > ul > li > span:after {
-	content: '"';
-}*/
-
-
-.results > footer {
+.results > a.button {
 	position: absolute;
-	top: 100%;
-	width: 100%;
-	padding: 12px 0;
-	text-align: right;
-}
-.results > footer > a {
-}
-.results > footer > a.button {
+	bottom: -72px;
+	right: -3px;
 }
 /* @end */
 
