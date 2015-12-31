@@ -17,7 +17,6 @@ $(function() {
 		});
 		
 		mixpanel.track('Viewed', {
-	//	    'page name' : document.title,
 		    'url' : window.location.pathname
 		});
 		
