@@ -5,7 +5,7 @@
 	</hgroup>
 	<form name="sleeves" id="sleeves">
 		{% for item in site.data.options.sleeves %}
-		<label>
+		<label  data-image-2="{{ item.Image_Path_2 }}">
 			<p>{{ item.Option }}</p>
 			<img src="{{ item.Image_Path }}" alt="{{ item.Option }}" />
 			<input type="radio" name="sleeves" value="{{ item.Option }}" />

@@ -5,7 +5,7 @@
 	</hgroup>
 	<form name="waist-type" id="waist-type">
 		{% for item in site.data.options.waist %}
-		<label class="{{  item.Type  }}">
+		<label class="{{  item.Type  }}"  data-image-2="{{ item.Image_Path_2 }}">
 			<p>{{ item.Option }}</p>
 			<img src="{{ item.Image_Path }}" alt="" />
 			<input type="radio" name="waist-type" value="{{ item.Option }}" />

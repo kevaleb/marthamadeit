@@ -56,8 +56,8 @@ Gallery:
 <div class="product-options" id="product-options">
 	<section class="photos">
 		<hgroup>
-			<h2>Fabric Options</h2>
-			<p>Blah blah blah blah blah blah blah blah blah.</p>
+			<h2  class="editable">Fabric Options</h2>
+			<p  class="editable">Blah blah blah blah blah blah blah blah blah.</p>
 		</hgroup>
 		<form method="" action="" id="fabric-options">
 			{% for item in page.FabricOptions %}
@@ -240,6 +240,9 @@ Gallery:
 		
 		$('#skirt-choice > span').html(skirtChoice);
 		$('.snipcart-add-item').data('item-custom6-value',skirtChoice);
+		
+		var skirtImage = $('#skirt > label.selected').data('image-2');
+		$("#skirt-diagram").attr("src",skirtImage);
 	});
 	
 	// Sleeves
@@ -251,6 +254,9 @@ Gallery:
 		
 		$('#sleeve-choice > span').html(sleeveChoice);
 		$('.snipcart-add-item').data('item-custom7-value',sleeveChoice);
+		
+		var sleeveImage = $('#sleeves > label.selected').data('image-2');
+		$("#sleeve-diagram").attr("src",sleeveImage);
 	});
 	
 	
@@ -263,6 +269,9 @@ Gallery:
 		
 		$('#pocket-choice > span').html(pocketChoice);
 		$('.snipcart-add-item').data('item-custom9-value',pocketChoice);
+		
+		var pocketImage = $('#pockets > label.selected').data('image-2');
+		$("#pocket-diagram").attr("src",pocketImage);
 	});
 	
 	

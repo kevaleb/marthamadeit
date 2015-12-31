@@ -5,7 +5,7 @@
 	</hgroup>
 	<form name="skirt" id="skirt" class="natural">
 		{% for item in site.data.options.skirt %}
-		<label class="{{  item.Style  }}">
+		<label data-image-2="{{ item.Image_Path_2 }}" class="{{  item.Style  }}">
 			<p>{{ item.Option }}</p>
 			<img src="{{ item.Image_Path_1 }}" alt="{{ item.Option }}" />
 			<!--<img src="{{ item.Image_Path_2 }}" alt="{{ item.Option }}" />-->
