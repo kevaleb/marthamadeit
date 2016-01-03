@@ -2,12 +2,12 @@
 	<img src="/images/icons/sizes/waist.png" alt="Waist Size" />
 	<hgroup>
 		<h2 class="editable">Waist</h2>
-		<p class="editable">Blah blah blah blah blah blah blah blah blah.</p>
+		<p class="editable">Please measure your Natural Waistline. This is usually just above your hips. Select the box below that matches your measurement:</p>
 	</hgroup>
 	<form name="waist" id="waist">
 		{% for item in site.data.sizes.waist %}
 		<label>
-			<!--<h3>{{ item.Size }}</h3>-->
+			<!--<h3>{{ item.Size }}-->
 			<p>{{ item.Measurement }}</p>
 			<input type="radio" name="waist" value="{{ item.Measurement }}" />
 		</label>

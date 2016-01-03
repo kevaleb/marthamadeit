@@ -1,11 +1,11 @@
 <section>
 	<hgroup>
 		<h2 class="editable">Waist</h2>
-		<p class="editable">Blah blah blah blah blah blah blah blah blah.</p>
+		<p class="editable">Please Select Natural waist or Empire Waist below. If you are not sure which to choose, I suggest choosing the empire waist option. That is the most flattering style for most body types.</p>
 	</hgroup>
 	<form name="waist-type" id="waist-type">
 		{% for item in site.data.options.waist %}
-		<label class="{{  item.Type  }}"  data-image-2="{{ item.Image_Path_2 }}">
+		<label class="{{  item.Type  }}" data-image-2="{{ item.Image_Path_2 }}">
 			<p>{{ item.Option }}</p>
 			<img src="{{ item.Image_Path }}" alt="" />
 			<input type="radio" name="waist-type" value="{{ item.Option }}" />

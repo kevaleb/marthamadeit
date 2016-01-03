@@ -2,12 +2,12 @@
 	<img src="/images/icons/sizes/bust.png" alt="Bust Size" />
 	<hgroup>
 		<h2 class="editable">Bust</h2>
-		<p class="editable">Blah blah blah blah blah blah blah blah blah.</p>
+		<p class="editable">Please Measure your bust at the fullest part and select the box that matches your measurement:</p>
 	</hgroup>
 	<form name="bust" id="bust">
 		{% for item in site.data.sizes.bust %}
 		<label>
-			<!--<h3>{{ item.Size }}</h3>-->
+			<!--<h3>{{ item.Size }}-->
 			<p>{{ item.Measurement }}</p>
 			<input type="radio" name="bust" value="{{ item.Measurement }}" />
 		</label>
