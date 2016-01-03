@@ -42,13 +42,13 @@ Gallery:
 ---
 <div class="main-gallery gallery js-flickity">
 	{% for item in page.Gallery %}
-		<div class="gallery-cell first-cell" style="background-image: url('');" >
+		<div class="gallery-cell first-cell" style="background-image: url('');">
 			<img src="{{  item.Image_Path  }}" alt="{{  page.title  }}" data-adaptive-background />
 			{% if forloop.first %}
 			<!--<hgroup>
-				<h1 class="product-title">{{  page.title  }}</h1>
+				<h1 class="product-title">{{  page.title  }}
 				<a href="#product-options" class="button editable">Customize It</a>
-			</hgroup>-->
+			-->
 			{% endif %}
 		</div>
 	{% endfor %}
@@ -57,8 +57,8 @@ Gallery:
 <div class="product-options" id="product-options">
 	<section class="photos">
 		<hgroup>
-			<h2  class="editable">Fabric Options</h2>
-			<p  class="editable">Blah blah blah blah blah blah blah blah blah.</p>
+			<h2 class="editable">Fabric Options</h2>
+			<p class="editable">All fabrics listed below are limited. If a fabric is shown with a solid color the solid color will be the top of your dress and the printed or contrasting color the skirt. If you fabric choice is just one fabric that fabric will be the top and bottom.&nbsp;</p>
 		</hgroup>
 		<form method="" action="" id="fabric-options">
 			{% for item in page.FabricOptions %}
@@ -91,10 +91,10 @@ Gallery:
 <div class="results">
 	<section class="fabricses">
 		<div class="diagram">
-			<img src="/images/galleries/boundless/options/pockets-2.png" alt="pokets" id="pocket-diagram"/>
-			<img src="/images/galleries/boundless/options/skirt-maxi-empire-2.png" alt="skirt" id="skirt-diagram"/>
-			<img src="/images/galleries/boundless/options/torso-2.png" alt="torso" id="torso-diagram"/>
-			<img src="/images/galleries/boundless/options/sleeves-sleeveless-2.png" alt="sleeves" id="sleeve-diagram"/>
+			<img src="/images/galleries/boundless/options/pockets-2.png" alt="pokets" id="pocket-diagram" />
+			<img src="/images/galleries/boundless/options/skirt-maxi-empire-2.png" alt="skirt" id="skirt-diagram" />
+			<img src="/images/galleries/boundless/options/torso-2.png" alt="torso" id="torso-diagram" />
+			<img src="/images/galleries/boundless/options/sleeves-sleeveless-2.png" alt="sleeves" id="sleeve-diagram" />
 		</div>
 	</section>
 	<section>
@@ -119,7 +119,7 @@ Gallery:
 			<li id="pocket-choice">Pockets: <span></span></li>
 		</ul>
 	</section>
-	<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="Boundless Dress" data-item-price="69.00" data-item-weight="1" data-item-url="/dress/boundless/" data-item-description="A dress without bounds" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Bust Size" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Under Bust Size" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Skirt" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Sleeves" data-item-custom7-value="" data-item-custom7-required="True" data-item-custom8-name="Waist" data-item-custom8-value="" data-item-custom8-required="True" data-item-custom9-name="Pockets" data-item-custom9-value="" data-item-custom9-required="True"data-item-custom10-name="Height" data-item-custom10-value="" data-item-custom10-required="True">Add To Cart</a>
+	<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="Boundless Dress" data-item-price="69.00" data-item-weight="1" data-item-url="/dress/boundless/" data-item-description="A dress without bounds" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Bust Size" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Under Bust Size" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Skirt" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Sleeves" data-item-custom7-value="" data-item-custom7-required="True" data-item-custom8-name="Waist" data-item-custom8-value="" data-item-custom8-required="True" data-item-custom9-name="Pockets" data-item-custom9-value="" data-item-custom9-required="True" data-item-custom10-name="Height" data-item-custom10-value="" data-item-custom10-required="True">Add To Cart</a>
 </div>
 
 <script type="text/javascript">
