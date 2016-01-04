@@ -84,7 +84,7 @@ a:hover {
 
 
 /* @group HEADER */
-body > header {
+body header {
 	position: absolute;
 	z-index: 1000000000;
 	width: 100%;
@@ -92,17 +92,20 @@ body > header {
 	padding: 12px;
 	text-align: center;
 }
-body > header > div {
+body header > div {
 	position: relative;
 	max-width: 1080px;
 	margin: 0 auto;
 }
-body > header > div > a {
+body header > div > a {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 }
-body > header > div > .menu-button {
+body header > div > a > img {
+	max-width: 300px;
+}
+body header > div > .menu-button {
 	display: none;
 	width: 48px;
 	height: 48px;
@@ -112,25 +115,25 @@ body > header > div > .menu-button {
 	color: #ccc;
 	/*background: #f16;*/
 }
-body > header > div > .menu-button:hover {
+body header > div > .menu-button:hover {
 	color: #b23636;
 	cursor: pointer;
 }
-body > header > div > nav {
+body header > div > nav {
 	text-align: right;
 	padding: 12px 0;
 }
-body > header > div > nav > p  {
+body header > div > nav > p  {
 	display: none;
 }
-body > header > div > nav > a {
+body header > div > nav > a {
 	position: relative;
 	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-decoration: none;
 	color: #666;
 	margin: 0 0 0 12px;
 }
-body > header > div > nav > a:hover {
+body header > div > nav > a:hover {
 	color: #000;
 }
 /* @end */
@@ -422,7 +425,7 @@ article > ul > li{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background: #13d1c1;
-	/*background: #000;*/
+	background: #fff;
 	white-space: nowrap;
 }
 .main-gallery .gallery-cell.first-cell {
@@ -495,8 +498,10 @@ article > ul > li{
 	margin: 0 auto;
 	border: 3px solid #fff;
 	border-radius: 200px;
-	background-size: cover;
+	background: #f2f2f2;
+	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 .products > a > h2 {
 	font: 200 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
