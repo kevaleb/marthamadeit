@@ -70,12 +70,12 @@ a:hover {
 }
 
 .button.dark {
-	/*background: #13d1c1;*/
-	border: 2px solid #13d1c1;
-	color: #13d1c1;
+	/*background: #91d5d3;*/
+	border: 2px solid #91d5d3;
+	color: #91d5d3;
 }
 .button.dark:hover {
-	background: #13d1c1;
+	background: #91d5d3;
 	color: #fff;
 }
 
@@ -146,10 +146,10 @@ body header > div > nav > a:hover {
 	position: relative;
 	height: 100%;
 	min-height: 320px;
-	background: #13d1c1;
-	background-attachment: fixed;
+	background: #91d5d3;
+	background-position: right top;
 	background-size: cover;
-	background-position: top right;
+	background-attachment: fixed;
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
@@ -424,7 +424,7 @@ article > ul > li{
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background: #13d1c1;
+	background: #91d5d3;
 	background: #fff;
 	white-space: nowrap;
 }
@@ -507,13 +507,13 @@ article > ul > li{
 	font: 200 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .products > a:hover {
-	/*background: #13d1c1;*/
+	/*background: #91d5d3;*/
 }
 .products > a:hover > .image {
-	border-color: #13d1c1;
+	border-color: #91d5d3;
 }
 .products > a:hover > h2 {
-	color: #13d1c1;
+	color: #91d5d3;
 }
 .products > a.coming-soon {
 	position: relative;
@@ -608,19 +608,19 @@ article > ul > li{
 	cursor: pointer;
 }
 .product-options > section > form > label:hover {
-	border-color: #13d1c1;
-	box-shadow: 0 0 0 1px #13d1c1 inset;
+	border-color: #91d5d3;
+	box-shadow: 0 0 0 1px #91d5d3 inset;
 }
 
 .product-options > section > form > label.selected {
-	border: 2px solid #13d1c1;
-	box-shadow: 0px -48px 0px -12px #13d1c1 inset;
+	border: 2px solid #91d5d3;
+	box-shadow: 0px -48px 0px -12px #91d5d3 inset;
 }
 .product-options > section > form > label.selected > h3 {
-	color: #13d1c1;
+	color: #91d5d3;
 }
 .product-options > section > form > label.selected > p {
-	color: #13d1c1;
+	color: #91d5d3;
 }
 .product-options > section > form > label > h3 {
 	font: 900 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -658,7 +658,7 @@ article > ul > li{
 	border-radius: 4px;
 }
 .product-options > section.photos > form > label.selected {
-	border: 2px solid #13d1c1;
+	border: 2px solid #91d5d3;
 }
 .product-options > section.photos > form > label.selected:after{
 	content: '\00a0';
@@ -668,7 +668,7 @@ article > ul > li{
 	bottom: 0;
 	width: 100%;
 	height: 42px;
-	background: #13d1c1;
+	background: #91d5d3;
 }
 .product-options > section.photos > form > label > a {
 	position: absolute;
@@ -681,7 +681,7 @@ article > ul > li{
 	border-radius: 0 0 0 3px;
 }
 .product-options > section.photos > form > label > a:hover {
-	background: #13d1c1;
+	background: #91d5d3;
 }
 .product-options > section.photos > form > label > img {
 	width: 100%;
