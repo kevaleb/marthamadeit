@@ -1107,6 +1107,9 @@ article > ul > li{
 	.banner > hgroup {
 		width: auto;
 	}
+	.banner > hgroup > h1 {
+		font-size: 18px;
+	}
 	.banner > hgroup > img {
 		
 	}
