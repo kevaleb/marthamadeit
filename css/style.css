@@ -91,6 +91,7 @@ body header {
 	height: 72px;
 	padding: 12px;
 	text-align: center;
+	background: #f16;
 }
 body header > div {
 	position: relative;
@@ -144,9 +145,9 @@ body header > div > nav > a:hover {
 /* @group BANNER */
 .banner {
 	position: relative;
-	height: 100%;
+	height: 90%;
 	min-height: 320px;
-	background: #91d5d3;
+	background-color: #91d5d3;
 	background-position: right top;
 	background-size: cover;
 	background-attachment: fixed;
@@ -154,17 +155,14 @@ body header > div > nav > a:hover {
 	text-align: center;
 	white-space: nowrap;
 }
-.banner:before {
-	display: none;
-	content: '\00a0';
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-image: radial-gradient(circle, rgba(0, 0, 0, .5) 0%, rgba(0,0,0,.75) 100%);	
+.banner.jagged {
+	background-image: url('/images/patterns/jagged.png');
+	background-attachment: scroll;
+	background-repeat: repeat no-repeat;
+	background-size: auto;
+	background-position: bottom center;
 }
-.banner:after {
+.banner:before {
 	content: '\00a0';
 	display: inline-block;
 	width: 0;
@@ -1053,6 +1051,69 @@ article > ul > li{
 
 
 
+
+/* @group Subscribe */
+
+.newsletter {
+	margin: 0 0 48px 0;
+	padding: 48px 24px 96px 24px;
+	background-color: #f2f2f2;
+	text-align: center;
+	
+	background-image: url('/images/patterns/clouds.png');
+	background-attachment: scroll;
+	background-repeat: repeat no-repeat;
+	background-size: auto;
+	background-position: bottom center;
+}
+.newsletter > h2 {
+	font: 400 26px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.newsletter > h2 > span {
+	font-weight: 900;
+	letter-spacing: 2px;
+}
+.newsletter > h3 {
+	font: 200 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+.newsletter label {
+	display: block;
+}
+.newsletter input {
+	width: 320px;
+	padding: 6px 24px;
+	border: 3px solid #666;	
+	font: 16px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.newsletter input.required.mce_inline_error {
+	border-color: #f16!important;
+	background: #fff!important;
+}
+.newsletter .mce_inline_error {
+	display: block;
+	background: #f16!important;
+}
+.newsletter .button {
+	width: auto;
+	padding: 6px 24px;
+	background: none;
+	border: 3px solid #91d5d3;
+	border-radius: 3;
+	color: #91d5d3;
+	font-size: 16px;
+}
+.newsletter .button:hover {
+	background: #91d5d3;
+	color: #fff;
+}
+.newsletter form div {
+	display: inline-block;
+	margin: 12px 0;
+	vertical-align: top;
+}
+
+/* @end */
 
 
 
