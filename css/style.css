@@ -91,7 +91,6 @@ body header {
 	height: 72px;
 	padding: 12px;
 	text-align: center;
-	background: #f16;
 }
 body header > div {
 	position: relative;
@@ -1057,7 +1056,7 @@ article > ul > li{
 .newsletter {
 	margin: 0 0 48px 0;
 	padding: 48px 24px 96px 24px;
-	background-color: #f2f2f2;
+	background-color: #e5e5e5;
 	text-align: center;
 	
 	background-image: url('/images/patterns/clouds.png');
@@ -1082,7 +1081,7 @@ article > ul > li{
 }
 .newsletter input {
 	width: 320px;
-	padding: 6px 24px;
+	padding: 18px 24px;
 	border: 3px solid #666;	
 	font: 16px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
@@ -1096,7 +1095,7 @@ article > ul > li{
 }
 .newsletter .button {
 	width: auto;
-	padding: 6px 24px;
+	padding: 18px 36px;
 	background: none;
 	border: 3px solid #91d5d3;
 	border-radius: 3;
