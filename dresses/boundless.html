@@ -3,7 +3,7 @@ layout: default
 title: Boundless Dress
 description: A Dress without Bounds
 price: 48
-permalink: /dress/boundless/
+permalink: /boundless-dress/
 FabricOptions:
   - Image_Path: /images/dresses/boundless/fabric/062.jpg
     Name: Bright Aztec Skirt with Solid Black Top.
@@ -87,16 +87,17 @@ Gallery:
 		</form>
 	</section>
 	
-	{% include options/waist.html %}
-	{% include options/skirt.html %}
-	{% include options/sleeves.html %}
-	{% include options/pockets.html %}
+	{% include dresses/boundless/options/waist.html %}
+	{% include dresses/boundless/options/skirt.html %}
+	{% include dresses/boundless/options/sleeves.html %}
+	{% include dresses/boundless/options/pockets.html %}
 	
-	{% include size/bust.html %}
-	{% include size/under-bust.html %}
-	{% include size/waist.html %}
-	{% include size/hips.html %}
-	{% include size/height.html %}
+	{% include dresses/boundless/sizes/bust.html %}
+	{% include dresses/boundless/sizes/under-bust.html %}
+	{% include dresses/boundless/sizes/waist.html %}
+	{% include dresses/boundless/sizes/hips.html %}
+	{% include dresses/boundless/sizes/height.html %}
+	
 	
 	
 	
@@ -117,20 +118,20 @@ Gallery:
 			<h3 id="price" class="price">{{  page.price  }}</h3>
 		</hgroup>
 		<ul>
-			<h4>Measurements</h4>
-			<li id="bust-measurement">Bust: <span></span></li>
-			<li id="under-bust-measurement">Under Bust: <span></span></li>
-			<li id="waist-measurement">Waist: <span></span></li>
-			<li id="hip-measurement">Hips: <span></span></li>
-			<li id="height-measurement">Height: <span></span></li>
-		</ul>
-		<ul>
 			<h4>Options</h4>
 			<li id="fabric-choice">Fabric: <span></span></li>
 			<li id="waist-choice">Waist: <span></span></li>
 			<li id="skirt-choice">Skirt: <span></span></li>
 			<li id="sleeve-choice">Sleeves: <span></span></li>
 			<li id="pocket-choice">Pockets: <span></span></li>
+		</ul>
+		<ul>
+			<h4>Measurements</h4>
+			<li id="bust-measurement">Bust: <span></span></li>
+			<li id="under-bust-measurement">Under Bust: <span></span></li>
+			<li id="waist-measurement">Waist: <span></span></li>
+			<li id="hip-measurement">Hips: <span></span></li>
+			<li id="height-measurement">Height: <span></span></li>
 		</ul>
 	</section>
 	<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="Boundless Dress" data-item-price="69.00" data-item-weight="1" data-item-url="{{page.permalink}}" data-item-description="A dress without bounds" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Bust Size" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Under Bust Size" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Skirt" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Sleeves" data-item-custom7-value="" data-item-custom7-required="True" data-item-custom8-name="Waist" data-item-custom8-value="" data-item-custom8-required="True" data-item-custom9-name="Pockets" data-item-custom9-value="" data-item-custom9-required="True" data-item-custom10-name="Height" data-item-custom10-value="" data-item-custom10-required="True">Add To Cart</a>
@@ -241,6 +242,7 @@ Gallery:
 		$('#skirt.empire').addClass('natural');
 		$('#skirt.empire').removeClass('empire');
 	});
+	
 	$( "#waist-type > label.empire" ).click(function() {	
 		$('#skirt.natural').addClass('empire');
 		$('#skirt.natural').removeClass('natural');

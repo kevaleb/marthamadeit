@@ -693,17 +693,38 @@ article > ul > li{
 
 
 
-
+/* @group Empire + Natural */
 .product-options > section > form.natural > label.empire {
 	display: none;
 }
 .product-options > section > form.empire > label.natural {
 	display: none!important;
 }
+/* @end */
+
+/* @group Elastic + Yoga */
+.product-options > section > form.elastic > label.yoga {
+	display: none;
+}
+.product-options > section > form.yoga > label.elastic {
+	display: none!important;
+}
 
 /* @end */
 
 
+/* @end */
+
+
+
+
+
+
+/* @group Diagram */
+	.pencil-skirt-diagram {
+		
+	}
+/* @end */
 
 
 
@@ -735,6 +756,9 @@ article > ul > li{
 	background-position: top right;
 }
 
+
+
+/* @group Diagram */
 .results .diagram {
 	position: relative;
 	width: 100%;
@@ -746,20 +770,12 @@ article > ul > li{
 	top: 0;
 	width: 100%;
 }
-.results .diagram > img#pocket-diagram {
-	z-index: 400;
-}
-.results .diagram > img#skirt-diagram {
-	z-index: 300;
-}
-.results .diagram > img#torso-diagram {
+.results .diagram > img:first-of-type{
 	position: relative;
 	z-index: 200;
 }
-.results .diagram > img#sleeve-diagram {
-	z-index: 100;	
-}
 
+/* @end */
 
 .results hgroup {
 	position: relative;
