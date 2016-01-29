@@ -719,18 +719,6 @@ article > ul > li{
 
 
 
-
-/* @group Diagram */
-	.pencil-skirt-diagram {
-		
-	}
-/* @end */
-
-
-
-
-
-
 /* @group Results */
 .results {
 	position: relative;
@@ -773,6 +761,15 @@ article > ul > li{
 .results .diagram > img:first-of-type{
 	position: relative;
 	z-index: 200;
+}
+.results .diagram > img+img {
+	z-index: 300;
+}
+.results .diagram > img+img+img {
+	z-index: 400;
+}
+.results .diagram > img+img+img+img {
+	z-index: 500;
 }
 
 /* @end */
