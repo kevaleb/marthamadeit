@@ -1,0 +1,16 @@
+<section>
+	<hgroup>
+		<h2 class="editable">Skirt Length</h2>
+		<p class="editable">Below are your skirt options:</p>
+	</hgroup>
+	<form name="skirt" id="skirt" class="elastic">
+		{% for item in site.data.skirts.pencil.options.skirt %}
+		<label class="{{  item.Style  }}" data-image-url="{{ item.Image_Path }}">
+			<p>{{ item.Option }}</p>
+			<img src="{{ item.Image_Path }}" alt="{{ item.Option }}" />
+			<!--<img src="{{ item.Image_Path_2 }}" alt="{{ item.Option }}" />-->
+			<input type="radio" name="skirt" value="{{ item.Option }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>

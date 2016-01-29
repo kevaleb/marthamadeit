@@ -1,0 +1,15 @@
+<section class="padding">
+	<img src="/images/icons/sizes/bust.png" alt="Bust Size" />
+	<hgroup>
+		<h2 class="editable">Bust</h2>
+		<p class="editable">Please Measure your bust at the fullest part and select the box that matches your measurement:</p>
+	</hgroup>
+	<form name="bust" id="bust">
+		{% for item in site.data.dresses.boundless.sizes.bust %}
+		<label>
+			<p>{{ item.Measurement }}</p>
+			<input type="radio" name="bust" value="{{ item.Measurement }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>

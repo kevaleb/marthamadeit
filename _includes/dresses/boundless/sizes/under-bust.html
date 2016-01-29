@@ -1,0 +1,16 @@
+<section class="padding">
+	<img src="/images/icons/sizes/under-bust.png" alt="Under Bust Size" />
+	<hgroup>
+		<h2 class="editable">Under Bust</h2>
+		<p class="editable">Please measure just under your bust and select the box matching your measurement:</p>
+	</hgroup>
+	<form name="underb-bust" id="under-bust">
+		{% for item in site.data.dresses.boundless.sizes.under-bust %}
+		<label>
+			<!--<h3>{{ item.Size }}-->
+			<p>{{ item.Measurement }}</p>
+			<input type="radio" name="under-bust" value="{{ item.Measurement }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>
