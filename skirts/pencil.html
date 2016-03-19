@@ -1,15 +1,66 @@
 ---
 layout: default
 title: Pencil Skirt
-description: A skirt for pencils
+description: Straight Cut Pencil Skirt
 price: 30
 permalink: /pencil-skirt/
+SkirtFit:
+  - Image_Path: /images/skirts/pencil/options/skirt-knee-thin.png
+    Name: Fitted
+  - Image_Path: /images/skirts/pencil/options/skirt-knee.png
+    Name: Regular
+SkirtLength:
+- Length: Knee
+  Fit: Fitted
+  ImagePath: /images/skirts/pencil/options/skirt-knee-fitted.png
+- Length: Knee
+  Fit: Regular
+  ImagePath: /images/skirts/pencil/options/skirt-knee.png
+- Length: Midi
+  Fit: Fitted
+  ImagePath: /images/skirts/pencil/options/skirt-midi-fitted.png
+- Length: Midi
+  Fit: Regular
+  ImagePath: /images/skirts/pencil/options/skirt-midi.png  
 FabricOptions:
-  - Image_Path: /images/skirts/pencil/fabric/001.jpg
-    Name: Bright Feather.
-    Description: ''
+  - Image_Path: /images/skirts/pencil/fabric/010.jpg
+    Name: Black and White Plaid
+    Description: Black and White Plaid
+  - Image_Path: /images/skirts/pencil/fabric/feathers.jpg
+    Name: Grey Feathers on White
+    Description: Grey Feathers on White
+  - Image_Path: /images/skirts/pencil/fabric/027.jpg
+    Name: White Pin Dots on Black
+    Description: White Pin Dots on Black
+  - Image_Path: /images/dresses/boundless/fabric/028.jpg
+    Name: 'Black, Brown Cheetah Print on White'
+    Description: 'Black, Brown Cheetah Print on White'
+  - Image_Path: /images/dresses/boundless/fabric/030.jpg
+    Name: Black and White Stripe
+    Description: Black and White Stripe
+  - Image_Path: /images/skirts/pencil/fabric/032.jpg
+    Name: Mint and White Stripe
+    Description: Mint and White Stripe
+  - Image_Path: /images/skirts/pencil/fabric/033.jpg
+    Name: Solid Black
+    Description: Solid Black
+  - Image_Path: /images/skirts/pencil/fabric/blue.jpg
+    Name: Royal Blue Damask Print on White
+    Description: Royal Blue Damask Print on White
+  - Image_Path: /images/skirts/pencil/fabric/burgundy.jpg
+    Name: Burgundy/ Magenta Flowers on Black
+    Description: Burgundy/ Magenta Flowers on Black
+  - Image_Path: /images/skirts/pencil/fabric/tan.jpg
+    Name: Tan Aztec on Black
+    Description: Tan Aztec on Black
+  - Image_Path: /images/skirts/pencil/fabric/013.jpg
+    Name: White and Black Aztec Rows
+    Description: White and Black Aztec Rows
+  - Image_Path: /images/skirts/pencil/fabric/363.jpg
+    Name: 'Deep Mint Floral on White (size down, slim fit for Linda)'
+    Description: 'Deep Mint Floral on White (size down, slim fit for Linda)'
 Gallery:
-  - Image_Path: /images/skirts/pencil/gallery/001.png
+  - Image_Path: /images/skirts/pencil/gallery/001.jpg
 ---
 <header>
 	<div>
@@ -36,7 +87,7 @@ Gallery:
 	<section class="photos">
 		<hgroup>
 			<h2 class="editable">Fabric Options</h2>
-			<p class="editable">All fabrics listed below are limited. If a fabric is shown with a solid color the solid color will be the top of your dress and the printed or contrasting color the skirt. If you fabric choice is just one fabric that fabric will be the top and bottom.&nbsp;</p>
+			<p class="editable">All fabrics listed below are limited Quantity, They will not be restocked. These fabrics are heavier weight with a nice stretch. Perfect for form fitting Comfortable Pencil Skirts.</p>
 		</hgroup>
 		<form method="" action="" id="fabric-options">
 			{% for item in page.FabricOptions %}
@@ -51,8 +102,41 @@ Gallery:
 		</form>
 	</section>
 	
+	<!-- Skirt Fit -->
+	<section>
+		<hgroup>
+			<h2 class="editable">Fit</h2>
+			<!--<p class="editable"></p>-->
+		</hgroup>
+		<form name="fit" id="fit">
+			{% for item in page.SkirtFit %}
+			<label class="{{ item.Name }}">
+				<p>{{ item.Name }}</p>
+				<img src="{{ item.Image_Path }}" alt="{{ item.Name }}" />
+				<input type="radio" name="fit" value="{{ item.Name }}" />
+			</label>
+			{% endfor %}
+		</form>
+	</section>
+	
+	<!-- Skirt Length -->
+	<section>
+		<hgroup>
+			<h2 class="editable">Skirt Length</h2>
+			<p class="editable">Below are your skirt options: Knee Length, Hits just below the Knee. Midi Length hits Mid Calf.</p>
+		</hgroup>
+		<form name="skirt" id="skirt" class="fitted">
+			{% for item in page.SkirtLength %}
+			<label class="{{  item.Fit  }}" data-image-url="{{ item.ImagePath }}">
+				<p>{{ item.Length }}</p>
+				<img src="{{ item.ImagePath }}" alt="{{ item.Length }}" />
+				<input type="radio" name="skirt" value="{{ item.Length }}" />
+			</label>
+			{% endfor %}
+		</form>
+	</section>
+	
 	{% include skirts/pencil/options/waist.html %}
-	{% include skirts/pencil/options/skirt.html %}
 	
 	{% include skirts/pencil/sizes/waist.html %}
 	{% include skirts/pencil/sizes/hips.html %}
@@ -75,7 +159,8 @@ Gallery:
 			<h4>Options</h4>
 			<li id="fabric-choice">Fabric: <span></span></li>
 			<li id="waist-choice">Waist: <span></span></li>
-			<li id="skirt-choice">Skirt: <span></span></li>			
+			<li id="skirt-choice">Skirt: <span></span></li>	
+			<li id="fit-choice">Fit: <span></span></li>			
 		</ul>
 		<ul>
 			<h4>Measurements</h4>
@@ -84,7 +169,7 @@ Gallery:
 			<li id="height-measurement">Height: <span></span></li>
 		</ul>
 	</section>
-	<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="{{page.title}}" data-item-price="{{ page.price }}" data-item-weight="1" data-item-url="{{page.permalink}}" data-item-description="{{page.description}}" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Waist Style" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Skirt Length" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Height" data-item-custom6-value="" data-item-custom6-required="True">Add To Cart</a>
+	<a href="#" class="snipcart-add-item button dark" data-item-id="1" data-item-name="{{page.title}}" data-item-price="{{ page.price }}" data-item-weight="1" data-item-url="{{page.permalink}}" data-item-description="{{page.description}}" data-item-custom1-name="Fabric" data-item-custom1-value="" data-item-custom1-required="True" data-item-custom2-name="Waist Style" data-item-custom2-value="" data-item-custom2-required="True" data-item-custom3-name="Skirt Length" data-item-custom3-value="" data-item-custom3-required="True" data-item-custom4-name="Waist Size" data-item-custom4-value="" data-item-custom4-required="True" data-item-custom5-name="Hip Size" data-item-custom5-value="" data-item-custom5-required="True" data-item-custom6-name="Height" data-item-custom6-value="" data-item-custom6-required="True" data-item-custom7-name="Fit" data-item-custom7-value="" data-item-custom7-required="True">Add To Cart</a>
 </div>
 </div>
 <script type="text/javascript">
@@ -117,29 +202,28 @@ Gallery:
 	//  Options  //
 	//////////////
 	
-	// Waist
-	$( "#waist-type > label" ).click(function() {	
-		$('#waist-type > label.selected').removeClass('selected');
+	// Fit
+	$( "#fit > label" ).click(function() {	
+		$('#fit > label.selected').removeClass('selected');
 		$(this).addClass('selected');
 		
-		var waistChoice = $('#waist-type input[name=waist-type]:checked').val();
+		var fitChoice = $('#fit input[name=fit]:checked').val();
 		
-		$('#waist-choice > span').html(waistChoice);
-		$('.snipcart-add-item').data('item-custom2-value',waistChoice);
-		
-//		var skirtImage = $('#waist-type > label.selected').data('image-url');
-//		$("#skirt-diagram").attr("src",skirtImage);
+		$('#fit-choice > span').html(fitChoice);
+		$('.snipcart-add-item').data('item-custom7-value',fitChoice);
 	});
 	
-	$( "#waist-type > label.elastic" ).click(function() {	
-		$('#skirt.yoga').addClass('elastic');
-		$('#skirt.yoga').removeClass('yoga');
+	$( "#fit > label.fitted" ).click(function() {	
+		$('#skirt.regular').addClass('fitted');
+		$('#skirt.regular').removeClass('regular');
 	});
 	
-	$( "#waist-type > label.yoga" ).click(function() {	
-		$('#skirt.elastic').addClass('yoga');
-		$('#skirt.elastic').removeClass('elastic');
+	$( "#fit > label.regular" ).click(function() {	
+		$('#skirt.fitted').addClass('regular');
+		$('#skirt.fitted').removeClass('fitted');
 	});
+	
+	
 	
 	// Skirt
 	$( "#skirt > label" ).click(function() {	
@@ -154,6 +238,33 @@ Gallery:
 		var skirtImage = $('#skirt > label.selected').data('image-url');
 		$("#skirt-diagram").attr("src",skirtImage);
 	});
+	
+	
+	
+	
+	
+	// Waist
+	$( "#waist-type > label" ).click(function() {	
+		$('#waist-type > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var waistChoice = $('#waist-type input[name=waist-type]:checked').val();
+		
+		$('#waist-choice > span').html(waistChoice);
+		$('.snipcart-add-item').data('item-custom2-value',waistChoice);
+	});
+	
+	
+	
+//	$( "#waist-type > label.elastic" ).click(function() {	
+//		$('#skirt.yoga').addClass('elastic');
+//		$('#skirt.yoga').removeClass('yoga');
+//	});
+//	
+//	$( "#waist-type > label.yoga" ).click(function() {	
+//		$('#skirt.elastic').addClass('yoga');
+//		$('#skirt.elastic').removeClass('elastic');
+//	});
 	
 	
 	

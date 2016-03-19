@@ -702,11 +702,11 @@ article > ul > li{
 }
 /* @end */
 
-/* @group Elastic + Yoga */
-.product-options > section > form.elastic > label.yoga {
+/* @group Fitted or Regular */
+.product-options > section > form.fitted > label.regular {
 	display: none;
 }
-.product-options > section > form.yoga > label.elastic {
+.product-options > section > form.regular > label.fitted {
 	display: none!important;
 }
 

@@ -1,0 +1,16 @@
+<section>
+	<hgroup>
+		<h2 class="editable">Style</h2>
+		<!--<p class="editable">Choose 1:</p>-->
+	</hgroup>
+	<form name="style" id="style">
+		{% for item in site.data.headbands.headband.options.style %}
+		<label class="{{  item.Option  }}" data-image-url="{{ item.Image_Path }}">
+			<p>{{ item.Option }}</p>
+			<!--<img src="{{ item.Image_Path }}" alt="{{ item.Option }}" />-->
+			<!--<img src="{{ item.Image_Path_2 }}" alt="{{ item.Option }}" />-->
+			<input type="radio" name="style" value="{{ item.Option }}" />
+		</label>
+		{% endfor %}
+	</form>
+</section>
