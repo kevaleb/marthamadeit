@@ -42,9 +42,53 @@ layout: default
 				</select>
 			</label>
 		{% endif %}
+		
+		{% if page.secondoptionincluded == true %}
+			<label>
+				<strong>{{ page.secondoptiontitle }}</strong>
+				<select id="secondoption">
+					{% for item in page.secondoption %}
+						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
+					{% endfor %}
+				</select>
+			</label>
+		{% endif %}
+		
+		{% if page.thirdoptionincluded == true %}
+			<label>
+				<strong>{{ page.thirdoptiontitle }}</strong>
+				<select id="thirdoption">
+					{% for item in page.thirdoption %}
+						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
+					{% endfor %}
+				</select>
+			</label>
+		{% endif %}
+		
+		{% if page.fourthoptionincluded == true %}
+			<label>
+				<strong>{{ page.fourthoptiontitle }}</strong>
+				<select id="fourthoption">
+					{% for item in page.fourthoption %}
+						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
+					{% endfor %}
+				</select>
+			</label>
+		{% endif %}
+		
+		{% if page.fifthoptionincluded == true %}
+			<label>
+				<strong>{{ page.fifthoptiontitle }}</strong>
+				<select id="fifthoption">
+					{% for item in page.fifthoption %}
+						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
+					{% endfor %}
+				</select>
+			</label>
+		{% endif %}
 	</section>
 	
-	<a class="snipcart-add-item add-product button dark" 
+	<a class="snipcart-add-item add-product button dark" id="snipcart-add-item" 
 		data-item-id="{{ page.productid }}" 
 		data-item-name="{{ page.title }}" 
 		data-item-price="{{  page.price  }}" 
@@ -53,9 +97,37 @@ layout: default
 		data-item-description="{{ page.description }}" 
 		{% if page.firstoptionincluded == true %}
 			data-item-custom1-name="{{ page.firstoptiontitle }}" 
-			data-item-custom1-value="" 
+			data-item-custom1-value=""
+			data-item-custom1-options="{% for item in page.firstoption %}|{{ item.option }}{% endfor %}" 
 			data-item-custom1-required="{% if page.firstoptionrequired == true %}true{% else %}false{% endif %}" 
 		{% endif %}
+		{% if page.secondoptionincluded == true %}
+			data-item-custom2-name="{{ page.secondoptiontitle }}" 
+			data-item-custom2-value=""
+			data-item-custom2-options="{% for item in page.secondoption %}|{{ item.option }}{% endfor %}" 
+			data-item-custom2-required="{% if page.secondoptionrequired == true %}true{% else %}false{% endif %}" 
+		{% endif %}
+		{% if page.thirdoptionincluded == true %}
+			data-item-custom3-name="{{ page.thirdoptiontitle }}" 
+			data-item-custom3-value=""
+			data-item-custom3-options="{% for item in page.thirdoption %}|{{ item.option }}{% endfor %}" 
+			data-item-custom3-required="{% if page.thirdoptionrequired == true %}true{% else %}false{% endif %}" 
+		{% endif %}
+		{% if page.fourthoptionincluded == true %}
+			data-item-custom4-name="{{ page.fourthoptiontitle }}" 
+			data-item-custom4-value=""
+			data-item-custom4-options="{% for item in page.fourthoption %}|{{ item.option }}{% endfor %}" 
+			data-item-custom4-required="{% if page.fourthoptionrequired == true %}true{% else %}false{% endif %}" 
+		{% endif %}
+		{% if page.fifthoptionincluded == true %}
+			data-item-custom5-name="{{ page.fifthoptiontitle }}" 
+			data-item-custom5-value=""
+			data-item-custom5-options="{% for item in page.fifthoption %}|{{ item.option }}{% endfor %}" 
+			data-item-custom5-required="{% if page.fifthoptionrequired == true %}true{% else %}false{% endif %}" 
+		{% endif %}
+		data-item-custom6-name="Fabric" 
+		data-item-custom6-value="" 
+		data-item-custom6-required="true"
 	>Add To Cart</a>
 	<p class="testtest">asdf</p>
 </div>
@@ -64,12 +136,44 @@ layout: default
 	{{ content }}
 </article>
 
-<script type="text/javascript">		
+<script type="text/javascript">
+	// Fabric
+	$( "#fabric-options > label" ).click(function() {	
+		$('#fabric-options > label.selected').removeClass('selected');
+		$(this).addClass('selected');
+		
+		var fabricChoice = $('#fabric-options input[name=fabric-option]:checked').val();
+		
+		$('.snipcart-add-item').data('item-custom6-value',fabricChoice);
+	});
 	
 	// Option 1
 	$( "#firstoption").change(function() {
 		var firstoption = $('#firstoption').val();
 		$('.snipcart-add-item').data('item-custom1-value',firstoption);
-		$('.testtest').html(firstoption);
+	});
+	
+	// Option 2
+	$( "#secondoption").change(function() {
+		var secondoption = $('#secondoption').val();
+		$('.snipcart-add-item').data('item-custom2-value',secondoption);
+	});
+	
+	// Option 3
+	$( "#thirdoption").change(function() {
+		var thirdoption = $('#thirdoption').val();
+		$('.snipcart-add-item').data('item-custom3-value',thirdoption);
+	});
+	
+	// Option 4
+	$( "#fourthoption").change(function() {
+		var fourthoption = $('#fourthoption').val();
+		$('.snipcart-add-item').data('item-custom4-value',fourthoption);
+	});
+	
+	// Option 5
+	$( "#fifthoption").change(function() {
+		var fifthoption = $('#fifthoption').val();
+		$('.snipcart-add-item').data('item-custom5-value',fifthoption);
 	});
 </script>
