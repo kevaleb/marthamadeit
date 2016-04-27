@@ -411,17 +411,16 @@ article > ul > li{
 
 /* @group Main Gallery */
 .main-gallery {
-	height: 100%;
+	height: 72%;
 }
 
 .main-gallery .gallery-cell {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background: #91d5d3;
+	background-position: center!important;
+	background-size: contain!important;
+	background-repeat: no-repeat!important;
 	background: #fff;
 	white-space: nowrap;
 }
@@ -449,7 +448,7 @@ article > ul > li{
 	max-width: 960px;
 }
 .main-gallery .gallery-cell > hgroup > h1 {
-	color: #fff;
+	color: #f16;
 	margin: 0 0 24px 0;
 	text-shadow: none;
 }
