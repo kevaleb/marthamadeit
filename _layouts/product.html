@@ -29,16 +29,6 @@ layout: default
 			</label>
 			{% endfor %}
 		</form>
-		
-		{% for item in page.fabricoptions %}
-		<label>
-			<a href="{{ item.image_path }}" class="strip" data-strip-group="fabric" data-strip-caption="{{ item.description }}">
-				<i class="fa fa-search-plus fa-lg"></i>
-			</a>
-			<img src="{{ item.image_path }}" alt="{{ item.name }}" />
-			<input type="radio" name="fabric-option" value="{{ item.Name }}" />
-		</label>
-		{% endfor %}
 	</section>
 	
 </div>
