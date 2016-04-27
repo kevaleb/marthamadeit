@@ -31,8 +31,45 @@ layout: default
 		</form>
 	</section>
 	
+	<section class="options">
+		{% if page.firstoptionincluded == true %}
+			<label>
+				<strong>{{ page.firstoptiontitle }}</strong>
+				<select id="firstoption">
+					{% for item in page.firstoption %}
+						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
+					{% endfor %}
+				</select>
+			</label>
+		{% endif %}
+	</section>
+	
+	<a class="snipcart-add-item add-product button dark" 
+		data-item-id="{{ page.productid }}" 
+		data-item-name="{{ page.title }}" 
+		data-item-price="{{  page.price  }}" 
+		data-item-weight="1" 
+		data-item-url="{{page.url}}"
+		data-item-description="{{ page.description }}" 
+		{% if page.firstoptionincluded == true %}
+			data-item-custom1-name="{{ page.firstoptiontitle }}" 
+			data-item-custom1-value="" 
+			data-item-custom1-required="{% if page.firstoptionrequired == true %}true{% else %}false{% endif %}" 
+		{% endif %}
+	>Add To Cart</a>
+	<p class="testtest">asdf</p>
 </div>
 
 <article>
 	{{ content }}
 </article>
+
+<script type="text/javascript">		
+	
+	// Option 1
+	$( "#firstoption").change(function() {
+		var firstoption = $('#firstoption').val();
+		$('.snipcart-add-item').data('item-custom1-value',firstoption);
+		$('.testtest').html(firstoption);
+	});
+</script>
