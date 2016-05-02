@@ -838,6 +838,9 @@ article > ul > li{
 	padding-left: 0px; 
 	font-family: Georgia; 
 }
+.product > section img {
+	width: 100%;
+}
 
 /* @group Options */
 .options {
