@@ -1,7 +1,8 @@
 name: Winery Guild
 permalink: pretty
-markdown: redcarpet
 excerpt_separator: <!--more-->
 collections:
   products:
+    output: true
+  main-pages:
     output: true

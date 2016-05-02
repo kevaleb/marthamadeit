@@ -30,6 +30,12 @@ layout: default
 			{% endfor %}
 		</form>
 	</section>
+</div>
+
+<div class="product">
+	<section class="description">
+		<p>{{ content }}</p>
+	</section>
 	
 	<section class="options">
 		{% if page.firstoptionincluded == true %}
@@ -86,55 +92,52 @@ layout: default
 				</select>
 			</label>
 		{% endif %}
+		
+		<h2 class="price">{{ page.price }}</h2>
+		
+		<a class="snipcart-add-item add-product button dark full" id="snipcart-add-item" 
+			data-item-id="{{ page.productid }}" 
+			data-item-name="{{ page.title }}" 
+			data-item-price="{{  page.price  }}" 
+			data-item-weight="1" 
+			data-item-url="{{page.url}}"
+			data-item-description="{{ page.description }}" 
+			{% if page.firstoptionincluded == true %}
+				data-item-custom1-name="{{ page.firstoptiontitle }}" 
+				data-item-custom1-value=""
+				data-item-custom1-options="{% for item in page.firstoption %}|{{ item.option }}{% endfor %}" 
+				data-item-custom1-required="{% if page.firstoptionrequired == true %}true{% else %}false{% endif %}" 
+			{% endif %}
+			{% if page.secondoptionincluded == true %}
+				data-item-custom2-name="{{ page.secondoptiontitle }}" 
+				data-item-custom2-value=""
+				data-item-custom2-options="{% for item in page.secondoption %}|{{ item.option }}{% endfor %}" 
+				data-item-custom2-required="{% if page.secondoptionrequired == true %}true{% else %}false{% endif %}" 
+			{% endif %}
+			{% if page.thirdoptionincluded == true %}
+				data-item-custom3-name="{{ page.thirdoptiontitle }}" 
+				data-item-custom3-value=""
+				data-item-custom3-options="{% for item in page.thirdoption %}|{{ item.option }}{% endfor %}" 
+				data-item-custom3-required="{% if page.thirdoptionrequired == true %}true{% else %}false{% endif %}" 
+			{% endif %}
+			{% if page.fourthoptionincluded == true %}
+				data-item-custom4-name="{{ page.fourthoptiontitle }}" 
+				data-item-custom4-value=""
+				data-item-custom4-options="{% for item in page.fourthoption %}|{{ item.option }}{% endfor %}" 
+				data-item-custom4-required="{% if page.fourthoptionrequired == true %}true{% else %}false{% endif %}" 
+			{% endif %}
+			{% if page.fifthoptionincluded == true %}
+				data-item-custom5-name="{{ page.fifthoptiontitle }}" 
+				data-item-custom5-value=""
+				data-item-custom5-options="{% for item in page.fifthoption %}|{{ item.option }}{% endfor %}" 
+				data-item-custom5-required="{% if page.fifthoptionrequired == true %}true{% else %}false{% endif %}" 
+			{% endif %}
+			data-item-custom6-name="Fabric" 
+			data-item-custom6-value="" 
+			data-item-custom6-required="true"
+		>Add To Cart</a>
 	</section>
-	
-	<a class="snipcart-add-item add-product button dark" id="snipcart-add-item" 
-		data-item-id="{{ page.productid }}" 
-		data-item-name="{{ page.title }}" 
-		data-item-price="{{  page.price  }}" 
-		data-item-weight="1" 
-		data-item-url="{{page.url}}"
-		data-item-description="{{ page.description }}" 
-		{% if page.firstoptionincluded == true %}
-			data-item-custom1-name="{{ page.firstoptiontitle }}" 
-			data-item-custom1-value=""
-			data-item-custom1-options="{% for item in page.firstoption %}|{{ item.option }}{% endfor %}" 
-			data-item-custom1-required="{% if page.firstoptionrequired == true %}true{% else %}false{% endif %}" 
-		{% endif %}
-		{% if page.secondoptionincluded == true %}
-			data-item-custom2-name="{{ page.secondoptiontitle }}" 
-			data-item-custom2-value=""
-			data-item-custom2-options="{% for item in page.secondoption %}|{{ item.option }}{% endfor %}" 
-			data-item-custom2-required="{% if page.secondoptionrequired == true %}true{% else %}false{% endif %}" 
-		{% endif %}
-		{% if page.thirdoptionincluded == true %}
-			data-item-custom3-name="{{ page.thirdoptiontitle }}" 
-			data-item-custom3-value=""
-			data-item-custom3-options="{% for item in page.thirdoption %}|{{ item.option }}{% endfor %}" 
-			data-item-custom3-required="{% if page.thirdoptionrequired == true %}true{% else %}false{% endif %}" 
-		{% endif %}
-		{% if page.fourthoptionincluded == true %}
-			data-item-custom4-name="{{ page.fourthoptiontitle }}" 
-			data-item-custom4-value=""
-			data-item-custom4-options="{% for item in page.fourthoption %}|{{ item.option }}{% endfor %}" 
-			data-item-custom4-required="{% if page.fourthoptionrequired == true %}true{% else %}false{% endif %}" 
-		{% endif %}
-		{% if page.fifthoptionincluded == true %}
-			data-item-custom5-name="{{ page.fifthoptiontitle }}" 
-			data-item-custom5-value=""
-			data-item-custom5-options="{% for item in page.fifthoption %}|{{ item.option }}{% endfor %}" 
-			data-item-custom5-required="{% if page.fifthoptionrequired == true %}true{% else %}false{% endif %}" 
-		{% endif %}
-		data-item-custom6-name="Fabric" 
-		data-item-custom6-value="" 
-		data-item-custom6-required="true"
-	>Add To Cart</a>
-	<p class="testtest">asdf</p>
 </div>
-
-<article>
-	{{ content }}
-</article>
 
 <script type="text/javascript">
 	// Fabric

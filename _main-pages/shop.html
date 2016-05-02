@@ -1,0 +1,43 @@
+---
+layout: default
+title: Shop
+navclass: shop
+navtitle: shop
+permalink: /shop/
+---
+<div class="pagetitle">
+	<h1>{{ page.title }}</h1>
+</div>
+<ul class="products">
+{% for product in site.products %}
+	<li>
+		<a href="{{ product.url }}">
+			<img src="{{ product.featuredimage_path }}" alt="" />
+			<hgroup>
+				<h2>{{ product.title }}</h2>
+				<h3>{{ product.price }}</h3>
+			</hgroup>
+		</a>
+	</li>
+{% endfor %}
+</ul>
+
+
+<div class="pagetitle">
+	<h1>Made To Measure</h1>
+</div>
+<section class="products-old" id="products">
+	<a href="/boundless-dress/">
+		<div class="image" style="background-image: url('/images/dresses/boundless/boundless-dress-1.png');"></div>
+		<h2>Boundless Dress</h2>
+	</a>
+	<a href="/pencil-skirt/">
+		<div class="image" style="background-image: url('/images/skirts/pencil/gallery/001.png'); background-size: cover; background-position: bottom center;"></div>
+		<h2>Pencil Skirt</h2>
+	</a>
+	<a href="/head-band/">
+		<div class="image" style="background-image: url('/images/headbands/headband/gallery/001.jpg'); background-size: cover; background-position: bottom center;"></div>
+		<h2>Head Band</h2>
+	</a>
+	<a class="coming-soon">More Coming Soon</a>
+</section>

@@ -2,21 +2,6 @@
 	<div>
 		<a href="/"><img src="/images/logos/martha-made-it-logo.png" alt="Martha Made It logo" /></a>
 		<span class="menu-button">&middot;&middot;&middot;</span>
-		<nav>
-			<a href="#">Home</a>
-			<a href="#">Blog</a>
-			<a href="#">Store</a>
-			<!--<p>Menu</p>
-			{% if page.pageclass == 'wineries' %}			
-			<a href="/wineries" class="selected">Wineries</a>
-			{% else %}
-			<a href="/wineries">Wineries</a>
-			{% endif %}-->
-		</nav>
+		{% include nav.html %}
 	</div>
 </header>
-
-<script src="/scripts/scroll-up-bar.js"></script>
-<script>
-	$('#header').scrollupbar();
-</script>
