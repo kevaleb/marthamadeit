@@ -5,15 +5,20 @@ layout: default
 <div class="main-gallery gallery js-flickity">
 	{% for item in page.gallery %}
 		<div class="gallery-cell first-cell" style="background-image: url('{{ item.image_path }}');">
-			{% if forloop.first %}
+			<!--<img src="{{ item.image_path }}" alt="" />-->
+			<!--{% if forloop.first %}
 				<hgroup>
 					<h1>{{ page.title }}</h1>
 				</hgroup>
-			{% endif %}
+			{% endif %}-->
 		</div>
 	{% endfor %}
 </div>
 
+
+<div class="pagetitle">
+	<h1>{{ page.title }}</h1>
+</div>
 
 
 <div class="product-options" id="product-options">
