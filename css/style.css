@@ -550,12 +550,18 @@ article > ul > li{
 	border: 3px solid #fff;
 	border-radius: 200px;
 	background: #f2f2f2;
-	background-size: contain;
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .products-old > a > h2 {
-	font: 200 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 500 20px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.products-old > a > h3 {
+	font: 200 20px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.products-old > a > h3:before {
+	content: '$';
 }
 .products-old > a:hover {
 	/*background: #91d5d3;*/
