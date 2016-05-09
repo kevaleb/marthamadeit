@@ -30,9 +30,8 @@ secondoptiontitle: Choose your Skirt Length
 secondoptionincluded: true
 secondoptionrequired: true
 secondoption:
-  - option: 'Regular Length 38"'
-  - option: 'Extra Long Length 40"'
-  - option: Half Skirt- Below Knee Length
+  - option: Below Knee
+  - option: Midi Length
 thirdoptiontitle: Choose your Waistband
 thirdoptionincluded: true
 thirdoptionrequired: true
