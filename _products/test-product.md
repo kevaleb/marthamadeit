@@ -68,3 +68,10 @@ fifthoption:
 ---
 
 
+My New Favorite Top! This top is fitted through the bust and flows out towards the waist and hips. The Momma Mya Top and Tunic is so comfortable you will want one for everyday! Choose between 3 Sleeve Lengths, and 2 Hem lengths. The Shirt Length sits at the hip and the Curved Tunic Length will fall under your bottom. Dress this top up or down with ease. This Style is available in 18 months to Child 12. If you would like a Mommy and Me Set please email or message me through FB.&nbsp;
+
+The fabric selected for this top is lightweight, soft and perfect for Spring and Summer. The way the fabric flows and style creates an amazing flattering style, you will love!&nbsp;
+
+I suggest you Machine Wash and Hang Clothes to Dry for lasting Quality.&nbsp;
+
+![](/uploads/versions/mya-size-chat---x----628-95x---.png)
