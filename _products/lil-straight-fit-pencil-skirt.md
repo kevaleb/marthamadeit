@@ -2,7 +2,7 @@
 layout: product
 title: "Lil' Straight Fit Pencil Skirt"
 productid: 25
-price: 22
+price: 24
 featuredimage_path: /skirts/136.jpg
 gallery:
   - image_path: /skirts/136.jpg
@@ -15,13 +15,17 @@ firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
 firstoption:
-  - option: X- Small
-  - option: Small
-  - option: Medium
-  - option: Large
-  - option: X-Large
-  - option: XX-Large
-  - option: Plus 1X
+  - option: 18 Months
+  - option: 2 Toddler
+  - option: 3 Toddler
+  - option: 4 Toddler
+  - option: 5 Toddler
+  - option: '6'
+  - option: '7'
+  - option: '8'
+  - option: '9'
+  - option: '10'
+  - option: '12'
 secondoptiontitle: Choose your Skirt Length
 secondoptionincluded: true
 secondoptionrequired: true
