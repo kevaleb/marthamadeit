@@ -19,7 +19,10 @@ firstoption:
   - option: Small
   - option: Medium
   - option: Large
-  - option: Large
+  - option: X-Large
+  - option: XX-Large
+  - option: Plus 1X
+  - option: Plus 2X
 secondoptiontitle: Choose your sleeve length
 secondoptionincluded: true
 secondoptionrequired: true
@@ -47,14 +50,12 @@ fifthoption:
 ---
 
 
-blahjfkahforui
+The Mama Mya Top is a Lovely Comfortable Top! This top is fitted at the bust and flows out towards the waist and hip, making it very flattering and comfortable.&nbsp;
 
-&nbsp;
+The Fabric I have selected is lightweight Rayon Knit. This fabric is stretchy, soft, and lightweight (perfect for Spring and Summer)!&nbsp;
 
-fakfhkjhdfkja
+You may choose any sleeve option below: Short Sleeve, 3/4 Sleeve, or Long Sleeves.&nbsp;
 
-&nbsp;
-
-gjhkajfkajsk
+You may Choose between: Shirt Length and Curved Tunic Length.&nbsp;
 
 ![](/uploads/versions/mya-size-chat---x----628-95x---.png)
