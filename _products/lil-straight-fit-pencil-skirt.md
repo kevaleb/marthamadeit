@@ -8,9 +8,21 @@ gallery:
   - image_path: /images/skirts/pencil/gallery/136.jpg
   - image_path: /skirts/size chart.png
 fabricoptions:
-  - image_path: /images/dresses/boundless/fabric/polkadot.jpg
-    Name: White Polka Dots on Black Skirt with Solid Coral Top
-    Description: White Polka Dots on Black Skirt with Solid Coral Top
+  - image_path: /images/skirts/pencil/fabric/027.jpg
+    Name: White Pin Dots on Black
+    Description: White Pin Dots on Black
+  - image_path: /images/skirts/pencil/fabric/hearts.jpg
+    Name: 'Pink, Navy, Grey Hearts on White'
+    Description: 'Pink, Navy, Grey Hearts on White'
+  - image_path: /images/skirts/pencil/fabric/untitled-1.jpg
+    Name: Solid Bright Yellow
+    Description: Solid Bright Yellow
+  - image_path: /images/skirts/pencil/fabric/floral.jpg
+    Name: 'Bright Coral, and Jade Flowers on White'
+    Description: 'Bright Coral, and Jade Flowers on White'
+  - image_path: /images/skirts/pencil/fabric/img_1872.jpg
+    Name: Pink Flowers on Charcoal Ponte De Roma Knit
+    Description: Pink Flowers on Charcoal Ponte De Roma Knit
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
