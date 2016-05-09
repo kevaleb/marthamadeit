@@ -1,18 +1,17 @@
 ---
 layout: product
 title: Maxi Skirt
-productid: 20
-price: 32
-featuredimage_path: /images/patterns/141.jpg
+productid: 24
+price: 38
+featuredimage_path:
 gallery:
-  - image_path: /images/patterns/138.jpg
-  - image_path: /images/patterns/141.jpg
-  - image_path: /images/products/mya size chat.png
+  - image_path: /images/skirts/maxi skirt chart.png
+  - image_path: /images/skirts/436.jpg
 fabricoptions:
   - image_path: /images/dresses/boundless/fabric/polkadot.jpg
     Name: White Polka Dots on Black Skirt with Solid Coral Top
     Description: White Polka Dots on Black Skirt with Solid Coral Top
-firstoptiontitle: Choose your size
+firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
 firstoption:
@@ -23,21 +22,21 @@ firstoption:
   - option: X-Large
   - option: XX-Large
   - option: Plus 1X
-  - option: Plus 2X
-secondoptiontitle: Choose your sleeve length
+secondoptiontitle: Choose your Skirt Length
 secondoptionincluded: true
 secondoptionrequired: true
 secondoption:
-  - option: Short Sleeve
-  - option: 3/4 Sleeve Length
-  - option: Long Sleeve Length
-thirdoptiontitle: Choose your style
+  - option: 'Regular Length 38"'
+  - option: 'Extra Long Length 40"'
+  - option: Half Skirt- Below Knee Length
+thirdoptiontitle: Choose your Waistband
 thirdoptionincluded: true
 thirdoptionrequired: true
 thirdoption:
-  - option: Shirt Length
-  - option: Curved Tunic Length
-fourthoptiontitle: waist
+  - option: Yoga Band
+  - option: Elastic Band
+  - option: Fold Over Waistband
+fourthoptiontitle:
 fourthoptionincluded: false
 fourthoptionrequired: true
 fourthoption:
@@ -48,3 +47,5 @@ fifthoptionrequired: true
 fifthoption:
   - option: asdf
 ---
+
+
