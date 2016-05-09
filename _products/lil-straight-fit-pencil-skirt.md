@@ -38,7 +38,6 @@ thirdoptionrequired: true
 thirdoption:
   - option: Yoga Band
   - option: Elastic Band
-  - option: Fold Over Waistband
 fourthoptiontitle:
 fourthoptionincluded: false
 fourthoptionrequired: true
