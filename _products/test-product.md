@@ -9,9 +9,27 @@ gallery:
   - image_path: /images/patterns/141.jpg
   - image_path: /images/products/mya size chat.png
 fabricoptions:
-  - image_path: /images/dresses/boundless/fabric/polkadot.jpg
-    Name: White Polka Dots on Black Skirt with Solid Coral Top
-    Description: White Polka Dots on Black Skirt with Solid Coral Top
+  - image_path: /images/420.jpg
+    Name: Multi Colored Floral on White Background
+    Description: Multi Colored Floral on White Background
+  - image_path: /images/421.jpg
+    Name: 'Pink, Blue Floral'
+    Description: 'Pink, Blue Floral'
+  - image_path: /images/422.jpg
+    Name: 'Black, Brown Cheetah Print Fabric'
+    Description: 'Black, Brown Cheetah Print Fabric'
+  - image_path: /images/423.jpg
+    Name: 'Yellow, Pink Small Floral on Cream'
+    Description: 'Yellow, Pink Small Floral on Cream'
+  - image_path: /images/424.jpg
+    Name: 'Pale Yellow Flowers, Grey Leaves on Black'
+    Description: 'Pale Yellow Flowers, Grey Leaves on Black'
+  - image_path: /images/425.jpg
+    Name: 'Teal, Aqua,White, Chevron Rows'
+    Description: 'Teal, Aqua,White, Chevron Rows'
+  - image_path: /images/427.jpg
+    Name: Black Faux Lace on Grey
+    Description: Black Faux Lace on Grey
 firstoptiontitle: Choose your size
 firstoptionincluded: true
 firstoptionrequired: true
@@ -50,24 +68,3 @@ fifthoption:
 ---
 
 
-The Mama Mya Top is a Flattering, Comfortable Top or Tunic. This Top is fitted at the bust and flows out towards the waist and hip. Dress the Mama Mya up or don easily with jeans or a Pencil Skirt.&nbsp;
-
-The Fabric I have selected for this Top is Incredibly Soft and Comfortable Stretchy Rayon Fabrics. This fabric is lightweight and flows beautifully, perfect for Spring and Summer.&nbsp;
-
-Choose Your Fabric, Sleeve Length, and Style to Create your one of a kind item. If you have any questions please contact me via my email.&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-![](/uploads/versions/mya-size-chat---x----628-95x---.png)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
