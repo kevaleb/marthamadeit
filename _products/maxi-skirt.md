@@ -49,3 +49,8 @@ fifthoption:
 ---
 
 
+Fall in Love with this Gorgeous Comfortable Maxi Skirt! You will want to live in this! The Skirt Style is an A-Line Maxi Skirt that hits at the ankle or choose the extra long version and wear with heels.&nbsp;
+
+The options are endless with this skirt! Choose your length: Maxi 38" Long or 40" Long. The third option is a Below the Knee Length A-Line Skirt.
+
+The Fabrics I have selected for this skirt flow beautifully! All fabrics are Machine Washable, I suggest you Hang to Dry all Items.![](/uploads/versions/maxi-skirt-chart---x----487-74x---.png)
