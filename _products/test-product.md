@@ -28,7 +28,9 @@ secondoptiontitle: Choose your sleeve length
 secondoptionincluded: true
 secondoptionrequired: true
 secondoption:
-  - option: 0
+  - option: Short Sleeve
+  - option: 3/4 Sleeve Length
+  - option: Long Sleeve Length
 thirdoptiontitle: Choose your style
 thirdoptionincluded: true
 thirdoptionrequired: true
