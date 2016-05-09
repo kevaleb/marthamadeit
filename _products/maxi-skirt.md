@@ -70,3 +70,10 @@ fifthoption:
 ---
 
 
+You will fall in Love with this gorgeous A-Line Maxi Skirt. This Skirt has many options, 3 Lengths, and 3 Waist Options. Create your New Favorite Skirt!&nbsp;
+
+The Fabric Available for this Style is soft and comfortable. The Type of fabric is Included in the description: Rayon, Jersey, and Cotton Spandex. We suggest you Machine Wash your Items and Hang them to Dry.&nbsp;
+
+&nbsp;
+
+![](/uploads/versions/maxi-skirt-chart---x----487-74x---.png)
