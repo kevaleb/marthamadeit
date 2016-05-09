@@ -35,7 +35,7 @@ thirdoptiontitle: Choose your style
 thirdoptionincluded: true
 thirdoptionrequired: true
 thirdoption:
-  - option: asdf
+  - option: asdfasdf
 fourthoptiontitle: waist
 fourthoptionincluded: false
 fourthoptionrequired: true
