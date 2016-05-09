@@ -168,6 +168,10 @@ body header > div > nav > a.selected:after  {
 	transform: rotate(45deg);
 }
 
+body header > div > nav > a > .fa-shopping-cart {
+	font-size: 22px;
+}
+
 /* @end */
 
 
