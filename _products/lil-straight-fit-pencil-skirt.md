@@ -1,12 +1,12 @@
 ---
 layout: product
 title: "Lil' Straight Fit Pencil Skirt"
-productid: 24
-price: 38
-featuredimage_path:
+productid: 25
+price: 22
+featuredimage_path: /skirts/136.jpg
 gallery:
-  - image_path: /images/skirts/436.jpg
-  - image_path: /images/skirts/maxi skirt chart.png
+  - image_path: /skirts/136.jpg
+  - image_path: /skirts/size chart.png
 fabricoptions:
   - image_path: /images/dresses/boundless/fabric/polkadot.jpg
     Name: White Polka Dots on Black Skirt with Solid Coral Top
@@ -47,3 +47,5 @@ fifthoptionrequired: true
 fifthoption:
   - option: asdf
 ---
+
+
