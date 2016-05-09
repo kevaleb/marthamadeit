@@ -8,9 +8,30 @@ gallery:
   - image_path: /images/skirts/436.jpg
   - image_path: /images/skirts/maxi skirt chart.png
 fabricoptions:
-  - image_path: /images/dresses/boundless/fabric/polkadot.jpg
-    Name: White Polka Dots on Black Skirt with Solid Coral Top
-    Description: White Polka Dots on Black Skirt with Solid Coral Top
+  - image_path: /images/skirts/393.jpg
+    Name: Blue Sunflowers on Coral Rayon Knit
+    Description: Blue Sunflowers on Coral Rayon Knit
+  - image_path: /images/skirts/394.jpg
+    Name: 'Fuchsia, White and Blue on Aqua Rayon Knit'
+    Description: 'Fuchsia, White and Blue on Aqua Rayon Knit'
+  - image_path: /images/skirts/395.jpg
+    Name: 'Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
+    Description: 'Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
+  - image_path: /images/skirts/396.jpg
+    Name: 'Coral, Black Diamond Design Rayon Knit'
+    Description: 'Coral, Black Diamond Design Rayon Knit'
+  - image_path: /images/skirts/397.jpg
+    Name: 'Navy, White Anchors on Mint Rayon'
+    Description: 'Navy, White Anchors on Mint Rayon'
+  - image_path: /images/skirts/398.jpg
+    Name: 'Teal, Coral, Brown Aztec on Tan Jersey Knit'
+    Description: 'Teal, Coral, Brown Aztec on Tan Jersey Knit'
+  - image_path: /images/skirts/418.jpg
+    Name: Jade Flowers on Coral Jersey Knit
+    Description: Jade Flowers on Coral Jersey Knit
+  - image_path: /images/skirts/426.jpg
+    Name: 'Navy, Red, and Mint Aztec Chevron Cotton Spandex'
+    Description: 'Navy, Red, and Mint Aztec Chevron Cotton Spandex'
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
@@ -49,8 +70,3 @@ fifthoption:
 ---
 
 
-Fall in Love with this Gorgeous Comfortable Maxi Skirt! You will want to live in this! The Skirt Style is an A-Line Maxi Skirt that hits at the ankle or choose the extra long version and wear with heels.&nbsp;
-
-The options are endless with this skirt! Choose your length: Maxi 38" Long or 40" Long. The third option is a Below the Knee Length A-Line Skirt.
-
-The Fabrics I have selected for this skirt flow beautifully! All fabrics are Machine Washable, I suggest you Hang to Dry all Items.![](/uploads/versions/maxi-skirt-chart---x----487-74x---.png)
