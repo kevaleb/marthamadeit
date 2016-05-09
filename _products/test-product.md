@@ -35,7 +35,8 @@ thirdoptiontitle: Choose your style
 thirdoptionincluded: true
 thirdoptionrequired: true
 thirdoption:
-  - option: asdfasdf
+  - option: Shirt Length
+  - option: Curved Tunic Length
 fourthoptiontitle: waist
 fourthoptionincluded: false
 fourthoptionrequired: true
