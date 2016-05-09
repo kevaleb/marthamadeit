@@ -51,3 +51,8 @@ fifthoption:
 ---
 
 
+This is the Lil' Version of Our Pencil Skirt. This Skirt is a Straight Fit Semi-Fitted Pencil Skirt. You can choose between Knee Length and Midi Length (Mid Calf).
+
+The Fabrics Available for this Skirt are Medium Weight Stretchy Knit. The Fabrics are Soft and Comfortable. We Suggest you Machine wash on cold and Hang to Dry.&nbsp;
+
+![](/uploads/versions/size-chart---x----592-40x---.png)
