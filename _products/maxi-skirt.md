@@ -5,8 +5,8 @@ productid: 24
 price: 38
 featuredimage_path:
 gallery:
-  - image_path: /images/skirts/maxi skirt chart.png
   - image_path: /images/skirts/436.jpg
+  - image_path: /images/skirts/maxi skirt chart.png
 fabricoptions:
   - image_path: /images/dresses/boundless/fabric/polkadot.jpg
     Name: White Polka Dots on Black Skirt with Solid Coral Top
