@@ -3,7 +3,7 @@ layout: product
 title: Maxi Skirt
 productid: 24
 price: 38
-featuredimage_path:
+featuredimage_path: /images/skirts/436.jpg
 gallery:
   - image_path: /images/skirts/436.jpg
   - image_path: /images/skirts/maxi skirt chart.png
