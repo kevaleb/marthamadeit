@@ -50,3 +50,20 @@ fifthoption:
 ---
 
 
+The Mama Mya Top is a Flattering, Comfortable Top or Tunic. This Top is fitted at the bust and flows out towards the waist and hip. Dress the Mama Mya up or don easily with jeans or a Pencil Skirt.&nbsp;
+
+The Fabric I have selected for this Top is Incredibly Soft and Comfortable Stretchy Rayon Fabrics. This fabric is lightweight and flows beautifully, perfect for Spring and Summer.&nbsp;
+
+Choose Your Fabric, Sleeve Length, and Style to Create your one of a kind item. If you have any questions please contact me via my email.&nbsp;
+
+![](/uploads/versions/mya-size-chat---x----628-95x---.png)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
