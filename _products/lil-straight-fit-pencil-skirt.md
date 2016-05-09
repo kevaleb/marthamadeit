@@ -63,3 +63,10 @@ fifthoption:
 ---
 
 
+This is the Lil' Pencil Skirt. This skirt is a relaxed, straight fit skirt. You choose from 2 band options an 2 length options. Customize it for you little ones specific tastes. She will love it!&nbsp;
+
+The fabric chosen for this style has plenty of stretch for your little one to play and jump around. Don't worry about her not having room to play. &nbsp;I suggest you Machine Wash and Hang your Items to Dry for lasting Quality.&nbsp;
+
+Want a Mommy and Me Set? Send me an email or contact me through FB. I create Custom listing for a one of a kind set!
+
+![](/uploads/versions/size-chart---x----592-40x---.png)
