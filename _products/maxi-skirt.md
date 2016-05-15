@@ -41,6 +41,12 @@ fabricoptions:
   - image_path: /images/skirts/009.jpg
     Name: White Stars on Navy Background
     Description: White Stars on Navy Background
+  - image_path: /images/skirts/006.jpg
+    Name: 'Coral, Lilac, Mint Chevron Print'
+    Description: 'Coral, Lilac, Mint Chevron Print'
+  - image_path:
+    Name: 'Coral, Lilac, Mint Chevron Print'
+    Description: 'Coral, Lilac, Mint Chevron Print'
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
@@ -82,7 +88,5 @@ fifthoption:
 You will fall in Love with this gorgeous A-Line Maxi Skirt. This Skirt has many options, 3 Lengths, and 3 Waist Options. Create your New Favorite Skirt!
 
 The Fabric Available for this Style is soft and comfortable. The Type of fabric is Included in the description: Rayon, Jersey, and Cotton Spandex. We suggest you Machine Wash your Items and Hang them to Dry.
-
-
 
 ![](/uploads/versions/maxi-skirt-chart---x----487-74x---.png)
