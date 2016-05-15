@@ -33,6 +33,9 @@ fabricoptions:
   - image_path: /images/skirts/418.jpg
     Name: Jade Flowers on Coral Background
     Description: Jade Flowers on Coral Background
+  - image_path: /images/skirts/397.jpg
+    Name: 'White, Navy Anchors on Mint Background'
+    Description: 'White, Navy Anchors on Mint Background'
 firstoptiontitle: Choose your size
 firstoptionincluded: true
 firstoptionrequired: true
