@@ -35,9 +35,6 @@ fabricoptions:
   - image_path: /images/skirts/065.jpg
     Name: Multi Floral on Navy Background
     Description: Multi Floral on Navy Background
-  - image_path: /images/skirts/pencil/fabric/hearts.jpg
-    Name: 'Pink, Navy, and Grey Hears on White'
-    Description: 'Pink, Navy, and Grey Hears on White'
   - image_path: /images/skirts/pencil/fabric/428.jpg
     Name: 'Coral, Cream Hearts on Grey Background'
     Description: 'Coral, Cream Hearts on Grey Background'
@@ -84,10 +81,3 @@ fifthoption:
 ---
 
 
-This is the Lil' Pencil Skirt. This skirt is a relaxed, straight fit skirt. You choose from 2 band options an 2 length options. Customize it for you little ones specific tastes. She will love it!
-
-The fabric chosen for this style has plenty of stretch for your little one to play and jump around. Don't worry about her not having room to play.  I suggest you Machine Wash and Hang your Items to Dry for lasting Quality.
-
-Want a Mommy and Me Set? Send me an email or contact me through FB. I create Custom listing for a one of a kind set!
-
-![](/uploads/versions/size-chart---x----592-40x---.png)
