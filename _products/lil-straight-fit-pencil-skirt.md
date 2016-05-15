@@ -23,6 +23,27 @@ fabricoptions:
   - image_path: /images/skirts/pencil/fabric/img_1872.jpg
     Name: Pink Flowers on Charcoal Ponte De Roma Knit
     Description: Pink Flowers on Charcoal Ponte De Roma Knit
+  - image_path: /images/skirts/008.jpg
+    Name: Black Leopard Spot on Hot Pink
+    Description: Black Leopard Spot on Hot Pink
+  - image_path: /images/skirts/063.jpg
+    Name: Fuchsia Pink and Emerald Floral on White
+    Description: Fuchsia Pink and Emerald Floral on White
+  - image_path: /images/skirts/064.jpg
+    Name: Light Grey Geo Print on White
+    Description: Light Grey Geo Print on White
+  - image_path: /images/skirts/065.jpg
+    Name: Multi Floral on Navy Background
+    Description: Multi Floral on Navy Background
+  - image_path: /images/skirts/pencil/fabric/hearts.jpg
+    Name: 'Pink, Navy, and Grey Hears on White'
+    Description: 'Pink, Navy, and Grey Hears on White'
+  - image_path: /images/skirts/pencil/fabric/428.jpg
+    Name: 'Coral, Cream Hearts on Grey Background'
+    Description: 'Coral, Cream Hearts on Grey Background'
+  - image_path: /images/skirts/pencil/fabric/430.jpg
+    Name: Coral and Cream Geo Print
+    Description: Coral and Cream Geo Print
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
@@ -63,9 +84,9 @@ fifthoption:
 ---
 
 
-This is the Lil' Pencil Skirt. This skirt is a relaxed, straight fit skirt. You choose from 2 band options an 2 length options. Customize it for you little ones specific tastes. She will love it!&nbsp;
+This is the Lil' Pencil Skirt. This skirt is a relaxed, straight fit skirt. You choose from 2 band options an 2 length options. Customize it for you little ones specific tastes. She will love it!
 
-The fabric chosen for this style has plenty of stretch for your little one to play and jump around. Don't worry about her not having room to play. &nbsp;I suggest you Machine Wash and Hang your Items to Dry for lasting Quality.&nbsp;
+The fabric chosen for this style has plenty of stretch for your little one to play and jump around. Don't worry about her not having room to play.  I suggest you Machine Wash and Hang your Items to Dry for lasting Quality.
 
 Want a Mommy and Me Set? Send me an email or contact me through FB. I create Custom listing for a one of a kind set!
 
