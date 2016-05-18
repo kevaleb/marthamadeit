@@ -15,7 +15,7 @@ fabricoptions:
     Name: 'Fuchsia, White and Blue on Aqua Rayon Knit'
     Description: 'Fuchsia, White and Blue on Aqua Rayon Knit'
   - image_path: /images/skirts/395.jpg
-    Name: 'Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
+    Name: '*DISPAY PICTURE* Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
     Description: 'Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
   - image_path: /images/skirts/396.jpg
     Name: 'Coral, Black Diamond Design Rayon Knit'
@@ -82,8 +82,3 @@ fifthoption:
 ---
 
 
-You will fall in Love with this gorgeous A-Line Maxi Skirt. This Skirt has many options, 3 Lengths, and 3 Waist Options. Create your New Favorite Skirt!
-
-The Fabric Available for this Style is soft and comfortable. The Type of fabric is Included in the description: Rayon, Jersey, and Cotton Spandex. We suggest you Machine Wash your Items and Hang them to Dry.
-
-![](/uploads/versions/maxi-skirt-chart---x----487-74x---.png)
