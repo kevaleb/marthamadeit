@@ -44,9 +44,6 @@ fabricoptions:
   - image_path: /images/skirts/006.jpg
     Name: 'Coral, Lilac, Mint Chevron Print'
     Description: 'Coral, Lilac, Mint Chevron Print'
-  - image_path:
-    Name: 'Coral, Lilac, Mint Chevron Print'
-    Description: 'Coral, Lilac, Mint Chevron Print'
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
