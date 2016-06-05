@@ -18,9 +18,6 @@ fabricoptions:
   - image_path: /images/422.jpg
     Name: 'Black, Brown Cheetah Print Fabric'
     Description: 'Black, Brown Cheetah Print Fabric'
-  - image_path: /images/423.jpg
-    Name: 'Yellow, Pink Small Floral on Cream'
-    Description: 'Yellow, Pink Small Floral on Cream'
   - image_path: /images/424.jpg
     Name: 'Pale Yellow Flowers, Grey Leaves on Black'
     Description: 'Pale Yellow Flowers, Grey Leaves on Black'
@@ -36,12 +33,6 @@ fabricoptions:
   - image_path: /images/skirts/397.jpg
     Name: 'White, Navy Anchors on Mint Background'
     Description: 'White, Navy Anchors on Mint Background'
-  - image_path: /images/skirts/013.jpg
-    Name: Emerald Green Flowers on Black
-    Description: Emerald Green Flowers on Black
-  - image_path: /images/skirts/012.jpg
-    Name: Silver Grey Flowers on Black
-    Description: Silver Grey Flowers on Black
 firstoptiontitle: Choose your size
 firstoptionincluded: true
 firstoptionrequired: true
