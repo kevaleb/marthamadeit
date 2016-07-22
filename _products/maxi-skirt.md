@@ -2,7 +2,7 @@
 layout: product
 title: Maxi Skirt
 productid: 24
-price: 38
+price: 35
 featuredimage_path: /images/skirts/436.jpg
 gallery:
   - image_path: /images/skirts/436.jpg
@@ -15,7 +15,7 @@ fabricoptions:
     Name: 'Fuchsia, White and Blue on Aqua Rayon Knit'
     Description: 'Fuchsia, White and Blue on Aqua Rayon Knit'
   - image_path: /images/skirts/395.jpg
-    Name: 'Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
+    Name: '*DISPAY PICTURE* Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
     Description: 'Lilac, Coral, Mint Aztec Print Cotton Spandex Knit'
   - image_path: /images/skirts/396.jpg
     Name: 'Coral, Black Diamond Design Rayon Knit'
@@ -32,6 +32,18 @@ fabricoptions:
   - image_path: /images/skirts/426.jpg
     Name: 'Navy, Red, and Mint Aztec Chevron Cotton Spandex'
     Description: 'Navy, Red, and Mint Aztec Chevron Cotton Spandex'
+  - image_path: /images/skirts/007.jpg
+    Name: 'Navy, Tan, Teal Plaid'
+    Description: 'Navy, Tan, Teal Plaid'
+  - image_path: /images/skirts/010.jpg
+    Name: Multi Floral on Black
+    Description: Multi Floral on Black
+  - image_path: /images/skirts/009.jpg
+    Name: White Stars on Navy Background
+    Description: White Stars on Navy Background
+  - image_path: /images/skirts/006.jpg
+    Name: 'Coral, Lilac, Mint Chevron Print'
+    Description: 'Coral, Lilac, Mint Chevron Print'
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
@@ -70,10 +82,3 @@ fifthoption:
 ---
 
 
-You will fall in Love with this gorgeous A-Line Maxi Skirt. This Skirt has many options, 3 Lengths, and 3 Waist Options. Create your New Favorite Skirt!&nbsp;
-
-The Fabric Available for this Style is soft and comfortable. The Type of fabric is Included in the description: Rayon, Jersey, and Cotton Spandex. We suggest you Machine Wash your Items and Hang them to Dry.&nbsp;
-
-&nbsp;
-
-![](/uploads/versions/maxi-skirt-chart---x----487-74x---.png)

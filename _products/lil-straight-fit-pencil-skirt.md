@@ -23,6 +23,24 @@ fabricoptions:
   - image_path: /images/skirts/pencil/fabric/img_1872.jpg
     Name: Pink Flowers on Charcoal Ponte De Roma Knit
     Description: Pink Flowers on Charcoal Ponte De Roma Knit
+  - image_path: /images/skirts/008.jpg
+    Name: Black Leopard Spot on Hot Pink
+    Description: Black Leopard Spot on Hot Pink
+  - image_path: /images/skirts/063.jpg
+    Name: Fuchsia Pink and Emerald Floral on White
+    Description: Fuchsia Pink and Emerald Floral on White
+  - image_path: /images/skirts/064.jpg
+    Name: Light Grey Geo Print on White
+    Description: Light Grey Geo Print on White
+  - image_path: /images/skirts/065.jpg
+    Name: Multi Floral on Navy Background
+    Description: Multi Floral on Navy Background
+  - image_path: /images/skirts/pencil/fabric/428.jpg
+    Name: 'Coral, Cream Hearts on Grey Background'
+    Description: 'Coral, Cream Hearts on Grey Background'
+  - image_path: /images/skirts/pencil/fabric/430.jpg
+    Name: Coral and Cream Geo Print
+    Description: Coral and Cream Geo Print
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true

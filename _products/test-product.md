@@ -1,6 +1,6 @@
 ---
 layout: product
-title: Mama Mya Top and Tunic
+title: Mya Top and Tunic
 productid: 20
 price: 32
 featuredimage_path: /images/patterns/141.jpg
@@ -18,9 +18,6 @@ fabricoptions:
   - image_path: /images/422.jpg
     Name: 'Black, Brown Cheetah Print Fabric'
     Description: 'Black, Brown Cheetah Print Fabric'
-  - image_path: /images/423.jpg
-    Name: 'Yellow, Pink Small Floral on Cream'
-    Description: 'Yellow, Pink Small Floral on Cream'
   - image_path: /images/424.jpg
     Name: 'Pale Yellow Flowers, Grey Leaves on Black'
     Description: 'Pale Yellow Flowers, Grey Leaves on Black'
@@ -30,6 +27,12 @@ fabricoptions:
   - image_path: /images/427.jpg
     Name: Black Faux Lace on Grey
     Description: Black Faux Lace on Grey
+  - image_path: /images/skirts/418.jpg
+    Name: Jade Flowers on Coral Background
+    Description: Jade Flowers on Coral Background
+  - image_path: /images/skirts/397.jpg
+    Name: 'White, Navy Anchors on Mint Background'
+    Description: 'White, Navy Anchors on Mint Background'
 firstoptiontitle: Choose your size
 firstoptionincluded: true
 firstoptionrequired: true
