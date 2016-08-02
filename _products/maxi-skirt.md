@@ -29,9 +29,6 @@ fabricoptions:
   - image_path: /images/skirts/418.jpg
     Name: Jade Flowers on Coral Jersey Knit
     Description: Jade Flowers on Coral Jersey Knit
-  - image_path: /images/skirts/426.jpg
-    Name: 'Navy, Red, and Mint Aztec Chevron Cotton Spandex'
-    Description: 'Navy, Red, and Mint Aztec Chevron Cotton Spandex'
   - image_path: /images/skirts/007.jpg
     Name: 'Navy, Tan, Teal Plaid'
     Description: 'Navy, Tan, Teal Plaid'
