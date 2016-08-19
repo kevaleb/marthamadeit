@@ -41,6 +41,21 @@ fabricoptions:
   - image_path: /images/skirts/006.jpg
     Name: 'Coral, Lilac, Mint Chevron Print'
     Description: 'Coral, Lilac, Mint Chevron Print'
+  - image_path: /images/dresses/boundless/fabric/068.jpg
+    Name: 'Navy, Blue Tie Dye'
+    Description: 'Navy, Blue Tie Dye'
+  - image_path: /images/dresses/boundless/fabric/205.jpg
+    Name: White Stripe Tie Dye on Dark Navy
+    Description: White Stripe Tie Dye on Dark Navy
+  - image_path: /images/dresses/boundless/fabric/070.jpg
+    Name: 'Grey, Cream, Black Tie Dye'
+    Description: 'Grey, Cream, Black Tie Dye'
+  - image_path: /images/dresses/boundless/fabric/217.jpg
+    Name: 'Aqua, Pink, Orange, White and Black Abstract Floral'
+    Description: 'Aqua, Pink, Orange, White and Black Abstract Floral Skirt'
+  - image_path: /images/dresses/boundless/fabric/115.jpg
+    Name: Navy Tire Track Tie Dye on White
+    Description: Navy Tire Track Tie Dye on White Skirt.
 firstoptiontitle: Choose your Size
 firstoptionincluded: true
 firstoptionrequired: true
