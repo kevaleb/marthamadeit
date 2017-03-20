@@ -1333,7 +1333,27 @@ article > ul > li{
 }
 /* @end */
 
+/* @group Under Construction */
 
+/* @group Under Construction - Banner */
+
+.under-construction {
+	height: 100%;
+	text-align: center;
+	box-shadow: none;
+}
+.under-construction > hgroup > img {
+	width: 100%;
+	max-width: 320px;
+}
+.under-construction > hgroup > h1 {
+	letter-spacing: 9px;
+	font: 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* @end */
+
+/* @end */
 
 @media all and (max-width: 1080px) {
 	.content > div > section {
