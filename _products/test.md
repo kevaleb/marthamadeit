@@ -7,9 +7,11 @@ photos:
   - photo_path: /uploads/boundless-dress-3.jpg
 options:
   - option:
+      option_title:
       - choice:
       - choice:
       - choice:
   - option:
+      option_title:
       - choice:
 ---
