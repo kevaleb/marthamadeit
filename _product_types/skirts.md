@@ -1,3 +1,4 @@
 ---
-product_group: 
+collections:
+  - product_group: 
 ---
