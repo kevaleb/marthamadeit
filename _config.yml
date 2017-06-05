@@ -3,9 +3,9 @@ permalink: pretty
 excerpt_separator: <!--more-->
 
 
-product_categories:
-  - product_category: woman
-  - product_category: children
+product_groups:
+  - product_group: woman
+  - product_group: children
 
 collections:
   product_types:
