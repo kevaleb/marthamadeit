@@ -6,12 +6,12 @@ photos:
   - photo_path: /uploads/boundless-dress-1.jpg
   - photo_path: /uploads/boundless-dress-3.jpg
 options:
-  - option: asdfasdfasdf
-    option_title:
+  - option_title: asdfasdfasdf
+    choices:
       - choice: asdf
       - choice: asdf
       - choice: asdf
-  - option: asdfasdf
-    option_title:
+  - option_title: asdfasdf
+    choices:
       - choice:
 ---
