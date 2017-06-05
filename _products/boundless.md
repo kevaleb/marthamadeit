@@ -24,4 +24,8 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
+  - option_title: 'Would you like the Solid Color Block Top? (if you select "no" your dress will be all main fabric)'
+    choices:
+      - choice: 'Yes'
+      - choice: 'No'
 ---
