@@ -1,9 +1,10 @@
 ---
 price:
-description_md:
+description:
 photos:
   - photo_path:
 options:
-  - option:
-    - option_choice:
+  - option_title:
+    choices:
+      - choice:
 ---
