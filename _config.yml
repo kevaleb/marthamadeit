@@ -7,7 +7,7 @@ genders:
 - children
 
 collections:
-  product_types
+  product_types:
   products:
     output: true
   main-pages:
