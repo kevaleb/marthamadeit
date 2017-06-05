@@ -4,8 +4,8 @@ excerpt_separator: <!--more-->
 
 
 product_groups:
-  - product_group: woman
-  - product_group: children
+- product_group: woman
+- product_group: children
 
 collections:
   product_types:
