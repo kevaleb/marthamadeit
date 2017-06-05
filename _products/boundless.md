@@ -15,4 +15,9 @@ options:
       - choice: Maternity Waist
       - choice: Empire Waist
       - choice: Natural Waist
+  - option_title: Skirt Length
+    choices:
+      - choice: Knee Length
+      - choice: Midi Length
+      - choice: Maxi Length
 ---
