@@ -1,5 +1,8 @@
 ---
 description: Blah blah blah
 product_types:
-photo_path:
+  - skirts
+photo_path: /uploads/003.jpg
 ---
+
+
