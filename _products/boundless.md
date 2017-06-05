@@ -20,4 +20,8 @@ options:
       - choice: Knee Length
       - choice: Midi Length
       - choice: Maxi Length
+  - option_title: Inseam Pockets?
+    choices:
+      - choice: 'Yes'
+      - choice: 'No'
 ---
