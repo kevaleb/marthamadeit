@@ -1,6 +1,6 @@
 ---
 price: '24.99'
-description_md:
+description:
 photos:
   - photo_path:
 options:
