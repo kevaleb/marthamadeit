@@ -1,3 +1,3 @@
 ---
-product_groups:
+product_group:
 ---
