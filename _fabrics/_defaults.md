@@ -1,5 +1,4 @@
 ---
-fabrics:
-  - fabric_title:
-    photo_path: 
+description:
+photo_path:
 ---
