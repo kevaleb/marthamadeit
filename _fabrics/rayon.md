@@ -1,5 +1,9 @@
 ---
-description:
+description: Coral Floral on White Background Jersey Knit Fabric. Solid Coral Top Color Block Option.
 product_types:
-photo_path:
+  - skirts
+  - womens-dresses
+photo_path: /uploads/247.jpg
 ---
+
+
