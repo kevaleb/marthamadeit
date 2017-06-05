@@ -1,8 +1,28 @@
 name: Winery Guild
 permalink: pretty
 excerpt_separator: <!--more-->
+
+genders:
+- woman
+- children
+
 collections:
+  product_types
   products:
     output: true
   main-pages:
     output: true
+    
+    
+    
+    
+defaults:
+  -
+    scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+      _hide_content: true
+      permalink: /:gender/:title/
+      navclass: /:gender/
