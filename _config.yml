@@ -8,9 +8,10 @@ genders:
 
 collections:
   product_types:
+    output: true
   products:
     output: true
-  fabric_collections:
+  fabrics:
   main-pages:
     output: true
     
