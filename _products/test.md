@@ -6,11 +6,11 @@ photos:
   - photo_path: /uploads/boundless-dress-1.jpg
   - photo_path: /uploads/boundless-dress-3.jpg
 options:
-  - option_title: asdfasdfasdf
+  - option_title: Skirts
     choices:
-      - choice: asdf
-      - choice: asdf
-      - choice: asdf
+      - choice: Midi
+      - choice: Maxi
+      - choice: Modera
   - option_title: asdfasdf
     choices:
       - choice:
