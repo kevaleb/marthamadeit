@@ -1,6 +1,6 @@
 ---
-product_type:
-price_number: '55'
+product_type: womens-dresses
+price_number: 55
 description: Your favorite new dress.
 photos:
   - photo_path: /uploads/boundless-dress-1.png
