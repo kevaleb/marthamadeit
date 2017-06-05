@@ -10,4 +10,9 @@ options:
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
+  - option_title: Waist Options
+    choices:
+      - choice: Maternity Waist
+      - choice: Empire Waist
+      - choice: Natural Waist
 ---
