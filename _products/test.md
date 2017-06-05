@@ -1,6 +1,6 @@
 ---
-product_type:
-price_number: '24.99'
+product_type: skirts
+price_number: 24.99
 description: Blah blah blah blah blah blah blah blah blah blah blah blah
 photos:
   - photo_path: /uploads/boundless-dress-4.jpg
