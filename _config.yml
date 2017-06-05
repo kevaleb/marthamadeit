@@ -10,6 +10,7 @@ collections:
   product_types:
   products:
     output: true
+  fabric_collections:
   main-pages:
     output: true
     
