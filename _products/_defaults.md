@@ -1,5 +1,6 @@
 ---
-price:
+product_type:
+price_number:
 description:
 photos:
   - photo_path:
