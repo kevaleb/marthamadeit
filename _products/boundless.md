@@ -1,5 +1,5 @@
 ---
-product_types: womens-dresses
+product_type: womens-dresses
 price_number: 55
 description: Your favorite new dress.
 photos:
