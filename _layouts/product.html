@@ -2,149 +2,233 @@
 layout: default
 ---
 
-<div class="main-gallery gallery js-flickity">
-	{% for item in page.gallery %}
-		<div class="gallery-cell first-cell" style="background-image: url('{{ item.image_path }}');">
-			<!--<img src="{{ item.image_path }}" alt="" />-->
-			<!--{% if forloop.first %}
-				<hgroup>
-					<h1>{{ page.title }}</h1>
-				</hgroup>
-			{% endif %}-->
-		</div>
-	{% endfor %}
+<div class="product_titles">
+	<hgroup>
+		<h1>{{ page.title }}</h1>
+		<h2>{% unless page.sale_price_number == nil %}<i>${{ page.price_number }}</i>${{ page.sale_price_number }} {% else %} ${{ page.price_number }} {% endunless %}</h2>
+	</hgroup>
+</div>
+
+<div class="product_photos">
+	<ul>
+		{% for photo in page.photos %}
+		<li>
+			<a href="{{ photo.photo_path }}" class="strip" data-strip-group="product_photos" data-strip-caption="{{ photo.description }}">
+				<img src="{{ photo.photo_path }}" alt="" />
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
 </div>
 
 
-<div class="pagetitle">
-	<h1>{{ page.title }}</h1>
-</div>
-
-
-<div class="product-options" id="product-options">
-	<section class="photos">
-		<form method="" action="" id="fabric-options">
-			{% for item in page.fabricoptions %}
-			<label>
-				<a href="{{ item.image_path }}" class="strip" data-strip-group="fabric" data-strip-caption="{{ item.description }}">
-					<i class="fa fa-search-plus fa-lg"></i>
-				</a>
-				<img src="{{ item.image_path }}" alt="{{ item.name }}" />
-				<input type="radio" name="fabric-option" value="{{ item.Name }}" />
-			</label>
-			{% endfor %}
-		</form>
-	</section>
-</div>
-
-<div class="product">
-	<section class="description">
-		<p>{{ content }}</p>
-	</section>
+<form class="product_form">
+	<div id="product_fabrics">
+		<h3>Choose Your Fabric</h3>
+		{% for fabric in site.fabrics  %}
+		{% assign product_type_string = fabric.product_types %}
+		
+		{% if product_type_string contains page.product_type %}
+		{% if forloop.first %}
+		{% capture FirstFabric %}{{ fabric.title }}{% endcapture %}
+		<label title="{{ fabric.title }}">
+			<a href="{{ fabric.photo_path }}" class="strip" data-strip-group="product_fabrics" data-strip-caption="{{ fabric.title }} ::: {{ fabric.description }}" style="background-image: url('{{ fabric.photo_path }}');"></a>
+			<input type="radio" name="fabric_choice" value="{{ fabric.title }}" checked="checked"/>
+			 <span>{{ fabric.title }}</span>
+		</label>
+		{% else %}
+		<label title="{{ fabric.title }}">
+			<a href="{{ fabric.photo_path }}" class="strip" data-strip-group="product_fabrics" data-strip-caption="{{ fabric.description }}" style="background-image: url('{{ fabric.photo_path }}');"></a>
+			<input type="radio" name="fabric_choice" value="{{ fabric.title }}" />
+			 <span>{{ fabric.title }}</span>
+		</label>
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</div>
 	
-	<section class="options">
-		{% if page.firstoptionincluded == true %}
-			<label>
-				<strong>{{ page.firstoptiontitle }}</strong>
-				<select id="firstoption">
-					{% for item in page.firstoption %}
-						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
-					{% endfor %}
-				</select>
-			</label>
+	
+	<div id="product_options">
+	{% assign optioncount = 6 %}
+	{% for option in page.options %}
+		{% assign optioncount = optioncount | plus: 1 %}
+		<h3>{{ option.option_title }}</h3>
+		{% unless option.option_description == nil %}
+		<h4>{{ option.option_description }}</h4>
+		{% endunless %}
+		{% for choice in option.choices %}
+		
+		{% if forloop.first %}
+		<label>
+			<input type="radio" name="{{ option.option_title }}" value="{{ choice.choice }}" class="option{{ optioncount }}" checked="checked"/>
+			<span>{{ choice.choice }} - {{ optioncount }}</span>
+		</label>
+		{% else %}
+		<label>
+			<input type="radio" name="{{ option.option_title }}" value="{{ choice.choice }}" class="option{{ optioncount }}" />
+			<span>{{ choice.choice }} - {{ optioncount }}</span>
+		</label>
 		{% endif %}
-		
-		{% if page.secondoptionincluded == true %}
-			<label>
-				<strong>{{ page.secondoptiontitle }}</strong>
-				<select id="secondoption">
-					{% for item in page.secondoption %}
-						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
-					{% endfor %}
-				</select>
-			</label>
+		{% endfor %}
+	{% endfor %}
+	</div>
+	
+	
+	<div id="product_sizes">
+		<h3>Bust</h3>
+		{% for item in site.data.bust %}
+		{% if forloop.first %}
+		<label>
+			<input type="radio" name="bust" value="{{ item.inches }}" checked="checked"/>
+			<span>{{ item.inches }}</span>
+		</label>
+		{% else %}
+		<label>
+			<input type="radio" name="bust" value="{{ item.inches }}" />
+			<span>{{ item.inches }}"</span>
+		</label>
 		{% endif %}
+		{% endfor %}
 		
-		{% if page.thirdoptionincluded == true %}
-			<label>
-				<strong>{{ page.thirdoptiontitle }}</strong>
-				<select id="thirdoption">
-					{% for item in page.thirdoption %}
-						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
-					{% endfor %}
-				</select>
-			</label>
+		
+		<h3>Under Bust</h3>
+		{% for item in site.data.under-bust %}
+		{% if forloop.first %}
+		<label>
+			<input type="radio" name="under-bust" value="{{ item.inches }}" checked="checked"/>
+			<span>{{ item.inches }}</span>
+		</label>
+		{% else %}
+		<label>
+			<input type="radio" name="under-bust" value="{{ item.inches }}" />
+			<span>{{ item.inches }}"</span>
+		</label>
 		{% endif %}
+		{% endfor %}
 		
-		{% if page.fourthoptionincluded == true %}
-			<label>
-				<strong>{{ page.fourthoptiontitle }}</strong>
-				<select id="fourthoption">
-					{% for item in page.fourthoption %}
-						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
-					{% endfor %}
-				</select>
-			</label>
+		
+		<h3>Height</h3>
+		{% for item in site.data.height %}
+		{% if forloop.first %}
+		<label>
+			<input type="radio" name="height" value="{{ item.inches }}" checked="checked"/>
+			<span>{{ item.inches }}</span>
+		</label>
+		{% else %}
+		<label>
+			<input type="radio" name="height" value="{{ item.inches }}" />
+			<span>{{ item.inches }}"</span>
+		</label>
 		{% endif %}
+		{% endfor %}
 		
-		{% if page.fifthoptionincluded == true %}
-			<label>
-				<strong>{{ page.fifthoptiontitle }}</strong>
-				<select id="fifthoption">
-					{% for item in page.fifthoption %}
-						<option value="{{ item.option }}" {% if forloop.first %}selected{% endif %}>{{ item.option }}</option>
-					{% endfor %}
-				</select>
-			</label>
+		
+		
+		<h3>Hips</h3>
+		{% for item in site.data.hips %}
+		{% if forloop.first %}
+		<label>
+			<input type="radio" name="hips" value="{{ item.inches }}" checked="checked"/>
+			<span>{{ item.inches }}</span>
+		</label>
+		{% else %}
+		<label>
+			<input type="radio" name="hips" value="{{ item.inches }}" />
+			<span>{{ item.inches }}"</span>
+		</label>
 		{% endif %}
+		{% endfor %}
 		
-		<h2 class="price">{{ page.price }}</h2>
 		
-		<a class="snipcart-add-item add-product button dark full" id="snipcart-add-item" 
-			data-item-id="{{ page.productid }}" 
-			data-item-name="{{ page.title }}" 
-			data-item-price="{{  page.price  }}" 
-			data-item-weight="1" 
-			data-item-url="{{page.url}}"
-			data-item-description="{{ page.description }}" 
-			{% if page.firstoptionincluded == true %}
-				data-item-custom1-name="{{ page.firstoptiontitle }}" 
-				data-item-custom1-value=""
-				data-item-custom1-options="{% for item in page.firstoption %}|{{ item.option }}{% endfor %}" 
-				data-item-custom1-required="{% if page.firstoptionrequired == true %}true{% else %}false{% endif %}" 
-			{% endif %}
-			{% if page.secondoptionincluded == true %}
-				data-item-custom2-name="{{ page.secondoptiontitle }}" 
-				data-item-custom2-value=""
-				data-item-custom2-options="{% for item in page.secondoption %}|{{ item.option }}{% endfor %}" 
-				data-item-custom2-required="{% if page.secondoptionrequired == true %}true{% else %}false{% endif %}" 
-			{% endif %}
-			{% if page.thirdoptionincluded == true %}
-				data-item-custom3-name="{{ page.thirdoptiontitle }}" 
-				data-item-custom3-value=""
-				data-item-custom3-options="{% for item in page.thirdoption %}|{{ item.option }}{% endfor %}" 
-				data-item-custom3-required="{% if page.thirdoptionrequired == true %}true{% else %}false{% endif %}" 
-			{% endif %}
-			{% if page.fourthoptionincluded == true %}
-				data-item-custom4-name="{{ page.fourthoptiontitle }}" 
-				data-item-custom4-value=""
-				data-item-custom4-options="{% for item in page.fourthoption %}|{{ item.option }}{% endfor %}" 
-				data-item-custom4-required="{% if page.fourthoptionrequired == true %}true{% else %}false{% endif %}" 
-			{% endif %}
-			{% if page.fifthoptionincluded == true %}
-				data-item-custom5-name="{{ page.fifthoptiontitle }}" 
-				data-item-custom5-value=""
-				data-item-custom5-options="{% for item in page.fifthoption %}|{{ item.option }}{% endfor %}" 
-				data-item-custom5-required="{% if page.fifthoptionrequired == true %}true{% else %}false{% endif %}" 
-			{% endif %}
-			data-item-custom6-name="Fabric" 
-			data-item-custom6-value="" 
-			data-item-custom6-required="true"
-		>Add To Cart</a>
-	</section>
-</div>
+		
+		<h3>Waist</h3>
+		{% for item in site.data.waist %}
+		{% if forloop.first %}
+		<label>
+			<input type="radio" name="waist" value="{{ item.inches }}" checked="checked"/>
+			<span>{{ item.inches }}</span>
+		</label>
+		{% else %}
+		<label>
+			<input type="radio" name="waist" value="{{ item.inches }}" />
+			<span>{{ item.inches }}"</span>
+		</label>
+		{% endif %}
+		{% endfor %}
+	</div>
+	
+	<a class="snipcart-add-item add-product button dark full" id="snipcart-add-item" 
+		data-item-id="{{ page.id }}" 
+		data-item-name="{{ page.title }}" 
+		data-item-price="{% unless page.sale_price_number == nil %}${{ page.sale_price_number }}{% else %} {{ page.price_number }}{% endunless %}" 
+		data-item-weight="1" 
+		data-item-url="{{ page.url }}"
+		data-item-description="{{ page.description }}" 
+		
+		data-item-custom1-name="fabric"
+		data-item-custom1-value="{{ FirstFabric }}"
+		
+		data-item-custom2-name="Bust"
+		data-item-custom2-value="{{ FirstFabric }}"
+		
+		{% assign count = 6 %}
+		{% for option in page.options %}
+			{% assign count = count | plus: 1 %}
+			data-item-custom{{ count }}-name="{{ option.option_title }}" 
+			data-item-custom{{ count }}-value="{% for choice in option.choices %}{% if forloop.first %}{{ choice.choice | escape }}{% endif %}{% endfor %}"
+		{% endfor%}
+		
+	>Add To Cart</a>
+</form>
+
+
+
+
+
+<article>
+	{{ content }}
+</article>
+
+
+
 
 <script type="text/javascript">
+		
+	// Fabric Option
+		$( ".product_form > #product_fabrics > label > input" ).change(function() {
+			var LastFabricValue= $(this).val();
+			$('.snipcart-add-item').attr('data-item-custom1-value',LastFabricValue);
+//			alert( LastInputName );
+		});
+	
+	// Product Options
+	{% assign optioncountjs = 1 %}		
+	{% for option in page.options %}
+		{% assign optioncountjs = optioncountjs | plus: 1 %}
+		
+		$( ".product_form > div > label > input.option{{ optioncountjs }}" ).change(function() {
+			var LastInputName= $(this).attr("name");
+			var LastInputValue= $(this).val();
+			$('.snipcart-add-item').attr('data-item-custom{{ optioncountjs }}-value',LastInputValue);
+//			alert( LastInputValue );
+		});
+	{% endfor %}
+	
+	
+//	$( ".product_form > div > label > input" ).change(function() {
+//		var LastInputName= $(this).attr("name");
+//		var LastInputValue= $(this).val();
+//		
+//		$('.snipcart-add-item').data('item-custom1-value',LastInputValue);
+//		
+//		alert( LastInputName );
+//	});
+</script>
+
+
+
+
+<!--<script type="text/javascript">
 	// Fabric
 	$( "#fabric-options > label" ).click(function() {	
 		$('#fabric-options > label.selected').removeClass('selected');
@@ -184,4 +268,4 @@ layout: default
 		var fifthoption = $('#fifthoption').val();
 		$('.snipcart-add-item').data('item-custom5-value',fifthoption);
 	});
-</script>
+</script>-->

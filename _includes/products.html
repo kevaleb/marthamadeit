@@ -1,0 +1,21 @@
+<div class="products">
+	<ul>
+	{% for product in filtered_products %}
+	{% for photo in product.photos %}
+		{% if forloop.first %}
+			{% capture primary_photo %}{{ photo.photo_path }}{% endcapture %}
+		{% endif %}
+	{% endfor %}
+		<li>
+			<a href="{{ product.url }}">
+				<div class="image" style="background-image: url('{{ primary_photo }}');"></div>
+				<hgroup>
+					<h3>{{ product.title }}</h3>
+					<h4><i>{% unless product.sale_price_number == nil %}${{ product.sale_price_number }} {% endunless %}</i>${{ product.price_number }}</h4>
+					
+				</hgroup>
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</div>

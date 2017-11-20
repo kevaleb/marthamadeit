@@ -1,4 +1,4 @@
-name: Winery Guild
+name: Martha Made It
 permalink: pretty
 excerpt_separator: <!--more-->
 
@@ -37,3 +37,9 @@ defaults:
       _hide_content: true
       permalink: /:title/
       navclass:
+  -
+    scope:
+      path: ""
+      type: "fabrics"
+    values:
+      _hide_content: true

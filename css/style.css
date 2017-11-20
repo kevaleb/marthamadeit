@@ -1,5 +1,8 @@
 /* @override http://0.0.0.0:4000/css/style.css */
 
+/* @group General
+ */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -90,73 +93,62 @@ a:hover {
 	border-color: #a1dad9;
 }
 
+/* @end */
 
-	
+
+
+
 
 
 /* @group HEADER */
 body header {
-	/*position: absolute;*/
-	/*z-index: 1000000000;*/
 	width: 100%;
-	height: 72px;
-	/*padding: 12px;*/
 	text-align: center;
-	background: #91d5d3;
 	overflow: hidden;
 }
 body header > div {
+	display: inline-block;
 	position: relative;
-	max-width: 1080px;
+	max-width: 720px;
 	margin: 0 auto;
 }
 body header > div > a {
-	position: absolute;
-	left: 0px;
-	top: 0px;
+	display: block;
+	margin: 0;
+	padding: 24px 0 12px 0;
 }
 body header > div > a > img {
 	max-width: 300px;
-	margin: 18px 0 0 12px;
+	margin: 0;
 }
-body header > div > .menu-button {
-	display: none;
-	width: 48px;
-	height: 48px;
-	padding: 0 0 0 12px;
-	border-left: 1px solid #ccc;
-	font: 900 24px/48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #ccc;
-	/*background: #f16;*/
-}
-body header > div > .menu-button:hover {
-	color: #b23636;
-	cursor: pointer;
-}
+
+
+
 body header > div > nav {
-	text-align: right;
-	/*padding: 12px 0;*/
-}
-body header > div > nav > p  {
-	display: none;
+	display: block;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
 }
 body header > div > nav > a {
 	position: relative;
 	display: inline-block;
-	height: 72px;
-	margin: 0 12px 0 0;
-	font: 200 18px/72px Georgia, "Times New Roman", Times, serif;
+		margin: 0 6px;
+	/*padding: 0 0 6px 0;*/
+	font: 200 18px/36px Georgia, "Times New Roman", Times, serif;
 	text-decoration: none;
-	color: #fff;
+	color: #999;
 	text-transform: capitalize;
 }
 body header > div > nav > a:hover {
-	color: rgba(255,255,255,.5);
+	color: #333;
 }
 body header > div > nav > a.selected {
-	
+	color: #91d5d3;
+	/*border-bottom: 2px solid #91d5d3;*/
 }
-body header > div > nav > a.selected:after  {
+/*body header > div > nav > a.selected:after  {
 	content: '\00a0';
 	position: absolute;
 	bottom: -6px;
@@ -166,13 +158,268 @@ body header > div > nav > a.selected:after  {
 	margin: 0 0 0 -6px;
 	background: #fff;
 	transform: rotate(45deg);
-}
+}*/
 
 body header > div > nav > a > .fa-shopping-cart {
 	font-size: 22px;
 }
 
 /* @end */
+
+
+/* @group CONTENT */
+.content {
+	position: relative;
+	height: 100%;
+	text-align: center;
+	/*overflow: scroll;*/
+}
+/* @end */
+
+
+/* @group Products */
+.products {
+	padding: 48px 24px;
+}
+.products > ul {
+	max-width: 720px;
+	margin:  0 auto;
+	text-align: center;
+}
+.products > ul > li {
+	display: inline-block;
+	width: 100%;
+	max-width: 240px;
+	vertical-align: top;
+}
+.products > ul > li > a {
+	text-decoration: none;
+}
+.products > ul > li > a > .image {
+	display: block;
+	width: 100%;
+	height: 240px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	box-shadow: 0 0 0 12px #fff inset;
+}
+.products > ul > li > a > hgroup {
+	padding: 24px 0;
+}
+.products > ul > li > a > hgroup > h3 {
+	font: 500 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+}
+.products > ul > li > a > hgroup > h4 {
+	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+}
+.products > ul > li > a > hgroup > h4 > i {
+	margin: 0 12px 0 0;
+	color: #ccc;
+	text-decoration: line-through;
+}
+/* @end */
+
+
+
+
+
+
+/* @group Product Titles */
+
+.product_titles {
+	
+}
+.product_titles > hgroup {
+	text-align: center;
+	padding: 48px 0 24px 0;
+}
+.product_titles > hgroup > h1 {
+	font: 200 30px/36px Georgia, "Times New Roman", Times, serif;
+}
+.product_titles > hgroup > h2 {
+	font: 200 24px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.product_titles > hgroup > h2 > i {
+	margin: 0 12px 0 0;
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+/* @end */
+
+
+
+
+
+
+/* @group Product Photos */
+
+.product_photos {
+	margin: 0 auto;
+	/*padding: 24px;*/
+	text-align: center;
+	/*background-color: #f2f2f2;*/
+}
+.product_photos > ul {
+	text-align: center;
+}
+.product_photos > ul > li {
+	display: inline-block;
+	max-width: 120px;
+	background-color: #f2f2f2;
+	border: 5px solid #fff;
+	vertical-align: top;
+	overflow: hidden;
+}
+.product_photos > ul > li:first-of-type {
+	max-width: none;
+	width: 100%;
+	border: none;
+	background-position: top center;
+	background-color: #fff;
+	background-size: contain;
+}
+.product_photos > ul > li > a {
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.product_photos > ul > li > a > img {
+	width: 100%;
+}
+.product_photos > ul > li:first-of-type > a > img {
+	width: auto;
+	max-width: 100%;
+	/*max-height: 480px;*/
+}
+@media all and (min-width: 840px) {
+	.product_photos {
+		display: inline-block;
+		width: 420px;
+		max-width: none;
+	}
+}
+
+/* @end */
+
+
+
+
+
+
+/* @group Product Form */
+
+.product_form {
+	max-width: 540px;
+	margin: 0 auto;
+	text-align: left;
+}
+.product_form > div {
+	padding: 0 24px;
+}
+.product_form > div > h3 {
+	margin: 24px 0 6px 0;
+	font: 900 14px/14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+.product_form > div > h4 {
+	margin: -3px 0 6px 0;
+	font: 200 13px/16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
+.product_form > div > label {
+	display: inline-block;
+	position: relative;
+	margin: 0px 6px 6px 0px;
+	vertical-align: top;
+	
+	-webkit-user-select: none;  
+	  -moz-user-select: none;    
+	  -ms-user-select: none;      
+	  user-select: none;
+}
+.product_form > div > label > input[type=radio] {
+	position: absolute;
+	z-index: 100;
+	left: 6px;
+	bottom: 6px;
+}
+.product_form > div > label > span {
+	display: inline-block;
+	background: #f2f2f2;
+	border: 1px solid #fff;
+	border-radius: 24px;
+	padding: 0 12px 0 24px;
+	font: 400 12px/22px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: rgba(0,0,0,.75);
+}
+
+.product_form > div > label > input[type=radio]:checked {
+	
+}
+.product_form > div > label > input:checked + span {
+	border-color:#91d5d3;
+	background-color: #91d5d3;
+}
+
+
+
+@media all and (min-width: 840px) {
+	.product_form {
+		display: inline-block;
+		width: 420px;
+		vertical-align: top;
+	}
+	.product_form > div {
+		padding: 0;
+	}
+}
+/* @end */
+
+
+
+
+/* @group Product Fabrics */
+
+#product_fabrics {
+	/*text-align: center;*/
+}
+#product_fabrics > label {
+	position: relative;
+	width: 96px;
+}
+#product_fabrics > label > a {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 96px;
+	background-color: #f2f2f2;
+	background-size: cover;
+}
+#product_fabrics > label > span {
+	position: relative;
+	width: 100%;
+	margin: 6px 0 0 0;
+	padding-right: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;	
+}
+#product_fabrics > label > input {
+	
+}
+
+/* @end */
+
+
+
+
 
 
 
@@ -263,35 +510,6 @@ body header > div > nav > a > .fa-shopping-cart {
 }
 /* @end */
 
-/* @group CONTENT */
-.content {
-	position: relative;
-	height: 100%;
-	/*overflow: scroll;*/
-}
-
-
-
-
-
-
-/* @group Page Title */
-.pagetitle {
-max-width: 1080px;
-	margin: 48px auto 0 auto;
-}
-.pagetitle > h1 {
-	font: 900 36px/60px Georgia, "Times New Roman", Times, serif;
-	text-align: center;
-	color: #91d5d3;
-	color: #444;
-	text-transform: capitalize;
-	letter-spacing: 2px;
-}
-/* @end */
-
-
-
 
 
 
@@ -299,7 +517,7 @@ max-width: 1080px;
 article {
 	max-width: 800px;
 	margin: 0 auto;
-	padding: 60px 0px 60px 0;
+	padding: 60px 24px;
 }
 
 
@@ -366,62 +584,6 @@ article > ul > li{
 	font-size: 20px;
 }
 /* @end */
-
-
-
-
-
-/*/* @group SECTION *!/
-.content > section {
-	max-width: 1080px;
-	margin: 0 auto;	
-	padding: 48px 0;
-}
-.content > div > section:after {
-	content: '\00a0';
-	display: block;
-	clear: both;
-	height: 0;
-}
-.content > div > section > section {
-	float: left;
-	width: 50%;
-	min-width: 320px;
-}
-.content > div > section > section + section {
-	padding-left: 24px;
-}
-.content > div > section > section > img {
-	max-width: 100%;
-}
-.content > div > section ul > li {
-	margin: 0 0 12px 0;
-	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #666;
-}
-
-.content > div > section > p {
-	margin: 0 0 24px;
-}
-
-.content > div > section > p:first-of-type:first-letter { 
-	float: left; 
-	color: #b23636; 
-	font-size: 75px; 
-	line-height: 60px; 
-	vertical-align: bottom;
-	padding-top: 4px; 
-	padding-right: 8px; 
-	padding-left: 3px; 
-	font-family: Georgia; 
-}
-
-/* @end *!/*/
-
-/* @end */
-
-
-
 
 
 
@@ -781,42 +943,7 @@ article > ul > li{
 
 
 
-/* @group Products */
-.products {
-	max-width: 1080px;
-	margin: 0 auto;
-	padding: 48px 0;
-	list-style: none;
-	overflow: hidden;
-}
-.products > li {
-	float: left;
-	width: 33.33333%;
-	border: 2px solid #ccc;
-	border-radius: 2px;
-}
-.products > li > a {
-	width: 100%;
-	text-decoration: none;
-}
-.products > li > a > img {
-	width: 100%;
-	border-bottom: 2px solid #ccc;
-}
-.products > li > a > hgroup {
-	padding: 12px;
-}
-.products > li > a > hgroup > h2 {	
-	font: 900 24px/24px Georgia, "Times New Roman", Times, serif;
-	text-transform: capitalize;
-}
-.products > li > a > hgroup > h3 {
-	font: 100 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-.products > li > a > hgroup > h3:before {
-	content: '$';
-}
-/* @end */
+
 
 
 
@@ -1385,10 +1512,7 @@ article > ul > li{
 
 
 
-@media all and (max-width: 840px) {
-	
-	
-}
+
 	
 	
 	
