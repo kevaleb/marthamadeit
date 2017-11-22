@@ -39,6 +39,19 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
+measurements:
+  - measurement_title: Bust
+    measurement_description: Blah blah blah
+  - measurement_title: Under Bust
+    measurement_description: Blah blah blah
+  - measurement_title: Waist
+    measurement_description: Blah blah blah
+  - measurement_title: Hips
+    measurement_description: Blah blah blah
+  - measurement_title: Height
+    measurement_description: Blah blah blah
+  - measurement_title: Length
+    measurement_description: Blah blah blah
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis tortor sit amet porta mattis. Quisque in convallis sem. Donec leo odio, egestas sit amet ullamcorper tristique, aliquet at ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vel tincidunt metus. Morbi ac ex nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget quam vestibulum, mattis libero non, ullamcorper neque. Vivamus ultricies ut purus id ultrices. Nulla non nulla a orci semper sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam a congue libero. Sed non augue non enim porta lobortis et a massa. In vulputate rutrum sem, sed sodales est sodales ut.
 

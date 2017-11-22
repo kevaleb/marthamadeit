@@ -45,11 +45,15 @@ layout: default
 		{% endif %}
 		{% endif %}
 		{% endfor %}
+		
+		<div class="actions">
+			<span class="button dark full next">Next</span>
+		</div>
 	</div>
 	
 	
 	<div id="product_options">
-	{% assign optioncount = 6 %}
+	{% assign optioncount = 1 %}
 	{% for option in page.options %}
 		{% assign optioncount = optioncount | plus: 1 %}
 		<h3>{{ option.option_title }}</h3>
@@ -61,7 +65,7 @@ layout: default
 		{% if forloop.first %}
 		<label>
 			<input type="radio" name="{{ option.option_title }}" value="{{ choice.choice }}" class="option{{ optioncount }}" checked="checked"/>
-			<span>{{ choice.choice }} - {{ optioncount }}</span>
+			<span>{{ choice.choice }}</span>
 		</label>
 		{% else %}
 		<label>
@@ -71,20 +75,69 @@ layout: default
 		{% endif %}
 		{% endfor %}
 	{% endfor %}
+		<div class="actions">
+			<span class="button dark back">Back</span>
+			<span class="button dark full next">Next</span>
+		</div>
 	</div>
 	
 	
-	<div id="product_sizes">
+	<div id="product_measurements">
+		{% assign measurementcount = optioncount %}
+		{% for measurement in page.measurements %}
+		{% assign measurementcount = measurementcount | plus: 1 %}	
+		<h3>{{ measurement.measurement_title }}</h3>
+		<h4>{{ measurement.measurement_description }}</h4>
+		<label>
+			<input type="text" name="{{ measurement.title }}" value=""  class="measurement{{ measurementcount }}"/>
+		</label>
+		<br />
+		{% endfor %}
+		
+		<div class="actions">
+			<span class="button dark back">Back</span>
+			<a class="snipcart-add-item add-product button dark full next" id="snipcart-add-item" 
+				data-item-id="{{ page.id }}" 
+				data-item-name="{{ page.title }}" 
+				data-item-price="{% unless page.sale_price_number == nil %}${{ page.sale_price_number }}{% else %} {{ page.price_number }}{% endunless %}" 
+				data-item-weight="1" 
+				data-item-url="{{ page.url }}"
+				data-item-description="{{ page.description }}" 
+				
+				data-item-custom1-name="fabric"
+				data-item-custom1-value="{{ FirstFabric }}"
+				
+				{% assign count = 1 %}
+				{% for option in page.options %}
+					{% assign count = count | plus: 1 %}
+					data-item-custom{{ count }}-name="{{ option.option_title }}" 
+					data-item-custom{{ count }}-value="{% for choice in option.choices %}{% if forloop.first %}{{ choice.choice | escape }}{% endif %}{% endfor %}"
+				{% endfor%}
+				
+				{% for measurement in page.measurements %}
+					{% assign count = count | plus: 1 %}
+					data-item-custom{{ count }}-name="{{ measurement.measurement_title }}" 
+					data-item-custom{{ count }}-value="123"
+				{% endfor%}
+				
+			>Add To Cart</a>
+		</div>
+	</div>
+	
+	
+	<!--<div id="product_sizes">
+		
 		<h3>Bust</h3>
 		{% for item in site.data.bust %}
 		{% if forloop.first %}
+		{% capture FirstBust %}{{ item.inches }}{% endcapture %}
 		<label>
-			<input type="radio" name="bust" value="{{ item.inches }}" checked="checked"/>
+			<input type="radio" name="bust" value="{{ item.inches }}" class="bust" checked="checked"/>
 			<span>{{ item.inches }}</span>
 		</label>
 		{% else %}
 		<label>
-			<input type="radio" name="bust" value="{{ item.inches }}" />
+			<input type="radio" name="bust" value="{{ item.inches }}" class="bust"/>
 			<span>{{ item.inches }}"</span>
 		</label>
 		{% endif %}
@@ -94,13 +147,14 @@ layout: default
 		<h3>Under Bust</h3>
 		{% for item in site.data.under-bust %}
 		{% if forloop.first %}
+		{% capture FirstUnderBust %}{{ item.inches }}{% endcapture %}
 		<label>
-			<input type="radio" name="under-bust" value="{{ item.inches }}" checked="checked"/>
+			<input type="radio" name="under-bust" value="{{ item.inches }}" class="underbust" checked="checked"/>
 			<span>{{ item.inches }}</span>
 		</label>
 		{% else %}
 		<label>
-			<input type="radio" name="under-bust" value="{{ item.inches }}" />
+			<input type="radio" name="under-bust" value="{{ item.inches }}" class="underbust" />
 			<span>{{ item.inches }}"</span>
 		</label>
 		{% endif %}
@@ -110,13 +164,14 @@ layout: default
 		<h3>Height</h3>
 		{% for item in site.data.height %}
 		{% if forloop.first %}
+		{% capture FirstHeight %}{{ item.inches }}{% endcapture %}
 		<label>
-			<input type="radio" name="height" value="{{ item.inches }}" checked="checked"/>
+			<input type="radio" name="height" value="{{ item.inches }}" class="height" checked="checked"/>
 			<span>{{ item.inches }}</span>
 		</label>
 		{% else %}
 		<label>
-			<input type="radio" name="height" value="{{ item.inches }}" />
+			<input type="radio" name="height" value="{{ item.inches }}" class="height" />
 			<span>{{ item.inches }}"</span>
 		</label>
 		{% endif %}
@@ -127,13 +182,14 @@ layout: default
 		<h3>Hips</h3>
 		{% for item in site.data.hips %}
 		{% if forloop.first %}
+		{% capture FirstHips %}{{ item.inches }}{% endcapture %}
 		<label>
-			<input type="radio" name="hips" value="{{ item.inches }}" checked="checked"/>
+			<input type="radio" name="hips" value="{{ item.inches }}" class="hips" checked="checked"/>
 			<span>{{ item.inches }}</span>
 		</label>
 		{% else %}
 		<label>
-			<input type="radio" name="hips" value="{{ item.inches }}" />
+			<input type="radio" name="hips" value="{{ item.inches }}" class="hips" />
 			<span>{{ item.inches }}"</span>
 		</label>
 		{% endif %}
@@ -144,41 +200,23 @@ layout: default
 		<h3>Waist</h3>
 		{% for item in site.data.waist %}
 		{% if forloop.first %}
+		{% capture FirstWaist %}{{ item.inches }}{% endcapture %}
 		<label>
-			<input type="radio" name="waist" value="{{ item.inches }}" checked="checked"/>
+			<input type="radio" name="waist" value="{{ item.inches }}" class="waist" checked="checked"/>
 			<span>{{ item.inches }}</span>
 		</label>
 		{% else %}
 		<label>
-			<input type="radio" name="waist" value="{{ item.inches }}" />
+			<input type="radio" name="waist" value="{{ item.inches }}" class="waist" />
 			<span>{{ item.inches }}"</span>
 		</label>
 		{% endif %}
 		{% endfor %}
-	</div>
+		
+		<span class="button">Back</span>
+	</div>-->
 	
-	<a class="snipcart-add-item add-product button dark full" id="snipcart-add-item" 
-		data-item-id="{{ page.id }}" 
-		data-item-name="{{ page.title }}" 
-		data-item-price="{% unless page.sale_price_number == nil %}${{ page.sale_price_number }}{% else %} {{ page.price_number }}{% endunless %}" 
-		data-item-weight="1" 
-		data-item-url="{{ page.url }}"
-		data-item-description="{{ page.description }}" 
-		
-		data-item-custom1-name="fabric"
-		data-item-custom1-value="{{ FirstFabric }}"
-		
-		data-item-custom2-name="Bust"
-		data-item-custom2-value="{{ FirstFabric }}"
-		
-		{% assign count = 6 %}
-		{% for option in page.options %}
-			{% assign count = count | plus: 1 %}
-			data-item-custom{{ count }}-name="{{ option.option_title }}" 
-			data-item-custom{{ count }}-value="{% for choice in option.choices %}{% if forloop.first %}{{ choice.choice | escape }}{% endif %}{% endfor %}"
-		{% endfor%}
-		
-	>Add To Cart</a>
+	
 </form>
 
 
@@ -198,8 +236,9 @@ layout: default
 		$( ".product_form > #product_fabrics > label > input" ).change(function() {
 			var LastFabricValue= $(this).val();
 			$('.snipcart-add-item').attr('data-item-custom1-value',LastFabricValue);
-//			alert( LastInputName );
 		});
+	
+	
 	
 	// Product Options
 	{% assign optioncountjs = 1 %}		
@@ -215,14 +254,37 @@ layout: default
 	{% endfor %}
 	
 	
-//	$( ".product_form > div > label > input" ).change(function() {
-//		var LastInputName= $(this).attr("name");
-//		var LastInputValue= $(this).val();
-//		
-//		$('.snipcart-add-item').data('item-custom1-value',LastInputValue);
-//		
-//		alert( LastInputName );
-//	});
+	// Sizes
+	{% assign measurementcount = optioncountjs %}
+	{% for measurement in page.measurements %}
+		{% assign measurementcount = measurementcount | plus: 1 %}
+		$( ".product_form > #product_measurements > label > input.measurement{{ measurementcount }}" ).change(function() {
+			var LastMeasurementValue= $(this).val();
+			$('.snipcart-add-item').attr('data-item-custom{{ measurementcount }}-value',LastMeasurementValue);
+		});
+	{% endfor %}
+	
+	
+	
+	// Actions
+	$( ".product_form > #product_fabrics > .actions > .next" ).click(function() {	
+		$('.product_form').addClass('stage2');
+	});
+	
+	
+	$( ".product_form > #product_options > .actions > .next" ).click(function() {	
+		$('.product_form').removeClass('stage2');
+		$('.product_form').addClass('stage3');
+	});
+	$( ".product_form > #product_options > .actions > .back" ).click(function() {	
+		$('.product_form').removeClass('stage2');
+	});
+	
+	
+	$( ".product_form > #product_measurements > .actions > .back" ).click(function() {	
+		$('.product_form').removeClass('stage3');
+		$('.product_form').addClass('stage2');
+	});
 </script>
 
 
