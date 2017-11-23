@@ -30,15 +30,13 @@ options:
       - choice: Printed Fabric
 measurements:
   - measurement_title: Bust
-    measurement_description: Blah blah blah
-  - measurement_title: Under Bust
-    measurement_description: Blah blah blah
+    measurement_description: Provide your Full Bust Measurment
   - measurement_title: Waist
-    measurement_description: Blah blah blah
+    measurement_description: Provide your Natural Waist Measurment
   - measurement_title: Hips
-    measurement_description: Blah blah blah
-  - measurement_title: Height
-    measurement_description: Blah blah blah
+    measurement_description: Provide the widest part of your Hips Measurment
   - measurement_title: Length
-    measurement_description: Blah blah blah
+    measurement_description: >-
+      If you would like a Specific Length of Dress please Provide that
+      measurement from the back of neck
 ---
