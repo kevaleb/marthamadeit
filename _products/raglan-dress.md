@@ -12,4 +12,17 @@ options:
     option_description:
     choices:
       - choice:
+measurements:
+  - measurement_title: Bust
+    measurement_description: Blah blah blah
+  - measurement_title: Under Bust
+    measurement_description: Blah blah blah
+  - measurement_title: Waist
+    measurement_description: Blah blah blah
+  - measurement_title: Hips
+    measurement_description: Blah blah blah
+  - measurement_title: Height
+    measurement_description: Blah blah blah
+  - measurement_title: Length
+    measurement_description: Blah blah blah
 ---
