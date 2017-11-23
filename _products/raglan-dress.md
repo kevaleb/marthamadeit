@@ -1,28 +1,17 @@
 ---
-id:
-product_group:
-product_type:
-price_number: 94.97
-sale_price_number: 0
-description:
+id: D3
+product_group: woman
+product_type: womens-dresses
+price_number: 55
+sale_price_number:
+description: Raglan Dress
 photos:
-  - photo_path:
+  - photo_path: /uploads/512-1.JPG
+  - photo_path: /uploads/540.JPG
+  - photo_path: /uploads/550.JPG
 options:
   - option_title:
     option_description:
     choices:
       - choice:
-measurements:
-  - measurement_title: Bust
-    measurement_description: Blah blah blah
-  - measurement_title: Under Bust
-    measurement_description: Blah blah blah
-  - measurement_title: Waist
-    measurement_description: Blah blah blah
-  - measurement_title: Hips
-    measurement_description: Blah blah blah
-  - measurement_title: Height
-    measurement_description: Blah blah blah
-  - measurement_title: Length
-    measurement_description: Blah blah blah
 ---
