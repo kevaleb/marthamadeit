@@ -26,8 +26,8 @@ options:
       If you Select Solid Sleeve the printed fabric will be the main part of the
       dress ect.
     choices:
-      - choice: 'Yes'
-      - choice: 'No'
+      - choice: Solid Fabric
+      - choice: Printed Fabric
 measurements:
   - measurement_title: Bust
     measurement_description: Blah blah blah
