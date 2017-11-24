@@ -18,16 +18,11 @@ options:
     choices:
       - choice: Knee Length
       - choice: Midi Length
-  - option_title: Inseam Pockets?
-    option_description:
+  - option_title: Band Option
+    option_description: Please Choose Which Band Option you would like
     choices:
-      - choice: 'Yes'
-      - choice: 'No'
-  - option_title: Would you like the Solid Color Block Top?
-    option_description: If you select no your dress will be all main fabric
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
+      - choice: Maternity Band
+      - choice: Yoga Band
 measurements:
   - measurement_title: Bust
     measurement_description:
