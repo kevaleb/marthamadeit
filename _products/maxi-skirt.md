@@ -1,7 +1,7 @@
 ---
 id: S1
 product_group: woman
-product_type:
+product_type: skirts
 price_number: 40
 sale_price_number:
 description: >-
