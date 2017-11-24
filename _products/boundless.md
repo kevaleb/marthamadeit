@@ -52,15 +52,17 @@ options:
       - choice: 'No'
 measurements:
   - measurement_title: Bust
-    measurement_description: Blah blah blah
+    measurement_description: Please Provide your Full Bust Measurement
   - measurement_title: Under Bust
-    measurement_description: Blah blah blah
+    measurement_description: Please Provide your Under Bust Measurement
   - measurement_title: Waist
-    measurement_description: Blah blah blah
+    measurement_description: Please Provide your Natural Waist Measurement
   - measurement_title: Hips
-    measurement_description: Blah blah blah
+    measurement_description: Please Provide your Low Hip Measurement
   - measurement_title: Height
-    measurement_description: Blah blah blah
+    measurement_description: What is your Total Height?
   - measurement_title: Length
-    measurement_description: Blah blah blah
+    measurement_description: >-
+      If you would like your Dress a Specific Length Please Provide the total
+      Length from the back of the neck to the Hem of the Skirt
 ---
