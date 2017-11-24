@@ -29,6 +29,11 @@ options:
     choices:
       - choice: Regular Dress Top
       - choice: Cross Front TOp
+  - option_title: Dress Skirt
+    option_description: Please Select which Style you would like your Dress Skirt
+    choices:
+      - choice: Gathered Waist (Looser Waistline)
+      - choice: Aline Skirt (Fitted Waistline)
   - option_title: Skirt Length
     option_description: Please choose which Skirt Length
     choices:
