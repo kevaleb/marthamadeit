@@ -1,14 +1,15 @@
 ---
-id: 001
+id: 1
 product_group: woman
 product_type: womens-dresses
-price_number: 55
-sale_price_number: 25
+price_number: 60
+sale_price_number:
 description: Your favorite new dress.
 photos:
-  - photo_path: /uploads/boundless-dress-1.png
+  - photo_path: /uploads/205.JPG
   - photo_path: /uploads/boundless-dress-4.jpg
-  - photo_path: /uploads/boundless-dress-3.jpg
+  - photo_path: /uploads/050.JPG
+  - photo_path: /uploads/090.JPG
 options:
   - option_title: Sleeve Length
     option_description:
@@ -34,7 +35,7 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
-  - option_title: 'Would you like the Solid Color Block Top?'
+  - option_title: Would you like the Solid Color Block Top?
     option_description: If you select no your dress will be all main fabric
     choices:
       - choice: 'Yes'
