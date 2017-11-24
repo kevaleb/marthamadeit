@@ -1,3 +1,3 @@
 ---
-product_group:
+product_group: woman
 ---
