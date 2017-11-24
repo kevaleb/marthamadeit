@@ -13,8 +13,9 @@ photos:
   - photo_path: /uploads/445.JPG
   - photo_path: /uploads/712.JPG
 options:
-  - option_title:
-    option_description:
+  - option_title: Band Option
+    option_description: Please choose which Band you would like on your Skirt
     choices:
-      - choice:
+      - choice: Fold Over Band
+      - choice: Yoga Band
 ---
