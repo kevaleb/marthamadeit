@@ -23,6 +23,11 @@ options:
     choices:
       - choice: Maternity Band
       - choice: Yoga Band
+  - option_title: Fit Options
+    option_description: Please Choose which Fit you would like your Skirt
+    choices:
+      - choice: Relaxed Fit
+      - choice: Slim Fit
 measurements:
   - measurement_title: Bust
     measurement_description:
