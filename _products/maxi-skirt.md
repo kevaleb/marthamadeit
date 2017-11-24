@@ -18,4 +18,17 @@ options:
     choices:
       - choice: Fold Over Band
       - choice: Yoga Band
+measurements:
+  - measurement_title: Bust
+    measurement_description:
+  - measurement_title: Under Bust
+    measurement_description:
+  - measurement_title: Waist
+    measurement_description:
+  - measurement_title: Hips
+    measurement_description:
+  - measurement_title: Height
+    measurement_description:
+  - measurement_title: Length
+    measurement_description:
 ---
