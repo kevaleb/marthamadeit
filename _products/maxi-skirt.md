@@ -1,6 +1,6 @@
 ---
-id:
-product_group:
+id: S1
+product_group: woman
 product_type:
 price_number: 94.97
 sale_price_number: 0
