@@ -12,20 +12,25 @@ photos:
   - photo_path: /uploads/090.JPG
 options:
   - option_title: Sleeve Length
-    option_description:
+    option_description: Please Choose your Sleeve Length
     choices:
       - choice: Tank Sleeve
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
   - option_title: Waist Options
-    option_description:
+    option_description: Please Choose your Waist Length
     choices:
       - choice: Maternity Waist
       - choice: Empire Waist
       - choice: Natural Waist
+  - option_title: Top Style
+    option_description: Please Select your Top Preference
+    choices:
+      - choice: Regular Dress Top
+      - choice: Cross Front TOp
   - option_title: Skirt Length
-    option_description:
+    option_description: Please choose which Skirt Length
     choices:
       - choice: Knee Length
       - choice: Midi Length
