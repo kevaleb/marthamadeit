@@ -29,16 +29,14 @@ options:
       - choice: Relaxed Fit
       - choice: Slim Fit
 measurements:
-  - measurement_title: Bust
-    measurement_description:
-  - measurement_title: Under Bust
-    measurement_description:
   - measurement_title: Waist
-    measurement_description:
+    measurement_description: Please Enter your Natural Waist Measurment
   - measurement_title: Hips
-    measurement_description:
+    measurement_description: Please Enter your Low Hip Measurement
   - measurement_title: Height
-    measurement_description:
+    measurement_description: Please enter your Total Height
   - measurement_title: Length
-    measurement_description:
+    measurement_description: >-
+      If you would like your skirt a Specific Length Please Enter that
+      Measurment
 ---
