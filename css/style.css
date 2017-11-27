@@ -183,14 +183,14 @@ body header > div > nav > a > .fa-shopping-cart {
 	padding: 48px 24px;
 }
 .products > ul {
-	max-width: 720px;
+	max-width: 1080px;
 	margin:  0 auto;
 	text-align: center;
 }
 .products > ul > li {
 	display: inline-block;
 	width: 100%;
-	max-width: 240px;
+	max-width: 320px;
 	vertical-align: top;
 }
 .products > ul > li > a {
@@ -199,7 +199,7 @@ body header > div > nav > a > .fa-shopping-cart {
 .products > ul > li > a > .image {
 	display: block;
 	width: 100%;
-	height: 240px;
+	height: 480px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
