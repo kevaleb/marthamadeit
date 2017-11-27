@@ -234,11 +234,17 @@ body header > div > nav > a > .fa-shopping-cart {
 /* @group Product Titles */
 
 .product_titles {
-	
+	position: relative;
+	top: 56px;
+	left: 24px;
+	z-index: 10000000000;
+	/*margin: 0 0 -120px;*/
+	padding: 0 0 0 50%;
+	/*border: 1px solid #333;*/
 }
 .product_titles > hgroup {
 	text-align: center;
-	padding: 48px 0 24px 0;
+	text-align: left;
 }
 .product_titles > hgroup > h1 {
 	font: 200 30px/36px Georgia, "Times New Roman", Times, serif;
@@ -252,6 +258,21 @@ body header > div > nav > a > .fa-shopping-cart {
 	text-decoration: line-through;
 }
 
+
+
+@media all and (max-width: 840px) {
+	
+.product_titles {
+	margin: 0;
+	padding: 0 0 0 0%;
+}
+.product_titles > hgroup {
+	padding: 48px 0 24px 24px;
+	text-align: center;
+}
+
+}
+
 /* @end */
 
 
@@ -262,10 +283,17 @@ body header > div > nav > a > .fa-shopping-cart {
 /* @group Product Photos */
 
 .product_photos {
-	margin: 0 auto;
-	/*padding: 24px;*/
+	position: relative;
+	z-index: 9000000000;
+	margin: auto 0;
+	padding: 0;
 	text-align: center;
+	
+	display: inline-block;
+	width: 420px;
+	max-width: none;
 	/*background-color: #f2f2f2;*/
+	/*border: 1px solid #ccc;*/
 }
 .product_photos > ul {
 	text-align: center;
@@ -277,11 +305,13 @@ body header > div > nav > a > .fa-shopping-cart {
 	border: 5px solid #fff;
 	vertical-align: top;
 	overflow: hidden;
+	
+	border: 1px solid #ccc;
 }
 .product_photos > ul > li:first-of-type {
 	max-width: none;
 	width: 100%;
-	border: none;
+	/*border: none;*/
 	background-position: top center;
 	background-color: #fff;
 	background-size: contain;
@@ -300,11 +330,13 @@ body header > div > nav > a > .fa-shopping-cart {
 	max-width: 100%;
 	/*max-height: 480px;*/
 }
-@media all and (min-width: 840px) {
+@media all and (max-width: 840px) {
 	.product_photos {
-		display: inline-block;
-		width: 420px;
-		max-width: none;
+		width: 100%;
+	}
+	
+	.product_photos > ul > li {
+		border: none;
 	}
 }
 
@@ -318,19 +350,40 @@ body header > div > nav > a > .fa-shopping-cart {
 /* @group Product Form */
 
 .product_form {
-	max-width: 540px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 420px;
 	margin: 0 auto;
+	padding: 72px 24px 0 24px;
 	text-align: left;
+	overflow: hidden;
+	/*background: #f16;*/
 }
 .product_form > div {
-	padding: 0 24px;
+	
+	/*height: 100%;*/
+	max-height: 555px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0px 0 72px 0;
 }
 .product_form > div > .actions {
-	padding: 24px 0 0 0;
+	position: absolute;
+	z-index: 100;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	padding: 0 24px;
+	box-shadow: 0 -25px 25px #fff;
+	background: #fff;
+	text-align: left;
 }
 .product_form > div > .actions > .button {
 	display: inline-block;
 	overflow: hidden;
+	line-height: 24px;
+	padding: 10px 24px;
 }
 .product_form > div > .actions > .next {
 	float: right;
@@ -422,14 +475,15 @@ body header > div > nav > a > .fa-shopping-cart {
 
 
 
-@media all and (min-width: 840px) {
+@media all and (max-width: 840px) {
 	.product_form {
-		display: inline-block;
-		width: 420px;
-		vertical-align: top;
+		display: block;
+		max-width: none;
+		width: 100%;
 	}
 	.product_form > div {
-		padding: 0;
+		/*padding: 0;*/
+		
 	}
 }
 /* @end */
@@ -440,7 +494,7 @@ body header > div > nav > a > .fa-shopping-cart {
 /* @group Product Fabrics */
 
 #product_fabrics {
-	/*text-align: center;*/
+	
 }
 #product_fabrics > label {
 	position: relative;
