@@ -7,9 +7,10 @@ sale_price_number:
 description: Your favorite new dress.
 photos:
   - photo_path: /uploads/205.JPG
-  - photo_path: /uploads/boundless-dress-4.jpg
+  - photo_path: /uploads/201.JPG
   - photo_path: /uploads/050.JPG
   - photo_path: /uploads/090.JPG
+  - photo_path: /uploads/213-b.JPG
 options:
   - option_title: Sleeve Length
     option_description: Please Choose your Sleeve Length
@@ -66,3 +67,6 @@ measurements:
       If you would like your Dress a Specific Length Please Provide the total
       Length from the back of the neck to the Hem of the Skirt
 ---
+
+
+The Boundless Dress is the most versatile dress you will ever own. With so many options and a variety of top and bottom combinations each dress will feel unique. This Dress is Semi-Fitted on top with a comfortable elastic waist.
