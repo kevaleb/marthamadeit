@@ -20,6 +20,11 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
+  - option_title: Maternity Waistband Option?
+    option_description: Would you like a Maternity Waistband?
+    choices:
+      - choice: 'Yes'
+      - choice: 'No'
 measurements:
   - measurement_title: Waist
     measurement_description:
