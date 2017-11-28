@@ -22,16 +22,12 @@ options:
       - choice: Knee Length
       - choice: Midi Length
 measurements:
-  - measurement_title: Bust
-    measurement_description:
-  - measurement_title: Under Bust
-    measurement_description:
   - measurement_title: Waist
     measurement_description:
   - measurement_title: Hips
     measurement_description:
   - measurement_title: Height
     measurement_description:
-  - measurement_title: Length
+  - measurement_title: Total Length from Waist
     measurement_description:
 ---
