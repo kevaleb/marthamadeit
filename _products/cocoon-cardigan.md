@@ -1,7 +1,7 @@
 ---
 id: T2
 product_group: woman
-product_type: womens-dresses
+product_type: maxi-skirt
 price_number: 40
 sale_price_number:
 description: Loose Fit Cozy Cardigan
