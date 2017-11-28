@@ -1,12 +1,18 @@
 ---
-id:
+id: T1
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 35
 sale_price_number:
-description:
+description: >-
+  The Raglan is a Tee Shirt Type Top that Can Have Bands Added to Create a
+  Sweatshirt or Hood. Or Select Solid Sleeves or Printed Sleeves to Create a One
+  of a Kind Baseball Type Top
 photos:
-  - photo_path:
+  - photo_path: /uploads/701.JPG
+  - photo_path: /uploads/718.JPG
+  - photo_path: /uploads/117.JPG
+  - photo_path: /uploads/714.JPG
 options:
   - option_title: Sleeve Length
     option_description:
