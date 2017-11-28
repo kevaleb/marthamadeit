@@ -1,12 +1,14 @@
 ---
-id:
+id: T5
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 35
 sale_price_number:
-description:
+description: Loose Fit Top
 photos:
-  - photo_path:
+  - photo_path: /uploads/781.JPG
+  - photo_path: /uploads/765.JPG
+  - photo_path: /uploads/845-1.JPG
 options:
   - option_title: Sleeve Length
     option_description:
