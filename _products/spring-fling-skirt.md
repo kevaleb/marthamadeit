@@ -8,6 +8,7 @@ description: Flared Knee or Midi Length Skirt
 photos:
   - photo_path: /uploads/073.JPG
   - photo_path: /uploads/039.JPG
+  - photo_path: /uploads/251.JPG
 options:
   - option_title: Sleeve Length
     option_description:
