@@ -32,7 +32,7 @@ measurements:
     measurement_description:
   - measurement_title: Height
     measurement_description:
-  - measurement_title: Length
+  - measurement_title: Total Length
     measurement_description: >-
       If you would like your pants a specific length please provide the
       measurement from your waist to pant hem.
