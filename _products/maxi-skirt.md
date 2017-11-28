@@ -26,10 +26,6 @@ options:
       - choice: 40"
       - choice: Other (I will email the specific length I'd like)
 measurements:
-  - measurement_title: Bust
-    measurement_description:
-  - measurement_title: Under Bust
-    measurement_description:
   - measurement_title: Waist
     measurement_description:
   - measurement_title: Hips
