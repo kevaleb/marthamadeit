@@ -21,21 +21,12 @@ options:
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
-  - option_title: Would you like Accent Sleeves?
-    option_description: >-
-      If you select "No" your shirt front and sleeves will be all printed
-      fabric.
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
-  - option_title: >-
-      Would you like Solid or Printed Sleeves? (If you Selected "No" above
-      choose other.)
+  - option_title: Would you Solid Fabric To be on the Sleeves or Torso?
     option_description:
     choices:
-      - choice: Solid Sleeves
-      - choice: Printed Sleeves
-      - choice: Other
+      - choice: Sleeves
+      - choice: Torso
+      - choice: 'Neither, I would like all printed fabric.'
   - option_title: Band options
     option_description: Would you Like Bands?
     choices:
