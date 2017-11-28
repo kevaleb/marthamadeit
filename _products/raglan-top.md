@@ -53,6 +53,7 @@ options:
     choices:
       - choice: Regular Shirt Length
       - choice: Tunic Shirt Length
+      - choice: 'Other: ( I will add a Specific Length with my Measurements)'
 measurements:
   - measurement_title: Bust
     measurement_description:
