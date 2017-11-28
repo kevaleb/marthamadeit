@@ -6,10 +6,10 @@ price_number: 32
 sale_price_number:
 description: This Amazing Pencil Skirt is my Go-To Skirt!
 photos:
-  - photo_path: /uploads/280.JPG
-  - photo_path: /uploads/501.JPG
   - photo_path: /uploads/045.JPG
   - photo_path: /uploads/081.JPG
+  - photo_path: /uploads/280.JPG
+  - photo_path: /uploads/501.JPG
   - photo_path: /uploads/830.JPG
   - photo_path: /uploads/845.JPG
   - photo_path: /uploads/826.JPG
