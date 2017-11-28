@@ -19,6 +19,7 @@ options:
     choices:
       - choice: Knee Length
       - choice: Midi Length
+      - choice: 'Other: (I will include the specific length with my measurements)'
   - option_title: Band Option
     option_description: Please Choose Which Band Option you would like
     choices:
