@@ -11,7 +11,7 @@ photos:
   - photo_path: /uploads/550.JPG
 options:
   - option_title: Sleeve Length
-    option_description:
+    option_description: Which Sleeve Length Would You Like?
     choices:
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
@@ -21,6 +21,9 @@ options:
     choices:
       - choice: Knee Length
       - choice: Midi Length
+      - choice: >-
+          Other: ( I will include a specific length with my measurements) Maxi
+          Length will Incur Extra Cost.
   - option_title: Which Fabric would you like for the Sleeve?
     option_description: >-
       If you Select Solid Sleeve the printed fabric will be the main part of the
