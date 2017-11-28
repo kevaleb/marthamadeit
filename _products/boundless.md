@@ -25,11 +25,6 @@ options:
       - choice: Maternity Waist
       - choice: Empire Waist
       - choice: Natural Waist
-  - option_title: Top Style
-    option_description: Please Select your Top Preference
-    choices:
-      - choice: Regular Dress Top
-      - choice: Cross Front TOp
   - option_title: Dress Skirt
     option_description: Please Select which Style you would like your Dress Skirt
     choices:
@@ -42,7 +37,7 @@ options:
       - choice: Midi Length
       - choice: Maxi Length
   - option_title: Inseam Pockets?
-    option_description:
+    option_description: Would you like Pockets in your Dress?
     choices:
       - choice: 'Yes'
       - choice: 'No'
