@@ -27,7 +27,6 @@ defaults:
     values:
       layout: "product"
       _hide_content: true
-      permalink: /:title/
   -
     scope:
       path: ""
