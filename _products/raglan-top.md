@@ -42,6 +42,12 @@ options:
       - choice: Accent (Solid) Bands
       - choice: Printed Bands
       - choice: No Bands Please
+  - option_title: Hood
+    option_description: Would you Like a Lined Hood Added?
+    choices:
+      - choice: 'Yes, in Accent (solid) Fabric'
+      - choice: Yes in Main Fabric
+      - choice: 'No Hood, Please'
 measurements:
   - measurement_title: Bust
     measurement_description:
