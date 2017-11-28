@@ -24,7 +24,9 @@ options:
     choices:
       - choice: 38"
       - choice: 40"
-      - choice: Other (I will email the specific length I'd like)
+      - choice: >-
+          Other (I will include the specific length I'd like with my
+          measurments)
 measurements:
   - measurement_title: Waist
     measurement_description:
