@@ -31,11 +31,6 @@ options:
       - choice: Mini Length
       - choice: Knee Length
       - choice: Midi Length
-  - option_title: Inseam Pockets?
-    option_description:
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
   - option_title: Would you like the Solid Color Block Top?
     option_description: If you select no your dress will be all main fabric
     choices:
