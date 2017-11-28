@@ -43,3 +43,6 @@ measurements:
       If you would like a Specific Length of Dress please Provide that
       measurement from the back of neck
 ---
+
+
+The Raglan Dress is a Loose Fit Aline Dress. You May Choose Many Fabric Combinations and Lengths.
