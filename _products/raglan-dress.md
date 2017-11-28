@@ -6,7 +6,7 @@ price_number: 55
 sale_price_number:
 description: Raglan Dress
 photos:
-  - photo_path: /uploads/512-1.JPG
+  - photo_path: /uploads/512-1-1.JPG
   - photo_path: /uploads/540.JPG
   - photo_path: /uploads/550.JPG
 options:
