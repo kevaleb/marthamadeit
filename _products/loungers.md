@@ -15,13 +15,8 @@ options:
       - choice: Knee Length
       - choice: Midi Length
       - choice: Full Length
-  - option_title: Inseam Pockets?
-    option_description:
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
-  - option_title: Would you like the Solid Color Block Top?
-    option_description: If you select no your dress will be all main fabric
+  - option_title: Pockets?
+    option_description: Would You Like Pockets?
     choices:
       - choice: 'Yes'
       - choice: 'No'
