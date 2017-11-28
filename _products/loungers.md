@@ -1,12 +1,13 @@
 ---
-id:
+id: P1
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 40
 sale_price_number:
-description:
+description: Relaxed Fit Lounge Pants
 photos:
-  - photo_path:
+  - photo_path: /uploads/391.JPG
+  - photo_path: /uploads/333.JPG
 options:
   - option_title: Sleeve Length
     option_description:
