@@ -19,6 +19,12 @@ options:
     choices:
       - choice: Fold Over Band
       - choice: Yoga Band
+  - option_title: Length Option
+    option_description: Which Length Option Would you like?
+    choices:
+      - choice: 38"
+      - choice: 40"
+      - choice: Other (I will email the specific length I'd like)
 measurements:
   - measurement_title: Bust
     measurement_description:
