@@ -9,25 +9,12 @@ photos:
   - photo_path: /uploads/391.JPG
   - photo_path: /uploads/333.JPG
 options:
-  - option_title: Sleeve Length
-    option_description:
-    choices:
-      - choice: Tank Sleeve
-      - choice: Short Sleeve
-      - choice: 3/4 Length Sleeve
-      - choice: Long Sleeve
-  - option_title: Waist Options
-    option_description:
-    choices:
-      - choice: Maternity Waist
-      - choice: Empire Waist
-      - choice: Natural Waist
-  - option_title: Skirt Length
+  - option_title: Inseam Length
     option_description:
     choices:
       - choice: Knee Length
       - choice: Midi Length
-      - choice: Maxi Length
+      - choice: Full Length
   - option_title: Inseam Pockets?
     option_description:
     choices:
