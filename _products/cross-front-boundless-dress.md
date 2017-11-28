@@ -9,7 +9,7 @@ photos:
   - photo_path: /uploads/cross-dress.JPG
   - photo_path: /uploads/cross.JPG
   - photo_path: /uploads/125-cross.JPG
-  - photo_path: /uploads/1427.PNG
+  - photo_path: /uploads/1427.jpg
 options:
   - option_title: Sleeve Length
     option_description:

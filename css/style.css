@@ -263,8 +263,9 @@ body header > div > nav > a > .fa-shopping-cart {
 @media all and (max-width: 840px) {
 	
 .product_titles {
+	top: 0;
 	margin: 0;
-	padding: 0 0 0 0%;
+	padding: 0;
 }
 .product_titles > hgroup {
 	padding: 48px 0 24px 24px;
@@ -284,7 +285,7 @@ body header > div > nav > a > .fa-shopping-cart {
 
 .product_photos {
 	position: relative;
-	z-index: 9000000000;
+	z-index: 1000000000;
 	margin: auto 0;
 	padding: 0;
 	text-align: center;
@@ -1626,6 +1627,15 @@ article > ul > li{
 /* @end */
 
 /* @end */
+
+
+.snip-layout{
+	z-index: 900000000000000000000000000000000000000000000000000!important;
+}
+.strp-window {
+	z-index: 90000000000000000000000000000000000000000000000000!important;
+}
+
 
 @media all and (max-width: 1080px) {
 	.content > div > section {
