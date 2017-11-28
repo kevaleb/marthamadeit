@@ -6,8 +6,8 @@ price_number: 35
 sale_price_number:
 description:
 photos:
-  - photo_path: /uploads/498.JPG
   - photo_path: /uploads/280-1.JPG
+  - photo_path: /uploads/498.JPG
 options:
   - option_title: Sleeve Length
     option_description:
