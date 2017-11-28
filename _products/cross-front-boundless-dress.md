@@ -23,6 +23,11 @@ options:
       - choice: Maternity Waist
       - choice: Empire Waist
       - choice: Natural Waist
+  - option_title: Skirt Style
+    option_description:
+    choices:
+      - choice: Aline Skirt
+      - choice: Gathered Straight Skirt
   - option_title: Skirt Length
     option_description:
     choices:
@@ -39,11 +44,6 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
-  - option_title: Skirt Style
-    option_description:
-    choices:
-      - choice: Aline Skirt
-      - choice: Gathered Straight Skirt
 measurements:
   - measurement_title: Bust
     measurement_description:
