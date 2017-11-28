@@ -1,12 +1,13 @@
 ---
-id:
+id: S3
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 35
 sale_price_number:
-description:
+description: Flared Knee or Midi Length Skirt
 photos:
-  - photo_path:
+  - photo_path: /uploads/073.JPG
+  - photo_path: /uploads/039.JPG
 options:
   - option_title: Sleeve Length
     option_description:
