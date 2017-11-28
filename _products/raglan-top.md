@@ -36,6 +36,12 @@ options:
       - choice: Solid Sleeves
       - choice: Printed Sleeves
       - choice: Other
+  - option_title: Band options
+    option_description: Would you Like Bands?
+    choices:
+      - choice: Accent (Solid) Bands
+      - choice: Printed Bands
+      - choice: No Bands Please
 measurements:
   - measurement_title: Bust
     measurement_description:
