@@ -20,6 +20,11 @@ options:
     choices:
       - choice: Shirt Length
       - choice: Tunic Length
+  - option_title: Would You Like Your Top in the Solid Fabric Selected?
+    option_description: If you select "No" Your Top will be Printed Fabric Selected.
+    choices:
+      - choice: 'Yes'
+      - choice: 'No'
 measurements:
   - measurement_title: Bust
     measurement_description:
