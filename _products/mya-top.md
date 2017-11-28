@@ -21,13 +21,8 @@ options:
     choices:
       - choice: Shirt Length
       - choice: Tunic Length
-  - option_title: Inseam Pockets?
-    option_description:
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
-  - option_title: Would you like the Solid Color Block Top?
-    option_description: If you select no your dress will be all main fabric
+  - option_title: Would you like the Solid Color Top?
+    option_description: If you select no your Shirt will be printed fabric
     choices:
       - choice: 'Yes'
       - choice: 'No'
