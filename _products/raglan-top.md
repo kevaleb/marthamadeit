@@ -48,6 +48,11 @@ options:
       - choice: 'Yes, in Accent (solid) Fabric'
       - choice: Yes in Main Fabric
       - choice: 'No Hood, Please'
+  - option_title: Shirt Length
+    option_description: Which Shirt Length Would You Like?
+    choices:
+      - choice: Regular Shirt Length
+      - choice: Tunic Shirt Length
 measurements:
   - measurement_title: Bust
     measurement_description:
