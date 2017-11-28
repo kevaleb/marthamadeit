@@ -28,9 +28,9 @@ options:
   - option_title: Skirt Length
     option_description:
     choices:
+      - choice: Mini Length
       - choice: Knee Length
       - choice: Midi Length
-      - choice: Maxi Length
   - option_title: Inseam Pockets?
     option_description:
     choices:
