@@ -10,19 +10,12 @@ photos:
   - photo_path: /uploads/039.JPG
   - photo_path: /uploads/251.JPG
 options:
-  - option_title: Sleeve Length
+  - option_title: Waist Band Options
     option_description:
     choices:
-      - choice: Tank Sleeve
-      - choice: Short Sleeve
-      - choice: 3/4 Length Sleeve
-      - choice: Long Sleeve
-  - option_title: Waist Options
-    option_description:
-    choices:
-      - choice: Maternity Waist
-      - choice: Empire Waist
-      - choice: Natural Waist
+      - choice: Maternity Band
+      - choice: Yoga Band
+      - choice: Fold Over Band
   - option_title: Skirt Length
     option_description:
     choices:
