@@ -32,3 +32,6 @@ measurements:
       If you would like your pants a specific length please provide the
       measurement from your waist to pant hem.
 ---
+
+
+The Loungers will have you Wearing Pajamas all Day. These are a Relaxed Fit Lounge Pant with a Comfortable Knit Yoga Waistband.&nbsp;
