@@ -15,34 +15,27 @@ photos:
   - photo_path: /uploads/714.JPG
 options:
   - option_title: Sleeve Length
-    option_description:
+    option_description: Which Sleeve Length Would You Like?
     choices:
       - choice: Tank Sleeve
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
-  - option_title: Waist Options
-    option_description:
-    choices:
-      - choice: Maternity Waist
-      - choice: Empire Waist
-      - choice: Natural Waist
-  - option_title: Skirt Length
-    option_description:
-    choices:
-      - choice: Knee Length
-      - choice: Midi Length
-      - choice: Maxi Length
-  - option_title: Inseam Pockets?
-    option_description:
+  - option_title: Would you like Accent Sleeves?
+    option_description: >-
+      If you select "No" your shirt front and sleeves will be all printed
+      fabric.
     choices:
       - choice: 'Yes'
       - choice: 'No'
-  - option_title: Would you like the Solid Color Block Top?
-    option_description: If you select no your dress will be all main fabric
+  - option_title: >-
+      Would you like Solid or Printed Sleeves? (If you Selected "No" above
+      choose other.)
+    option_description:
     choices:
-      - choice: 'Yes'
-      - choice: 'No'
+      - choice: Solid Sleeves
+      - choice: Printed Sleeves
+      - choice: Other
 measurements:
   - measurement_title: Bust
     measurement_description:
