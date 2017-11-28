@@ -55,6 +55,6 @@ measurements:
     measurement_description:
   - measurement_title: Height
     measurement_description:
-  - measurement_title: Length
+  - measurement_title: Total Length From Back of Neck
     measurement_description:
 ---
