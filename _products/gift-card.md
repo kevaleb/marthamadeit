@@ -1,7 +1,7 @@
 ---
 id: G1
 product_group: woman
-product_type: womens-dresses
+product_type: skirts
 price_number: 50
 sale_price_number:
 description: Gift Card
