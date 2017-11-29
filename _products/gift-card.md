@@ -1,12 +1,12 @@
 ---
-id:
+id: G1
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 60
 sale_price_number:
-description:
+description: Gift Card
 photos:
-  - photo_path:
+  - photo_path: /uploads/gift-card-50.jpg
 options:
   - option_title: Sleeve Length
     option_description:
