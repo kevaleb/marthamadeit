@@ -1,7 +1,7 @@
 ---
 id: G1
 product_group: woman
-product_type: skirts
+product_type:
 price_number: 50
 sale_price_number:
 description: Gift Card
@@ -15,6 +15,6 @@ options:
       - choice: '75'
       - choice: '100'
 measurements:
-  - measurement_title: Length
+  - measurement_title: Would you like a Card Mailed or a Emailed Card?
     measurement_description:
 ---
