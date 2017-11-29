@@ -111,7 +111,7 @@ layout: default
 				{% for option in page.options %}
 					{% assign count = count | plus: 1 %}
 					data-item-custom{{ count }}-name="{{ option.option_title }}" 
-					data-item-custom{{ count }}-value="{% for choice in option.choices %}{% if forloop.first %}{{ choice.choice | escape }}{% endif %}{% endfor %}"
+					data-item-custom{{ count }}-options="{% for choice in option.choices %}{{ choice.choice | escape }}{% if forloop.last == true %}{% else %}|{% endif %}{% endfor %}"
 				{% endfor%}
 				
 				{% for measurement in page.measurements %}
