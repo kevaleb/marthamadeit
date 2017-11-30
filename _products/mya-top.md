@@ -6,6 +6,7 @@ price_number: 35
 sale_price_number:
 description: Loose Fit Top
 photos:
+  - photo_path: /uploads/826-1.JPG
   - photo_path: /uploads/781.JPG
   - photo_path: /uploads/765.JPG
   - photo_path: /uploads/845-1.JPG
@@ -38,3 +39,5 @@ measurements:
   - measurement_title: Total Length if Tunic
     measurement_description:
 ---
+
+
