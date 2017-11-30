@@ -1,7 +1,7 @@
 ---
 id:
 product_group: woman
-product_type: womens-dresses
+product_type:
 price_number: 60
 sale_price_number:
 description: Gift Card for Marthamadeit.com
@@ -18,3 +18,5 @@ measurements:
   - measurement_title: Would you like your card sent via Email or Post Mail?
     measurement_description: If email please enter below.
 ---
+
+
