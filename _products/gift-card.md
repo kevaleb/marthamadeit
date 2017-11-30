@@ -2,11 +2,11 @@
 id:
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 60
 sale_price_number:
-description:
+description: Gift Card for Marthamadeit.com
 photos:
-  - photo_path:
+  - photo_path: /uploads/fair-gift-card-1.jpg
 options:
   - option_title: Sleeve Length
     option_description:
