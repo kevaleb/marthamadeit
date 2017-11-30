@@ -11,6 +11,7 @@ options:
   - option_title: What Amount Would You Like Your Gift Card?
     option_description:
     choices:
+      - choice: '25'
       - choice: '60'
       - choice: '75'
       - choice: '100'
