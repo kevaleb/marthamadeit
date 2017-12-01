@@ -1,20 +1,22 @@
 ---
-id: G1
+id:
 product_group: woman
 product_type:
-price_number: 50
+price_number: 60
 sale_price_number:
-description: Gift Card
+description: Gift Card for Marthamadeit.com
 photos:
-  - photo_path: /uploads/gift-card-50.jpg
+  - photo_path: /uploads/fair-gift-card-1.jpg
 options:
-  - option_title: What Amount Would You Like Your Gift Card?
+  - option_title: What Amount Gift Card Would You Like?
     option_description:
     choices:
-      - choice: '50'
-      - choice: '75'
+      - choice: '25'
+      - choice: '60'
       - choice: '100'
 measurements:
-  - measurement_title: Would you like a Card Mailed or a Emailed Card?
-    measurement_description:
+  - measurement_title: Would you like your card sent via Email or Post Mail?
+    measurement_description: If email please enter below.
 ---
+
+
