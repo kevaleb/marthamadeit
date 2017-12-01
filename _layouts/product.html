@@ -285,6 +285,14 @@ layout: default
 		$('.product_form').removeClass('stage3');
 		$('.product_form').addClass('stage2');
 	});
+	
+	
+
+	//	FB Events
+	$( '#snipcart-add-item' ).click(function() {
+		fbq('track', 'AddToCart');
+	});
+
 </script>
 
 
