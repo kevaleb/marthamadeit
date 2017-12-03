@@ -14,7 +14,7 @@ options:
       - choice: '60'
 measurements:
   - measurement_title: Would you like your card sent via Email or Post Mail?
-    measurement_description: If email please enter below.
+    measurement_description: If email please enter below. Or enter shipping address at checkout.
 ---
 
 
