@@ -2,7 +2,7 @@
 id: T1
 product_group: woman
 product_type: womens-dresses
-price_number: 40
+price_number: 35
 sale_price_number:
 description: >-
   The Raglan is a Tee Shirt Type Top that Can Have Bands Added to Create a
