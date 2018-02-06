@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<script>
+  fbq('track', 'ViewContent', {
+    content_type: 'product',
+  });
+</script>
 
 <div class="product_titles">
 	<hgroup>
@@ -291,6 +296,7 @@ layout: default
 	//	FB Events
 	$( '#snipcart-add-item' ).click(function() {
 		fbq('track', 'AddToCart');
+//		window.alert("sometext");
 	});
 
 </script>
