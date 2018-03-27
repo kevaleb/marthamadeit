@@ -57,3 +57,5 @@ measurements:
   - measurement_title: Length
     measurement_description:
 ---
+
+The Raglan Top is a Must! Loose fit through the body with lots of options to Customize your style. The Item is made with Stretch Fabric for Comfort and Ease.
