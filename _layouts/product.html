@@ -106,7 +106,7 @@ layout: default
 		</label>
 		
 		<h2>Custom Measurements</h2>
-		<a href="/faq/">How To Take Your Measurements</a>
+		<a href="/faq/" target="_blank">How To Take Your Measurements</a>
 		{% assign measurementcount = optioncount %}
 		{% for measurement in page.measurements %}
 		{% assign measurementcount = measurementcount | plus: 1 %}	
@@ -241,48 +241,3 @@ layout: default
 	});
 
 </script>
-
-
-
-
-<!--<script type="text/javascript">
-	// Fabric
-	$( "#fabric-options > label" ).click(function() {	
-		$('#fabric-options > label.selected').removeClass('selected');
-		$(this).addClass('selected');
-		
-		var fabricChoice = $('#fabric-options input[name=fabric-option]:checked').val();
-		
-		$('.snipcart-add-item').data('item-custom6-value',fabricChoice);
-	});
-	
-	// Option 1
-	$( "#firstoption").change(function() {
-		var firstoption = $('#firstoption').val();
-		$('.snipcart-add-item').data('item-custom1-value',firstoption);
-	});
-	
-	// Option 2
-	$( "#secondoption").change(function() {
-		var secondoption = $('#secondoption').val();
-		$('.snipcart-add-item').data('item-custom2-value',secondoption);
-	});
-	
-	// Option 3
-	$( "#thirdoption").change(function() {
-		var thirdoption = $('#thirdoption').val();
-		$('.snipcart-add-item').data('item-custom3-value',thirdoption);
-	});
-	
-	// Option 4
-	$( "#fourthoption").change(function() {
-		var fourthoption = $('#fourthoption').val();
-		$('.snipcart-add-item').data('item-custom4-value',fourthoption);
-	});
-	
-	// Option 5
-	$( "#fifthoption").change(function() {
-		var fifthoption = $('#fifthoption').val();
-		$('.snipcart-add-item').data('item-custom5-value',fifthoption);
-	});
-</script>-->
