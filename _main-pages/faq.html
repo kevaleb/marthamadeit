@@ -1,0 +1,26 @@
+---
+layout: default
+navclass: faq
+navtitle: faq
+permalink: /faq/
+youtube_video_id:
+faqs:
+  - question: How do i take my own measurements?
+    answer: Very carefully
+    video_link: EgeVpBYwiXI
+---
+<div class="pagetitle">
+	<h1 class="editable"></h1>
+</div>
+
+<div class="faq">
+	<ul>
+	{% for faq in page.faqs %}
+		<li>
+			<h3>{{ faq.question }}</h3>
+			<p>{{ faq.answer }}</p>
+			{% if faq.video_link %}{% include video-block.html %}{% endif %}
+		</li>
+	{% endfor %}
+	</ul>
+</div>

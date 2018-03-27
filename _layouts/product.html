@@ -36,15 +36,16 @@ layout: default
 		{% if product_type_string contains page.product_type %}
 		{% if forloop.first %}
 		{% capture FirstFabric %}{{ fabric.title }}{% endcapture %}
+		{% capture FirstFabricPhoto %}www.marthamadeit.com{{ fabric.photo_path }}{% endcapture %}
 		<label title="{{ fabric.title }}">
 			<a href="{{ fabric.photo_path }}" class="strip" data-strip-group="product_fabrics" data-strip-caption="{{ fabric.title }} ::: {{ fabric.description }}" style="background-image: url('{{ fabric.photo_path }}');"></a>
-			<input type="radio" name="fabric_choice" value="{{ fabric.title }}" checked="checked"/>
+			<input type="radio" name="fabric_choice" value="{{ fabric.title }}" data-fabric-photo-path="{{ fabric.photo_path }}" checked="checked"/>
 			 <span>{{ fabric.title }}</span>
 		</label>
 		{% else %}
 		<label title="{{ fabric.title }}">
 			<a href="{{ fabric.photo_path }}" class="strip" data-strip-group="product_fabrics" data-strip-caption="{{ fabric.description }}" style="background-image: url('{{ fabric.photo_path }}');"></a>
-			<input type="radio" name="fabric_choice" value="{{ fabric.title }}" />
+			<input type="radio" name="fabric_choice" value="{{ fabric.title }}" data-fabric-photo-path="{{ fabric.photo_path }}"/>
 			 <span>{{ fabric.title }}</span>
 		</label>
 		{% endif %}
@@ -58,7 +59,7 @@ layout: default
 	
 	
 	<div id="product_options">
-	{% assign optioncount = 1 %}
+	{% assign optioncount = 2 %}
 	{% for option in page.options %}
 		{% assign optioncount = optioncount | plus: 1 %}
 		<h3>{{ option.option_title }}</h3>
@@ -88,13 +89,33 @@ layout: default
 	
 	
 	<div id="product_measurements">
+		<h2>Standard Sizes</h2>
+		<h4>If you would rather not measure yourself you can enter your standard size and skip the other measurements.</h4>
+		<label>
+			<select>
+				<option value="X-Small">X-Small</option>
+				<option value="Small">Small</option>
+				<option value="Medium">Medium</option>
+				<option value="large">Large</option>
+				<option value="X-Large">X-Large</option>
+				<option value="XX-Large">XX-Large</option>
+				<option value="Plus 1X">Plus 1X</option>
+				<option value="Plus 2X">Plus 2X</option>
+				<option value="Plus 3X">Plus 3X</option>			
+			</select>
+		</label>
+		
+		<h2>Custom Measurements</h2>
+		<a href="/faq/">How To Take Your Measurements</a>
 		{% assign measurementcount = optioncount %}
 		{% for measurement in page.measurements %}
 		{% assign measurementcount = measurementcount | plus: 1 %}	
 		<h3>{{ measurement.measurement_title }}</h3>
-		<h4>{{ measurement.measurement_description }}</h4>
+		{% if measurement.measurement_description %}
+		<h4>{{ measurement.measurement_description }} Blah blah blah blah blah blah blah blah blah blah blah.</h4>
+		{% endif %}
 		<label>
-			<input type="text" name="{{ measurement.title }}" value="0"  class="measurement{{ measurementcount }}"/>
+			<input type="text" name="{{ measurement.title }}" value=""  class="measurement{{ measurementcount }}"/>
 		</label>
 		<br />
 		{% endfor %}
@@ -108,11 +129,16 @@ layout: default
 				data-item-weight="1" 
 				data-item-url="{{ page.url }}"
 				data-item-description="{{ page.description }}" 
+				data-item-image="{{ FirstFabricPhoto }}"
 				
 				data-item-custom1-name="fabric"
 				data-item-custom1-value="{{ FirstFabric }}"
 				
-				{% assign count = 1 %}
+				
+				data-item-custom2-name="standard size"
+				data-item-custom2-options="X-Small[-5.00]|Small[-5.00]|Medium|Large|X-Large|XX-Large|Plus 1X[+10.00]|Plus 2X[+10.00]|Plus 3X[+10.00]"
+				
+				{% assign count = 2 %}
 				{% for option in page.options %}
 					{% assign count = count | plus: 1 %}
 					data-item-custom{{ count }}-name="{{ option.option_title }}" 
@@ -128,100 +154,6 @@ layout: default
 			>Add To Cart</a>
 		</div>
 	</div>
-	
-	
-	<!--<div id="product_sizes">
-		
-		<h3>Bust</h3>
-		{% for item in site.data.bust %}
-		{% if forloop.first %}
-		{% capture FirstBust %}{{ item.inches }}{% endcapture %}
-		<label>
-			<input type="radio" name="bust" value="{{ item.inches }}" class="bust" checked="checked"/>
-			<span>{{ item.inches }}</span>
-		</label>
-		{% else %}
-		<label>
-			<input type="radio" name="bust" value="{{ item.inches }}" class="bust"/>
-			<span>{{ item.inches }}"</span>
-		</label>
-		{% endif %}
-		{% endfor %}
-		
-		
-		<h3>Under Bust</h3>
-		{% for item in site.data.under-bust %}
-		{% if forloop.first %}
-		{% capture FirstUnderBust %}{{ item.inches }}{% endcapture %}
-		<label>
-			<input type="radio" name="under-bust" value="{{ item.inches }}" class="underbust" checked="checked"/>
-			<span>{{ item.inches }}</span>
-		</label>
-		{% else %}
-		<label>
-			<input type="radio" name="under-bust" value="{{ item.inches }}" class="underbust" />
-			<span>{{ item.inches }}"</span>
-		</label>
-		{% endif %}
-		{% endfor %}
-		
-		
-		<h3>Height</h3>
-		{% for item in site.data.height %}
-		{% if forloop.first %}
-		{% capture FirstHeight %}{{ item.inches }}{% endcapture %}
-		<label>
-			<input type="radio" name="height" value="{{ item.inches }}" class="height" checked="checked"/>
-			<span>{{ item.inches }}</span>
-		</label>
-		{% else %}
-		<label>
-			<input type="radio" name="height" value="{{ item.inches }}" class="height" />
-			<span>{{ item.inches }}"</span>
-		</label>
-		{% endif %}
-		{% endfor %}
-		
-		
-		
-		<h3>Hips</h3>
-		{% for item in site.data.hips %}
-		{% if forloop.first %}
-		{% capture FirstHips %}{{ item.inches }}{% endcapture %}
-		<label>
-			<input type="radio" name="hips" value="{{ item.inches }}" class="hips" checked="checked"/>
-			<span>{{ item.inches }}</span>
-		</label>
-		{% else %}
-		<label>
-			<input type="radio" name="hips" value="{{ item.inches }}" class="hips" />
-			<span>{{ item.inches }}"</span>
-		</label>
-		{% endif %}
-		{% endfor %}
-		
-		
-		
-		<h3>Waist</h3>
-		{% for item in site.data.waist %}
-		{% if forloop.first %}
-		{% capture FirstWaist %}{{ item.inches }}{% endcapture %}
-		<label>
-			<input type="radio" name="waist" value="{{ item.inches }}" class="waist" checked="checked"/>
-			<span>{{ item.inches }}</span>
-		</label>
-		{% else %}
-		<label>
-			<input type="radio" name="waist" value="{{ item.inches }}" class="waist" />
-			<span>{{ item.inches }}"</span>
-		</label>
-		{% endif %}
-		{% endfor %}
-		
-		<span class="button">Back</span>
-	</div>-->
-	
-	
 </form>
 
 
@@ -241,12 +173,21 @@ layout: default
 		$( ".product_form > #product_fabrics > label > input" ).change(function() {
 			var LastFabricValue= $(this).val();
 			$('.snipcart-add-item').attr('data-item-custom1-value',LastFabricValue);
+			
+			var FabricPhoto= 'www.marthamadeit.com'+$(this).attr('data-fabric-photo-path');
+			$('.snipcart-add-item').attr('data-item-image',FabricPhoto);
+		});
+		
+		
+	// Standard Size 
+		$( ".product_form > #product_measurements > label > select" ).change(function() {
+			var StandardSizeValue= $(this).val();
+			$('.snipcart-add-item').attr('data-item-custom2-value',StandardSizeValue);
 		});
 	
 	
-	
 	// Product Options
-	{% assign optioncountjs = 1 %}		
+	{% assign optioncountjs = 2 %}		
 	{% for option in page.options %}
 		{% assign optioncountjs = optioncountjs | plus: 1 %}
 		

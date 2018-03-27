@@ -39,6 +39,5 @@ measurements:
     measurement_description: Please enter your Total Height
   - measurement_title: Length
     measurement_description: >-
-      If you would like your skirt a Specific Length Please Enter that
-      Measurment
+      If you would like your skirt a Specific Length Please Enter that Measurment
 ---

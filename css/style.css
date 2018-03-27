@@ -186,11 +186,13 @@ body header > div > nav > a > .fa-shopping-cart {
 	max-width: 1080px;
 	margin:  0 auto;
 	text-align: center;
+	overflow: hidden;
+	list-style: none;
 }
 .products > ul > li {
-	display: inline-block;
-	width: 100%;
-	max-width: 320px;
+	float: left;
+	width: 23%;
+	margin: 1%;
 	vertical-align: top;
 }
 .products > ul > li > a {
@@ -199,30 +201,74 @@ body header > div > nav > a > .fa-shopping-cart {
 .products > ul > li > a > .image {
 	display: block;
 	width: 100%;
-	height: 480px;
-	background-size: cover;
+	height: 320px;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	
-	background-color: #f2f2f2;
+	background-color: #fff;
 	border: 1px solid #f2f2f2;
 	box-shadow: 0 0 0 12px #fff inset;
 }
 .products > ul > li > a > hgroup {
-	padding: 24px 0;
+	height: 72px;
+	margin: 12px 0;
+	padding: 0;
 }
 .products > ul > li > a > hgroup > h3 {
-	font: 500 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 500 14px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
+	letter-spacing: 0;
 }
 .products > ul > li > a > hgroup > h4 {
-	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 200 12px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
 }
 .products > ul > li > a > hgroup > h4 > i {
 	margin: 0 12px 0 0;
 	color: #ccc;
 	text-decoration: line-through;
+}
+
+
+
+@media all and (max-width: 960px) {
+
+.products{
+	padding: 36px 12px;
+}
+.products > ul > li {
+	width: 16%;
+	margin: 0 0 0 .66%;
+}
+.products > ul > li > a > .image {
+	height: 200px;
+}
+.products > ul > li > a > hgroup {
+	height: 48px;
+	margin: 9px 0;
+	padding: 0;
+}
+.products > ul > li > a > hgroup > h3 {
+	font: 900 12px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0;
+}
+.products > ul > li > a > hgroup > h4 {
+	font: 400 10px/10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+}
+
+
+
+
+@media all and (max-width: 720px) {
+
+.products > ul > li {
+	width: 32%;
+	margin: 0 0 0 1%;
+}
+	
 }
 /* @end */
 
@@ -532,30 +578,29 @@ body header > div > nav > a > .fa-shopping-cart {
 #product_measurements {
 	text-align: center;
 }
+#product_measurements > h2 {
+	margin: 24px 0 0 0;
+	font: 900 16px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-transform: uppercase;
+	color: #000;
+}
 #product_measurements > h3 {
-	display: inline-block;
-	width: 96px;
-	padding: 0 12px 0 0;
+	display: block;
+	/*width: 96px;*/
+	/*padding: 0 12px 0 0;*/
 	z-index: 100;
-	font: 900 10px/10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 900 10px/12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	text-transform: uppercase;
 	margin: 0;
-	text-align: right;
+	text-align: center;
 	vertical-align: middle;
 }
-/*#product_measurements > h3:after {
-	content: ' (Inches)';
-	display: block;
-	font-weight: 100;
-	font-size: 10px;
-	text-transform: none;
-	line-height: 10px;
-}*/
 #product_measurements > h4 {
-	display: none;
+	
 }
 #product_measurements > label {
 	display: inline-block;
+	margin: 0 0 12px 0;
 	vertical-align: middle;
 }
 #product_measurements > label > input {
@@ -563,6 +608,15 @@ body header > div > nav > a > .fa-shopping-cart {
 	outline: none;
 	margin: 0;
 	/*padding: 0 0 0 96px;*/
+}
+#product_measurements > label > select {
+	padding: 3px 12px;
+	outline: none;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	background: none;
+	-webkit-appearance: none;
+	font: 200 14px/18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 /* @end */
@@ -635,6 +689,70 @@ body header > div > nav > a > .fa-shopping-cart {
 
 
 /* @end */
+
+
+
+/* @group Video Block */
+
+.video-wrapper {
+	position: relative;
+	z-index: 1000000000000000;
+	max-width: 720px;
+	margin: 0px auto 0 auto;
+	padding: 0 0 48px 0;
+}
+.video-wrapper > img {
+	position: absolute;
+	z-index: -100;
+	left: 0;
+	bottom: 5%;
+}
+
+
+@media all and (max-width: 720px) {
+
+.video-wrapper {
+	margin: 0px 0 24px 0;
+	padding: 24px;
+}
+.video-wrapper > img {
+	left: 24px;
+	bottom: 6px;
+}
+
+}
+
+/* @end */
+
+
+/* @group faq */
+
+.faq {
+	
+}
+.faq > ul {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 48px;
+	list-style: none;
+}
+.faq > ul > li {
+	
+}
+.faq > ul > li > h3 {
+	
+}
+.faq > ul > li > p {
+	
+}
+.faq > ul > li > .video-wrapper {
+	width: 100%;
+	/*height: 320px;*/
+}
+
+/* @end */
+
+
 
 /* @group KNOWLEDGE */
 .knowledge {
