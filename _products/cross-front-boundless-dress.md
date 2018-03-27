@@ -58,3 +58,5 @@ measurements:
   - measurement_title: Total Length From Back of Neck
     measurement_description:
 ---
+
+Your New Favorite Dress! This Cross Front Dress is extremely nursing friendly but also so on trend! With an empire waist that flatters all body types! Choose any Shirt Length and Sleeve length!&nbsp;
