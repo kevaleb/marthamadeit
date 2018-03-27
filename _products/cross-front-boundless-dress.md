@@ -59,4 +59,4 @@ measurements:
     measurement_description:
 ---
 
-Your New Favorite Dress! This Cross Front Dress is extremely nursing friendly but also so on trend! With an empire waist that flatters all body types! Choose any Shirt Length and Sleeve length!&nbsp;
+Your New Favorite Dress! This Cross Front Dress is extremely nursing friendly but also so on trend! With an empire waist that flatters all body types! Choose any Shirt Length and Sleeve length! Semi Fitted through the bust with an Elastic Waist and You Choose your Skirt Style!
