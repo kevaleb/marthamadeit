@@ -58,4 +58,4 @@ measurements:
     measurement_description:
 ---
 
-The Raglan Top is a Must! Loose fit through the body with lots of options to Customize your style. The Item is made with Stretch Fabric for Comfort and Ease.
+The Raglan Top is a Must! Loose fit through the body with lots of options to Customize your style. The Item is made with Stretch Fabric for Comfort and Ease. Change it up with Solid Sleeves for a Baseball Tee Look!
