@@ -40,4 +40,4 @@ measurements:
     measurement_description:
 ---
 
-
+The Mya is my Fav! This loose fit top goes beautifully with everything! Skirts, Jeans, Leggings, you name it! Leave it loose or knot it for a fun look! Choose Top or Tunic Length, and Any Sleeve Length!&nbsp;
