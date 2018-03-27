@@ -2,7 +2,7 @@
 id: P1
 product_group: woman
 product_type: pencil-skirt
-price_number: 32
+price_number: 35
 sale_price_number:
 description: This Amazing Pencil Skirt is my Go-To Skirt!
 photos:
