@@ -37,3 +37,5 @@ measurements:
   - measurement_title: Total Length if Tunic
     measurement_description:
 ---
+
+This Dolman is a Slim Fit Top. Loose through the arms and chest and fitted through the body. Can be made Shirt or Tunic Length, and any Sleeve Length.&nbsp;
