@@ -37,3 +37,5 @@ measurements:
   - measurement_title: Length
     measurement_description:
 ---
+
+The Maxi Skirt is your new Live in Skirt! This Skirt is an Aline cut with a Yoga Waistband. Made with the softest and most comfortable fabric I could find! Are you Tall? Short? No Problem! Send me the exact Length you need your Maxi and Ill make it the Perfect Length for you Every time!&nbsp;

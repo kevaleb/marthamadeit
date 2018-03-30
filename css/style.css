@@ -745,9 +745,8 @@ body header > div > nav > a > .fa-shopping-cart {
 .faq > ul > li > p {
 	
 }
-.faq > ul > li > .video-wrapper {
-	width: 100%;
-	/*height: 320px;*/
+.faq > ul > li > .videoBlock {
+	margin-bottom: 24px;
 }
 
 /* @end */

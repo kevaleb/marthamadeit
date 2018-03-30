@@ -41,3 +41,5 @@ measurements:
     measurement_description: >-
       If you would like your skirt a Specific Length Please Enter that Measurment
 ---
+
+You Need This! Trust me! This Awesome Fitting Skirt is Just What Your Looking For! Choose your Fit, Length, And Style! This Skirt is Built from the Ground Up! You can make it loose or Fitted, Long or Mini Skirt. Your Gonna Love It!&nbsp;
