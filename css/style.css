@@ -1,4 +1,4 @@
-/* @override http://0.0.0.0:4000/css/style.css */
+/* @override http://127.0.0.1:4000/css/style.css */
 
 /* @group General
  */
@@ -1723,6 +1723,53 @@ article > ul > li{
 	font: 200 18px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 /* @end */
+
+
+
+
+
+
+
+/* @group VideoBlock */
+
+.videoBlock {
+	position: relative;
+	z-index: 999999;
+	max-width: 720px;
+	margin: 0px auto 0 auto;
+	padding: 24px;
+}
+.videoBlock > img {
+	position: absolute;
+	width: 90%;
+	z-index: -10;
+	left: 5%;
+	bottom: 0px;
+}
+
+/* @end */
+
+/* @group Video Wrapper */
+
+.videoWrapper {
+	/*box-sizing: content-box;*/
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 0px;
+	height: 0;
+}
+.videoWrapper > iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* @end */
+
+
+
 
 /* @group Under Construction */
 

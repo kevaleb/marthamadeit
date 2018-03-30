@@ -7,7 +7,7 @@ youtube_video_id:
 faqs:
   - question: How do i take my own measurements?
     answer: Very carefully
-    video_link: EgeVpBYwiXI
+    youtube_video_id: EgeVpBYwiXI
 ---
 <div class="pagetitle">
 	<h1 class="editable"></h1>
@@ -19,7 +19,14 @@ faqs:
 		<li>
 			<h3>{{ faq.question }}</h3>
 			<p>{{ faq.answer }}</p>
-			{% if faq.video_link %}{% include video-block.html %}{% endif %}
+			{% if faq.youtube_video_id %}
+			<div class="videoBlock">
+				<div class="videoWrapper">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ faq.youtube_video_id }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<img src="/images/other/video_shadow.svg" alt="video shadow" />
+			</div>
+			{% endif %}
 		</li>
 	{% endfor %}
 	</ul>
