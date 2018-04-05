@@ -638,6 +638,7 @@ body header > div > nav > a > .fa-shopping-cart {
 	white-space: nowrap;
 }
 .banner.jagged {
+	height: 50%;
 	background-image: url('/images/patterns/jagged.png');
 	background-attachment: scroll;
 	background-repeat: repeat no-repeat;
