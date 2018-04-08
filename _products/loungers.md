@@ -6,8 +6,9 @@ price_number: 40
 sale_price_number:
 description: Relaxed Fit Lounge Pants
 photos:
+  - photo_path: /uploads/010-1.JPG
+  - photo_path: /uploads/011.JPG
   - photo_path: /uploads/391.JPG
-  - photo_path: /uploads/333.JPG
 options:
   - option_title: Inseam Length
     option_description:
