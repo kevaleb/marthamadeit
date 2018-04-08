@@ -6,11 +6,14 @@ price_number: 60
 sale_price_number:
 description: Your favorite new dress.
 photos:
+  - photo_path: /uploads/007.JPG
   - photo_path: /uploads/205.JPG
   - photo_path: /uploads/201.JPG
   - photo_path: /uploads/050.JPG
   - photo_path: /uploads/090.JPG
   - photo_path: /uploads/213-b.JPG
+  - photo_path: /uploads/005.JPG
+  - photo_path: /uploads/008.JPG
 options:
   - option_title: Sleeve Length
     option_description: Please Choose your Sleeve Length
