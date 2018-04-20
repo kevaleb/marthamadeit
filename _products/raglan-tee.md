@@ -14,7 +14,7 @@ photos:
   - photo_path: /uploads/135.JPG
 options:
   - option_title: Sleeve Length
-    option_description:
+    option_description: Your Sleeve will be a Solid Color. Unless pictured with Stripes.
     choices:
       - choice: Tank Sleeve
       - choice: Short Sleeve
