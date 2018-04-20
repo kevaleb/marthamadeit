@@ -5,9 +5,8 @@ product_type: womens-dresses
 price_number: 35
 sale_price_number:
 description: >-
-  The Raglan is a Tee Shirt Type Top that Can Have Bands Added to Create a
-  Sweatshirt or Hood. Or Select Solid Sleeves or Printed Sleeves to Create a One
-  of a Kind Baseball Type Top
+  The Raglan Sweatshirt is a Banded Top. You may add a Hood to create a Hoodie
+  or Create a  Relaxed Simple Sweatshirt. Its up to you!
 photos:
   - photo_path: /uploads/701.JPG
   - photo_path: /uploads/718.JPG
