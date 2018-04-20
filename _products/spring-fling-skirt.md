@@ -6,6 +6,8 @@ price_number: 35
 sale_price_number:
 description: Flared Knee or Midi Length Skirt
 photos:
+  - photo_path:
+  - photo_path:
   - photo_path: /uploads/073.JPG
   - photo_path: /uploads/039.JPG
   - photo_path: /uploads/251.JPG
