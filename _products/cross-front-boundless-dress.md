@@ -6,10 +6,11 @@ price_number: 65
 sale_price_number:
 description: Cross Front Top Dress (Nursing Option)
 photos:
+  - photo_path: /uploads/013.JPG
   - photo_path: /uploads/cross-dress.JPG
   - photo_path: /uploads/cross.JPG
   - photo_path: /uploads/125-cross.JPG
-  - photo_path: /uploads/1427.jpg
+  - photo_path: /uploads/012-2.JPG
 options:
   - option_title: Sleeve Length
     option_description:
