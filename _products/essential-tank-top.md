@@ -18,8 +18,6 @@ options:
 measurements:
   - measurement_title: Bust
     measurement_description:
-  - measurement_title: Under Bust
-    measurement_description:
   - measurement_title: Waist
     measurement_description:
   - measurement_title: Hips
