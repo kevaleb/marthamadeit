@@ -1,12 +1,17 @@
 ---
 id:
 product_group: woman
-product_type: womens-dresses
-price_number:
+product_type: to
+price_number: 35
 sale_price_number:
-description:
+description: >-
+  The Simply Tee is a relaxed straight fit tee shirt. You may choose from 2 neck
+  options and all sleeve options.
 photos:
-  - photo_path:
+  - photo_path: /uploads/017.JPG
+  - photo_path: /uploads/415.JPG
+  - photo_path: /uploads/535.JPG
+  - photo_path: /uploads/527.JPG
 options:
   - option_title: Sleeve Length
     option_description:
