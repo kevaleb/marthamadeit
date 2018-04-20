@@ -16,7 +16,6 @@ options:
   - option_title: Sleeve Length
     option_description: Your Sleeve will be a Solid Color. Unless pictured with Stripes.
     choices:
-      - choice: Tank Sleeve
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
