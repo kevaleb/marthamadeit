@@ -1,4 +1,4 @@
-/* @override http://127.0.0.1:4000/css/style.css */
+/* @override http://0.0.0.0:4000/css/style.css */
 
 /* @group General
  */
@@ -1644,6 +1644,11 @@ article > ul > li{
 	background-repeat: repeat no-repeat;
 	background-size: auto;
 	background-position: bottom center;
+}
+.newsletter > .videoBlock {
+	width: 480px;
+	margin: 0px auto 48px auto;
+	padding: 0;
 }
 .newsletter > h2 {
 	font: 400 26px/36px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
