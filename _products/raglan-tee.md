@@ -19,6 +19,11 @@ options:
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
+  - option_title: Fit
+    option_description:
+    choices:
+      - choice: Relaxed Loose Fit
+      - choice: Semi Fitted
 measurements:
   - measurement_title: Bust
     measurement_description:
