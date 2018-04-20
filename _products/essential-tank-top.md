@@ -6,8 +6,8 @@ price_number: 35
 sale_price_number:
 description: 'The Essential Tank Top is a wide shouldered, comfortable fit top.'
 photos:
-  - photo_path: /uploads/287.JPG
   - photo_path: /uploads/326.JPG
+  - photo_path: /uploads/287.JPG
   - photo_path: /uploads/671.JPG
 options:
   - option_title: Hem Style
