@@ -20,18 +20,6 @@ options:
       - choice: Short Sleeve
       - choice: 3/4 Length Sleeve
       - choice: Long Sleeve
-  - option_title: Would you Solid Fabric To be on the Sleeves or Torso?
-    option_description:
-    choices:
-      - choice: Sleeves
-      - choice: Torso
-      - choice: 'Neither, I would like all printed fabric.'
-  - option_title: Band options
-    option_description: Would you Like Bands?
-    choices:
-      - choice: Accent (Solid) Bands
-      - choice: Printed Bands
-      - choice: No Bands Please
   - option_title: Hood
     option_description: Would you Like a Lined Hood Added?
     choices:
