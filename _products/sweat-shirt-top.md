@@ -2,7 +2,7 @@
 id: T1
 product_group: woman
 product_type: womens-dresses
-price_number: 35
+price_number: 40
 sale_price_number:
 description: >-
   The Raglan Sweatshirt is a Banded Top. You may add a Hood to create a Hoodie
