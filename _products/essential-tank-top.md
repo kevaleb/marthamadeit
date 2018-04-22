@@ -15,6 +15,11 @@ options:
     choices:
       - choice: Curved Hem
       - choice: Straight Hem
+  - option_title: Neckline
+    option_description:
+    choices:
+      - choice: High Neckline
+      - choice: Modest Neckline
 measurements:
   - measurement_title: Bust
     measurement_description:
