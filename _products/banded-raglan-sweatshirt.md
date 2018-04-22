@@ -12,6 +12,8 @@ description: >-
 photos:
   - photo_path: /uploads/701.JPG
   - photo_path: /uploads/718.JPG
+  - photo_path: /uploads/731.PNG
+  - photo_path: /uploads/010.PNG
 options:
   - option_title: Sleeve Length
     option_description: Which Sleeve Length Would You Like?
