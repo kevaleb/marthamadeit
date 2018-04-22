@@ -8,7 +8,6 @@ description: >-
   The Maxi Skirt is a Flowing Full Length Knit Skirt. Perfect for Everyday and
   Dressy Occasions.
 photos:
-  - photo_path:
   - photo_path: /uploads/399.JPG
   - photo_path: /uploads/355.JPG
   - photo_path: /uploads/445.JPG
