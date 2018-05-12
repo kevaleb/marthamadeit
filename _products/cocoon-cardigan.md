@@ -21,7 +21,7 @@ options:
     choices:
       - choice: Shirt Length
       - choice: Tunic Length
-  - option_title: Inseam Pockets?
+  - option_title: Pockets?
     option_description:
     choices:
       - choice: 'Yes'
@@ -41,3 +41,4 @@ measurements:
   - measurement_title: Height
     measurement_description:
 ---
+
