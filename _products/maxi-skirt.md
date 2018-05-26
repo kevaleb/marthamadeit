@@ -3,7 +3,7 @@ id: S1
 product_group: woman
 product_type: maxi-skirt
 price_number: 42
-sale_price_number:
+sale_price_number: 35
 description: >-
   The Maxi Skirt is a Flowing Full Length Knit Skirt. Perfect for Everyday and
   Dressy Occasions.
@@ -37,4 +37,4 @@ measurements:
     measurement_description:
 ---
 
-The Maxi Skirt is your new Live in Skirt! This Skirt is an Aline cut with a Yoga Waistband. Made with the softest and most comfortable fabric I could find! Are you Tall? Short? No Problem! Send me the exact Length you need your Maxi and Ill make it the Perfect Length for you Every time!&nbsp;
+The Maxi Skirt is your new Live in Skirt! This Skirt is an Aline cut with a Yoga Waistband. Made with the softest and most comfortable fabric I could find! Are you Tall? Short? No Problem! Send me the exact Length you need your Maxi and Ill make it the Perfect Length for you Every time!
