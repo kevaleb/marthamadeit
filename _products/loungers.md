@@ -2,8 +2,8 @@
 id: P1
 product_group: woman
 product_type: womens-dresses
-price_number: 40
-sale_price_number:
+price_number: 45
+sale_price_number: 35
 description: Relaxed Fit Lounge Pants
 photos:
   - photo_path: /uploads/010-1.JPG
@@ -39,5 +39,4 @@ measurements:
       measurement from your waist to pant hem.
 ---
 
-
-The Loungers will have you Wearing Pajamas all Day. These are a Relaxed Fit Lounge Pant with a Comfortable Knit Yoga Waistband.&nbsp;
+The Loungers will have you Wearing Pajamas all Day. These are a Relaxed Fit Lounge Pant with a Comfortable Knit Yoga Waistband.
