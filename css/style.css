@@ -693,7 +693,7 @@ body header > div > nav > a > .fa-shopping-cart {
 
 
 
-/* @group Video Block */
+/* @group Video Wrapper */
 
 .video-wrapper {
 	position: relative;
@@ -721,6 +721,45 @@ body header > div > nav > a > .fa-shopping-cart {
 	bottom: 6px;
 }
 
+}
+
+/* @end */
+
+
+/* @group VideoBlock */
+
+.videoBlock {
+	position: relative;
+	z-index: 999999;
+	max-width: 720px;
+	margin: 0px auto 0 auto;
+	padding: 24px;
+}
+.videoBlock > img {
+	position: absolute;
+	width: 90%;
+	z-index: -10;
+	left: 5%;
+	bottom: 0px;
+}
+
+/* @end */
+
+/* @group Video Wrapper */
+
+.videoWrapper {
+	/*box-sizing: content-box;*/
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 0px;
+	height: 0;
+}
+.videoWrapper > iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /* @end */
@@ -1762,43 +1801,7 @@ article > ul > li{
 
 
 
-/* @group VideoBlock */
 
-.videoBlock {
-	position: relative;
-	z-index: 999999;
-	max-width: 720px;
-	margin: 0px auto 0 auto;
-	padding: 24px;
-}
-.videoBlock > img {
-	position: absolute;
-	width: 90%;
-	z-index: -10;
-	left: 5%;
-	bottom: 0px;
-}
-
-/* @end */
-
-/* @group Video Wrapper */
-
-.videoWrapper {
-	/*box-sizing: content-box;*/
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 0px;
-	height: 0;
-}
-.videoWrapper > iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* @end */
 
 
 

@@ -179,7 +179,7 @@ layout: default
 			<a class="snipcart-add-item add-product button dark full next" id="snipcart-add-item" 
 				data-item-id="{{ page.id }}" 
 				data-item-name="{{ page.title }}" 
-				data-item-price="{% unless page.sale_price_number == nil %}${{ page.sale_price_number }}{% else %} {{ page.price_number }}{% endunless %}" 
+				data-item-price="{% unless page.sale_price_number == nil %}{{ page.sale_price_number }}{% else %} {{ page.price_number }}{% endunless %}" 
 				data-item-weight="1" 
 				data-item-url="{{ page.url }}"
 				data-item-description="{{ page.description }}" 
