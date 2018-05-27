@@ -5,13 +5,15 @@ product_type: womens-dresses
 price_number: 40
 sale_price_number:
 description: >-
-  The Raglan Sweatshirt is a Banded Top. You may add a Hood to create a Hoodie
-  or Create a  Relaxed Simple Sweatshirt. Its up to you!
+  The Raglan Sweatshirt is a Banded Top.his top is a relaxed fit and can be
+  tunic length or shirt length.  The fabric is made with soft stretchy knit
+  fabrics. You may add a Hood to create a Hoodie or Create a  Relaxed Simple
+  Sweatshirt. Its up to you!
 photos:
   - photo_path: /uploads/701.JPG
   - photo_path: /uploads/718.JPG
-  - photo_path: /uploads/117.JPG
-  - photo_path: /uploads/714.JPG
+  - photo_path: /uploads/731.PNG
+  - photo_path: /uploads/010.PNG
 options:
   - option_title: Sleeve Length
     option_description: Which Sleeve Length Would You Like?

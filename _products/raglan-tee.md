@@ -12,6 +12,8 @@ photos:
   - photo_path: /uploads/013-1.JPG
   - photo_path: /uploads/116.JPG
   - photo_path: /uploads/135.JPG
+  - photo_path: /uploads/120.PNG
+  - photo_path: /uploads/912.PNG
 options:
   - option_title: Sleeve Length
     option_description: Your Sleeve will be a Solid Color. Unless pictured with Stripes.
