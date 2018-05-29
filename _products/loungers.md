@@ -10,7 +10,7 @@ photos:
   - photo_path: /uploads/011.JPG
   - photo_path: /uploads/391.JPG
 options:
-  - option_title: Inseam Length
+  - option_title: Pant Length
     option_description:
     choices:
       - choice: Knee Length
@@ -18,11 +18,6 @@ options:
       - choice: Full Length
   - option_title: Pockets?
     option_description: Would You Like Pockets?
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
-  - option_title: Maternity Waistband Option?
-    option_description: Would you like a Maternity Waistband?
     choices:
       - choice: 'Yes'
       - choice: 'No'
