@@ -1,7 +1,7 @@
 ---
 id: P1
 product_group: woman
-product_type: womens-dresses
+product_type: maxi-skirt
 price_number: 45
 sale_price_number: 35
 description: Relaxed Fit Lounge Pants
