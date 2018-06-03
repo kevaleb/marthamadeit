@@ -6,8 +6,8 @@ price_number: 45
 sale_price_number:
 description: Relaxed Fit Lounge Pants
 photos:
-  - photo_path: /uploads/010-1.JPG
   - photo_path: /uploads/011.JPG
+  - photo_path: /uploads/010-1.JPG
   - photo_path: /uploads/391.JPG
 options:
   - option_title: Pant Length
