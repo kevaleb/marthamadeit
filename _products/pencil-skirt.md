@@ -23,7 +23,7 @@ options:
   - option_title: Band Option
     option_description: Please Choose Which Band Option you would like
     choices:
-      - choice: Maternity Band
+      - choice: Fold Over Band
       - choice: Yoga Band
   - option_title: Fit Options
     option_description: Please Choose which Fit you would like your Skirt
@@ -39,7 +39,8 @@ measurements:
     measurement_description: Please enter your Total Height
   - measurement_title: Length
     measurement_description: >-
-      If you would like your skirt a Specific Length Please Enter that Measurment
+      If you would like your skirt a Specific Length Please Enter that
+      Measurment
 ---
 
-You Need This! Trust me! This Awesome Fitting Skirt is Just What Your Looking For! Choose your Fit, Length, And Style! This Skirt is Built from the Ground Up! You can make it loose or Fitted, Long or Mini Skirt. Your Gonna Love It!&nbsp;
+You Need This! Trust me! This Awesome Fitting Skirt is Just What Your Looking For! Choose your Fit, Length, And Style! This Skirt is Built from the Ground Up! You can make it loose or Fitted, Long or Mini Skirt. Your Gonna Love It!
