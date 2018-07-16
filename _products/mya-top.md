@@ -23,11 +23,6 @@ options:
     choices:
       - choice: Shirt Length
       - choice: Tunic Length
-  - option_title: Would you like the Solid Color Top?
-    option_description: If you select no your Shirt will be printed fabric
-    choices:
-      - choice: 'Yes'
-      - choice: 'No'
 measurements:
   - measurement_title: Bust
     measurement_description:
@@ -41,4 +36,4 @@ measurements:
     measurement_description:
 ---
 
-The Mya is my Fav! This loose fit top goes beautifully with everything! Skirts, Jeans, Leggings, you name it! Leave it loose or knot it for a fun look! Choose Top or Tunic Length, and Any Sleeve Length!&nbsp;
+The Mya is my Fav! This loose fit top goes beautifully with everything! Skirts, Jeans, Leggings, you name it! Leave it loose or knot it for a fun look! Choose Top or Tunic Length, and Any Sleeve Length!
