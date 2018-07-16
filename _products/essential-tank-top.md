@@ -2,7 +2,7 @@
 id:
 product_group: woman
 product_type: to
-price_number: 35
+price_number: 30
 sale_price_number:
 description: 'The Essential Tank Top is a wide shouldered, comfortable fit top.'
 photos:
