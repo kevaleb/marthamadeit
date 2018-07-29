@@ -3,7 +3,7 @@ id: 1
 product_group: woman
 product_type: womens-dresses
 price_number: 65
-sale_price_number:
+sale_price_number: 58
 description: Your favorite new dress.
 photos:
   - photo_path: /uploads/007.JPG
