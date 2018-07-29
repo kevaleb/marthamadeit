@@ -3,7 +3,7 @@ id:
 product_group: woman
 product_type: to
 price_number: 35
-sale_price_number:
+sale_price_number: 30
 description: >-
   The Raglan Tee is a Semi Fitted Top and Can be loose or fitted depending on
   the style you choose.
