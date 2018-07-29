@@ -3,7 +3,7 @@ id: S1
 product_group: woman
 product_type: maxi-skirt
 price_number: 42
-sale_price_number:
+sale_price_number: 35
 description: >-
   The Maxi Skirt is a Flowing Full Length Knit Skirt. Perfect for Everyday and
   Dressy Occasions.
