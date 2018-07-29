@@ -3,7 +3,7 @@ id: D3
 product_group: woman
 product_type: womens-dresses
 price_number: 55
-sale_price_number:
+sale_price_number: 50
 description: Raglan Dress
 photos:
   - photo_path: /uploads/512-1-1.JPG
