@@ -3,7 +3,7 @@ id:
 product_group: woman
 product_type: womens-dresses
 price_number: 65
-sale_price_number: 58
+sale_price_number:
 description: Cross Front Top Dress (Nursing Option)
 photos:
   - photo_path: /uploads/013.JPG
