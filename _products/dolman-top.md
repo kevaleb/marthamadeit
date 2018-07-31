@@ -3,7 +3,7 @@ id: T4
 product_group: woman
 product_type: womens-dresses
 price_number: 35
-sale_price_number: 30
+sale_price_number:
 description:
 photos:
   - photo_path: /uploads/280-1.JPG
@@ -38,4 +38,4 @@ measurements:
     measurement_description:
 ---
 
-This Dolman is a Slim Fit Top. Loose through the arms and chest and fitted through the body. Can be made Shirt or Tunic Length, and any Sleeve Length.&nbsp;
+This Dolman is a Slim Fit Top. Loose through the arms and chest and fitted through the body. Can be made Shirt or Tunic Length, and any Sleeve Length.
