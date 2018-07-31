@@ -3,7 +3,7 @@ id: T1
 product_group: woman
 product_type: womens-dresses
 price_number: 40
-sale_price_number: 36
+sale_price_number:
 description: >-
   The Raglan Sweatshirt is a Banded Top.his top is a relaxed fit and can be
   tunic length or shirt length.  The fabric is made with soft stretchy knit
