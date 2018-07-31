@@ -3,7 +3,7 @@ id:
 product_group: woman
 product_type: fit-n-flare
 price_number: 60
-sale_price_number: 55
+sale_price_number:
 description: Lined Fitted Top with Full Half Circle Skirt
 photos:
   - photo_path: /uploads/285f.JPG
@@ -50,3 +50,4 @@ measurements:
   - measurement_title: Total Length from Back of Neck
     measurement_description:
 ---
+
