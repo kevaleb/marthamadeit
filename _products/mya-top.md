@@ -3,7 +3,7 @@ id: T5
 product_group: woman
 product_type: womens-dresses
 price_number: 35
-sale_price_number: 30
+sale_price_number:
 description: Loose Fit Top
 photos:
   - photo_path: /uploads/019.JPG
