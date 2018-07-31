@@ -3,7 +3,7 @@ id: D3
 product_group: woman
 product_type: womens-dresses
 price_number: 55
-sale_price_number: 50
+sale_price_number:
 description: Raglan Dress
 photos:
   - photo_path: /uploads/512-1-1.JPG
@@ -43,6 +43,5 @@ measurements:
       If you would like a Specific Length of Dress please Provide that
       measurement from the back of neck
 ---
-
 
 The Raglan Dress is a Loose Fit Aline Dress. You May Choose Many Fabric Combinations and Lengths.
