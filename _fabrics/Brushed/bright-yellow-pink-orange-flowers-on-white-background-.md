@@ -3,5 +3,6 @@ description: 'Bright Yellow, Pink, Orange Flowers on White Background. Brushed P
 product_types:
   - maxi-skirt
   - to
+  - womens-dresses
 photo_path: /uploads/flowers.jpg
 ---
