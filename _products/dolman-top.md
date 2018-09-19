@@ -25,6 +25,13 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
+  - option_title: Please Select Which Fit?
+    option_description: >-
+      You may choose if you want the loose fit or regular fit option. The polka
+      dot top shown is the regular fit.
+    choices:
+      - choice: Loose Fit
+      - choice: Regular
 measurements:
   - measurement_title: Bust
     measurement_description:
