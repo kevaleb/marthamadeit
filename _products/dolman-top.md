@@ -32,6 +32,11 @@ options:
     choices:
       - choice: Loose Fit
       - choice: Regular
+  - option_title:
+    option_description: Hi/ Low Tunic Option
+    choices:
+      - choice: Hi/ Low Tunic
+      - choice: Curved Hem
 measurements:
   - measurement_title: Bust
     measurement_description:
