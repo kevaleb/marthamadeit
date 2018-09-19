@@ -50,4 +50,4 @@ measurements:
     measurement_description:
 ---
 
-This Dolman is a Slim Fit Top. Loose through the arms and chest and fitted through the body. Can be made Shirt or Tunic Length, and any Sleeve Length.
+This Dolman is Staple Top. You can choose between two fits: Regular Fit Which is Loose through the arms and chest and semi fitted through the body. Or Loose fit with a Hi/Low Tunic Hem option. Can be made Shirt or Tunic Length, and any Sleeve Length.
