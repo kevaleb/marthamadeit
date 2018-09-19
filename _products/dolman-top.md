@@ -33,7 +33,7 @@ options:
       - choice: Loose Fit
       - choice: Regular
   - option_title:
-    option_description: Hi/ Low Tunic Option
+    option_description: Hi/ Low Tunic or Curved Hem Option
     choices:
       - choice: Hi/ Low Tunic
       - choice: Curved Hem
