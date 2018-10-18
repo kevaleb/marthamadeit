@@ -1,5 +1,5 @@
 ---
-description: 01 Pink Flowers with Olive Green Leaves on Distressed Denim Blue Background
+description: NEW Pink Flowers with Olive Green Leaves on Distressed Denim Blue Background
 product_types:
   - fit-n-flare
   - maxi-skirt
