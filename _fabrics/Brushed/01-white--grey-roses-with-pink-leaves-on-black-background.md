@@ -1,5 +1,5 @@
 ---
-description: 01 White & Grey Roses with Pink Leaves on Black Background
+description: NEW White & Grey Roses with Pink Leaves on Black Background
 product_types:
   - fit-n-flare
   - maxi-skirt
