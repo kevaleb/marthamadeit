@@ -1,5 +1,5 @@
 ---
-description: 01 Coral Blue Yellow Flowers on White Background with Black Stripes
+description: NEW Coral Blue Yellow Flowers on White Background with Black Stripes
 product_types:
   - fit-n-flare
   - maxi-skirt
