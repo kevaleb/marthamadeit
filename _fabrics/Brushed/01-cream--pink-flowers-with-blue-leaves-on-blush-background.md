@@ -1,5 +1,5 @@
 ---
-description: 01 Cream & Pink Flowers with Blue Leaves on Blush Background
+description: NEW Cream & Pink Flowers with Blue Leaves on Blush Background
 product_types:
   - fit-n-flare
   - maxi-skirt
