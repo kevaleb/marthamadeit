@@ -1,5 +1,5 @@
 ---
-description: 01 Cream Flowers with Grey Blue Leaves on Seafoam Blue Background
+description: NEW Cream Flowers with Grey Blue Leaves on Seafoam Blue Background
 product_types:
   - fit-n-flare
   - maxi-skirt
