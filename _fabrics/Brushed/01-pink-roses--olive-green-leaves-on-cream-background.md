@@ -1,5 +1,5 @@
 ---
-description: 01 Pink Roses & Olive Green Leaves on Cream Background
+description: NEW Pink Roses & Olive Green Leaves on Cream Background
 product_types:
   - fit-n-flare
   - maxi-skirt
