@@ -1,5 +1,5 @@
 ---
-description: 01 Black & Cream Tye-Dye Abstract
+description: NEW Black & Cream Tye-Dye Abstract
 product_types:
   - fit-n-flare
   - to
