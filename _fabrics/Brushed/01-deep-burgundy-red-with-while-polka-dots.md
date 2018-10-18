@@ -1,5 +1,5 @@
 ---
-description: 01 Deep Burgundy Red with While Polka Dots
+description: NEW Deep Burgundy Red with While Polka Dots
 product_types:
   - fit-n-flare
   - maxi-skirt
