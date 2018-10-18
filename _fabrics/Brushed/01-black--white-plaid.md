@@ -1,5 +1,5 @@
 ---
-description: 01 Black & White Plaid
+description: NEW Black & White Plaid
 product_types:
   - fit-n-flare
   - maxi-skirt
