@@ -2,11 +2,19 @@
 id:
 product_group: woman
 product_type: womens-dresses
-price_number:
+price_number: 55
 sale_price_number:
-description:
+description: >-
+  The Linda Drawstring is a Staple Dress! Made from super soft, stretchy fabric
+  which makes it perfect for everyday wear. I throw on some cute shoes and
+  jewelry and its the cutest Date Dress! This dress has a drop dolman sleeve and
+  a semi fitted skirt with an adjustable drawstring. Choose your sleeve length
+  and dress length. The Maxi Style has a looser skirt better for walking. I hope
+  you love the Newest Addition to the Family!
 photos:
-  - photo_path:
+  - photo_path: /uploads/dress-1.jpg
+  - photo_path: /uploads/dress-2.jpg
+  - photo_path: /uploads/dress-3.jpg
 options:
   - option_title: Sleeve Length
     option_description:
