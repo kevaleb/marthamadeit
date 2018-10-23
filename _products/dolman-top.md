@@ -25,6 +25,18 @@ options:
     choices:
       - choice: 'Yes'
       - choice: 'No'
+  - option_title: Please Select Which Fit?
+    option_description: >-
+      You may choose if you want the loose fit or regular fit option. The polka
+      dot top shown is the regular fit.
+    choices:
+      - choice: Loose Fit
+      - choice: Regular
+  - option_title:
+    option_description: Hi/ Low Tunic or Curved Hem Option
+    choices:
+      - choice: Hi/ Low Tunic
+      - choice: Curved Hem
 measurements:
   - measurement_title: Bust
     measurement_description:
@@ -38,4 +50,4 @@ measurements:
     measurement_description:
 ---
 
-This Dolman is a Slim Fit Top. Loose through the arms and chest and fitted through the body. Can be made Shirt or Tunic Length, and any Sleeve Length.
+This Dolman is Staple Top. You can choose between two fits: Regular Fit Which is Loose through the arms and chest and semi fitted through the body. Or Loose fit with a Hi/Low Tunic Hem option. Can be made Shirt or Tunic Length, and any Sleeve Length.
