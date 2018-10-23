@@ -1,5 +1,5 @@
 ---
-description: Blush Roses on Cream Background. Double brushed poly
+description: 01 Blush Roses on Cream Background. Double brushed poly
 product_types:
   - maxi-skirt
   - to
