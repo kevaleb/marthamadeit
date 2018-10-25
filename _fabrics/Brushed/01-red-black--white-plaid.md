@@ -5,5 +5,6 @@ product_types:
   - maxi-skirt
   - to
   - womens-dresses
+  - pencil-skirt
 photo_path: /uploads/img-1748.jpg
 ---
