@@ -3,5 +3,7 @@ description: 'Purple, Pink, Aqua, Gold Flowers on Navy Background. Double Brushe
 product_types:
   - maxi-skirt
   - to
+  - womens-dresses
+  - fit-n-flare
 photo_path: /uploads/073-1.JPG
 ---
