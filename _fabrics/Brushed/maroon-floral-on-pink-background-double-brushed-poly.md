@@ -1,5 +1,5 @@
 ---
-description: 'Pink, Maroon Floral on Pink Background Double Brushed Poly'
+description: '01 Pink, Maroon Floral on Pink Background Double Brushed Poly'
 product_types:
   - maxi-skirt
   - fit-n-flare
