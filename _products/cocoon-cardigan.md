@@ -42,3 +42,4 @@ measurements:
     measurement_description:
 ---
 
+The Cocoon Cardigan feels like a hug\! Made with Incredibly Soft Fabric Choices. Choose your sleeve length and Top or Tunic and Pockets\! This is a loose fit cardigan perfect for layering\!
