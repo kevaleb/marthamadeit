@@ -41,3 +41,4 @@ measurements:
     measurement_description:
 ---
 
+The Raglan Top is a semi-fitted top or tunic. With accent sleeves (baseball style) This is such a fun, cute top\! Dress it up or down with ease.
