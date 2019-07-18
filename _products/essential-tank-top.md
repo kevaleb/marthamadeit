@@ -32,3 +32,5 @@ measurements:
   - measurement_title: Length
     measurement_description:
 ---
+
+The Essential Tank is Just That\! The perfect fit tank is here\! Not to loose not too tight. Amazing for layering or on a summer day. Choose from amazing fabrics and top or tunic length. This one comes in Dress Length as well\! Send us an email to order the dress.&nbsp;
