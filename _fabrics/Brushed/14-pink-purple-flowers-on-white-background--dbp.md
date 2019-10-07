@@ -1,5 +1,0 @@
----
-description: '14 Pink, Purple Flowers on White Background. DBP'
-product_types:
-photo_path: /uploads/fabric7.jpg
----
