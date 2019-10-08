@@ -12,6 +12,7 @@ photos:
   - photo_path: /uploads/355.JPG
   - photo_path: /uploads/445.JPG
   - photo_path: /uploads/715.JPG
+  - photo_path: /uploads/003-3.JPG
 options:
   - option_title: Band Option
     option_description: Please choose which Band you would like on your Skirt
